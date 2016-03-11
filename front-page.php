@@ -8,6 +8,14 @@ add_action( 'genesis_meta', 'author_front_page_genesis_meta' );
  * Add widget support for homepage. If no widgets active, display the default loop.
  *
  */
+
+	add_action( 'genesis_before_content_sidebar_wrap', 'faf_home_add_hero' );
+	function faf_home_add_hero() {
+		echo '<div id="home-hero"><img src="'. get_home_url() .'/wp-content/uploads/2016/03/home1-Chartreuse-Traditional-Industrial-Dining-Room.jpg" alt="Chartreuse Traditional Dining Room" /></div>';
+	}
+
+
+
 function author_front_page_genesis_meta() {
 
 	if ( is_active_sidebar( 'front-page-1' ) || is_active_sidebar( 'front-page-2' ) || is_active_sidebar( 'front-page-3' ) || is_active_sidebar( 'front-page-4' ) || is_active_sidebar( 'front-page-5' ) ) {
