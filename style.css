@@ -545,6 +545,10 @@ th {
 /* ## Site Containers
 --------------------------------------------- */
 
+.site-container {
+  max-width: 1570px;
+}
+
 .site-inner,
 .wrap {
 	margin: 0 auto;
@@ -554,7 +558,7 @@ th {
 .site-inner {
 	background-color: #fff;
 	clear: both;
-	margin-top: 140px;
+	margin-top: 87px; /*height of .site-header*/
 	position: relative;
 	z-index: 99;
 }
@@ -1020,6 +1024,7 @@ div .book-featured-text-banner {
   padding: 0 80px;
 	position: fixed;
 	width: 100%;
+  max-width: 1570px;
 	z-index: 498;
 }
 
@@ -1293,6 +1298,18 @@ div .book-featured-text-banner {
 
 /* ## Home
 --------------------------------------------- */
+
+#home-hero {
+    border-bottom: 11px solid purple;
+    position: relative;
+    top: -20px;
+}
+
+#home-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 .featured-widget-area {
 	margin-top: 120px;
