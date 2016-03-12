@@ -253,6 +253,17 @@ blockquote footer::before {
     left: 25%;
     border-top: 1px solid #776f93;
 }
+.rule-below-fifty {
+  position: relative;
+  margin-top: 90px;
+}
+.rule-below-fifty:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    border-top: 1px solid #776f93;
+}
 
 hr {
 	border: 0;
@@ -1376,11 +1387,13 @@ div.presswidget {
     /* display: block; */
     /* overflow: hidden; */
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .widget_sp_image {
     /*float: left;*/
     display: inline-block;
+    margin: 0 2%;
 }
 
 .featured-widget-area {
