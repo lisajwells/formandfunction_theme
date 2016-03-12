@@ -1163,7 +1163,7 @@ div .book-featured-text-banner {
 	-ms-transition:     opacity .3s ease-in-out;
 	-o-transition:      opacity .3s ease-in-out;
 	transition:         opacity .3s ease-in-out;
-	width: 200px;
+	width: 140px;
 	z-index: 499;
 }
 .shrink .sub-menu {
@@ -1176,11 +1176,11 @@ div .book-featured-text-banner {
 	font-size: 12px;
 	padding: 20px;
 	position: relative;
-	width: 200px;
+	width: 140px;
 }
 
 .genesis-nav-menu .sub-menu li.current_page_item a {
-    background-color: green;
+    background-color: #9b9b2f;
   color: #fff;
 
 }
@@ -1235,7 +1235,7 @@ div .book-featured-text-banner {
 }
 
 .nav-primary:hover .genesis-nav-menu .sub-menu li a:hover {
-  background-color: green;
+  background-color: #9b9b2f;
   color: #fff;
 }
 
@@ -1325,7 +1325,7 @@ div .book-featured-text-banner {
 --------------------------------------------- */
 
 #home-hero {
-    border-bottom: 11px solid purple;
+    border-bottom: 11px solid #776f93;
     position: relative;
     /*top: -20px;*/
 }
@@ -2006,7 +2006,7 @@ p.entry-meta {
   }
 
   ul#menu-main-menu {
-    background-color: pink;
+    background-color: #efefef;
     padding: 0 9px;
   }
   .genesis-nav-menu > .menu-item-has-children > a::after {
