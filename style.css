@@ -425,7 +425,7 @@ input[type="submit"],
   font-size: 22px;
   font-weight: 400;
   line-height: 1.625;
-  margin: 22px auto;
+  margin: 22px auto 0;
   padding: 7px 32px;
   text-align: center;
   text-transform: uppercase;
@@ -444,7 +444,7 @@ input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover,
 .featured-content .more-link:hover {
-	background-color: #000;
+	background-color: #776f93;
 	color: #fff;
 }
 
@@ -1160,9 +1160,9 @@ div .book-featured-text-banner {
 	background-color: #efefef;
 	left: -9999px;
 	opacity: 0;
-	padding: 10px 0;
+	padding: 0 0;
 	position: absolute;
-  top: 70px;
+  top: 80px;
 	-webkit-transition: opacity .3s ease-in-out;
 	-moz-transition:    opacity .3s ease-in-out;
 	-ms-transition:     opacity .3s ease-in-out;
@@ -1172,7 +1172,7 @@ div .book-featured-text-banner {
 	z-index: 499;
 }
 .shrink .sub-menu {
-  top: 45px;
+  top: 55px;
 }
 
 .genesis-nav-menu .sub-menu li a {
@@ -1355,29 +1355,44 @@ div .book-featured-text-banner {
 	background-color: #f9f9f9;
 }
 
-/* ## CTA Groups (black transparent box, type, button)
+/* ## Dark-box Groups (black transparent box, type, button)
 --------------------------------------------- */
 
-.cta-group {
+.dark-box-group {
   background-color: rgba(0,0,0,.5);
-  padding: 70px;
+  padding: 60px;
   width: auto;
 }
 
-.cta-group p {
+.dark-box-group p {
   font-size: 66px;
   color: #fff;
   font-family: 'La Belle Aurore', cursive;
+  line-height: 1;
   text-align: center;
 }
-#hero-cta-group {
+
+#hero-dark-box-group { /*home-hero*/
   position: absolute;
-  top: 40px;
+/*  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 5%;
+  width: 600px;
+*/
+    top: 50%;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, -50%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+
 }
-#hero-cta-group p {
+#hero-dark-box-group p {
   font-size: 73px;
+  margin-bottom: 0;
 }
-#hero-cta-group h1 {
+#hero-dark-box-group h1 {
   font-size: 22px;
   text-align: center;
   color: #fff;
