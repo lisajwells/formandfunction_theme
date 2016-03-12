@@ -1221,6 +1221,16 @@ div .book-featured-text-banner {
 .nav-primary:hover .genesis-nav-menu a:hover {
 	color: #776f93; /*green*/
 }
+.nav-primary:hover .genesis-nav-menu a:hover {
+  color: #776f93; /*green*/
+}
+
+.nav-primary:hover .genesis-nav-menu .sub-menu li a:hover {
+  background-color: green;
+  color: #fff;
+}
+
+
 
 /* ## Secondary Navigation
 --------------------------------------------- */
@@ -1289,7 +1299,7 @@ div .book-featured-text-banner {
 .responsive-menu-icon {
 	cursor: pointer;
 	display: none;
-	margin: 15px auto 10px;
+	margin: 28px auto 10px;
 	text-align: center;
 }
 
@@ -1308,7 +1318,7 @@ div .book-featured-text-banner {
 #home-hero {
     border-bottom: 11px solid purple;
     position: relative;
-    top: -20px;
+    /*top: -20px;*/
 }
 
 #home-hero img {
@@ -1730,15 +1740,22 @@ p.entry-meta {
 
 @media only screen and (max-width: 1200px) {
 
-	  .header-image .site-title > a {
+  .header-image .site-title > a {
     width: 300px;
   }
-.genesis-nav-menu a {
+
+  .genesis-nav-menu a {
     padding: 39px 10px;
   }
 
-.site-header {
+  .site-header {
     height: 70px;
+  }
+.site-inner {
+    margin-top: 70px;
+  }
+  #home-hero {
+    /*top: 60px;*/
   }
 
   .nav-secondary,
@@ -1829,19 +1846,20 @@ p.entry-meta {
 	}
 
 	.nav-secondary + .content-sidebar-wrap,
-	.site-inner,
 	.featured-widget-area,
 	.nav-secondary.shrink + .content-sidebar-wrap {
-		margin-top: 0;
-	}
+    margin-top: 0;
+  }
+
+  .site-inner {
+		margin-top: 70px; /*to match height of .site-header*/
+
+  }
+
 
 	.site-header {
 		background: none;
 		min-height: 0;
-	}
-
-	.site-header > .wrap {
-		/*background-color: #efefef;*/
 	}
 
 	.title-area {
@@ -1884,7 +1902,7 @@ p.entry-meta {
 	.front-page-featured,
 	.nav-secondary,
 	.nav-secondary.fixed,
-	.site-header,
+	/*.site-header,*/
 	.widget-full .featured-content .alignleft,
 	.widget-full .featured-content .alignright {
 		position: relative;
@@ -2059,6 +2077,13 @@ p.entry-meta {
 		padding-right: 5%;
 	}
 
+  .site-header > .wrap {
+    /*background-color: #efefef;*/
+    margin-left: -5%; /*to compensate for 5% padding added to any .wrap at 980-*/
+    margin-right: -5%;
+    padding: 0;
+  }
+
 	.featured-widget-area .wrap {
 		padding: 0;
 	}
@@ -2197,4 +2222,23 @@ p.entry-meta {
 		width: 100%;
 	}
 
+}
+
+@media only screen and (max-width: 500px) {
+  div.title-area, .header-image .site-title > a {
+      max-width: 220px;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  .responsive-menu-icon::before {
+    content: "Menu \f333";
+    font: normal 18px/1 "dashicons";
+    margin: 0 auto;
+}
+
+div.title-area, .header-image .site-title > a {
+      max-width: 180px;
+  }
 }
