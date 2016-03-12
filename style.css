@@ -54,6 +54,7 @@
 	- Responsive Menu
 - Content Area
 	- Home
+  - Dark-box Groups
 	- Flexible Widgets
 	- Entries
 	- Entry Meta
@@ -225,19 +226,31 @@ i {
 }
 
 blockquote {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 41px;
 	margin: 30px;
+  text-align: center;
 }
 
-blockquote::before {
-	color: #e1e9ee;
-	content: "\201C";
-	display: block;
-	font-size: 60px;
-	font-weight: 400;
-	height: 0;
-	left: -30px;
-	position: relative;
-	top: -16px;
+blockquote footer {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+blockquote footer::before {
+	content: "\2014";
+
+}
+.rule-above-fifty {
+  position: relative;
+}
+.rule-above:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    border-top: 1px solid #776f93;
 }
 
 hr {
@@ -259,9 +272,9 @@ h4,
 h5,
 h6 {
 	font-family: "Lato", sans-serif;
-	font-weight: 700;
+	font-weight: 400;
 	line-height: 1.2;
-	margin: 0 0 10px;
+	margin: 0 0 20px;
 }
 
 h1 {
@@ -269,7 +282,7 @@ h1 {
 }
 
 h2 {
-	font-size: 36px;
+	font-size: 34px;
 }
 
 h3 {
@@ -1374,24 +1387,17 @@ div .book-featured-text-banner {
 
 #hero-dark-box-group { /*home-hero*/
   position: absolute;
-/*  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  top: 5%;
-  width: 600px;
-*/
-    top: 50%;  /* position the top  edge of the element at the middle of the parent */
-    left: 50%; /* position the left edge of the element at the middle of the parent */
-
-    transform: translate(-50%, -50%); /* This is a shorthand of
-                                         translateX(-50%) and translateY(-50%) */
-
+  max-width: 600px;
+  top: 50%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%); /* translateX(-50%) and translateY(-50%) */
 }
+
 #hero-dark-box-group p {
   font-size: 73px;
   margin-bottom: 0;
 }
+
 #hero-dark-box-group h1 {
   font-size: 22px;
   text-align: center;
@@ -1513,6 +1519,12 @@ div .book-featured-text-banner {
 .entry {
 	/*padding: 80px;*/
 	position: relative;
+  margin: 7% auto;
+}
+
+.home .entry {
+  max-width: 900px;
+
 }
 
 .entry:after {
