@@ -1365,6 +1365,24 @@ div .book-featured-text-banner {
   position: relative;
 }
 
+div.presswidget {
+  clear: both;
+  padding: 5% 0;
+}
+
+.wrap-images {
+    /* width: 80%; */
+    /* margin: 0 auto; */
+    /* display: block; */
+    /* overflow: hidden; */
+    text-align: center;
+}
+
+.widget_sp_image {
+    /*float: left;*/
+    display: inline-block;
+}
+
 .featured-widget-area {
 	margin-top: 120px;
 }

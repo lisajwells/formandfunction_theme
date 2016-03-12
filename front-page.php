@@ -53,13 +53,10 @@ function faf_home_add_cta_imgs() {
 }
 
 /* add the press image widget area */
-
-
-
 add_action( 'genesis_after_content', 'faf_home_add_press_sb' );
 function faf_home_add_press_sb() {
 	genesis_widget_area ('presswidget', array(
-        'before' => '<div class="presswidget"><div class="wrap">asdfsadfads',
+        'before' => '<div class="presswidget"><div class="wrap-images">',
         'after' => '</div></div>',
 	) );
 }
