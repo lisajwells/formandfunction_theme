@@ -32,19 +32,19 @@ function faf_home_add_cta_imgs() {
 			</div>
 			</div>
 			<div class="home-cta-img">
-				<img src="'. get_home_url() .'/wp-content/uploads/2016/03/home2-Rustic-Industrial-Kitchen.jpg" alt="Rustic-Industrial Kitchen" />
+				<img src="'. get_home_url() .'/wp-content/uploads/2016/03/home3-Living-Room-Coffee-Table.jpg" alt="Living Room Coffee Table" />
 			<div class="dark-box-group">
 				<div class="dark-box-content-wrap">
-					<p>Custom Diy</p>
+					<p>Redesign</p>
 					<a class="button">Learn More</a>
 				</div>
 			</div>
 			</div>
 			<div class="home-cta-img">
-				<img src="'. get_home_url() .'/wp-content/uploads/2016/03/home2-Rustic-Industrial-Kitchen.jpg" alt="Rustic-Industrial Kitchen" />
+				<img src="'. get_home_url() .'/wp-content/uploads/2016/03/home4-master-bedroom-statement-wall-grasscloth-wallpaper-linen-drum-shade-pendant.jpg" alt="Master Bedroom" />
 			<div class="dark-box-group">
 				<div class="dark-box-content-wrap">
-					<p>Custom Diy</p>
+					<p>The Works</p>
 					<a class="button">Learn More</a>
 				</div>
 			</div>
