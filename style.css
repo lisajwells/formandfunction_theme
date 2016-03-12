@@ -1360,7 +1360,8 @@ div .book-featured-text-banner {
 }
 
 .home-cta-img {
-  width: 33%;
+  float: left;
+  width: 33.333333333%;
   position: relative;
 }
 
@@ -1383,7 +1384,7 @@ div .book-featured-text-banner {
 
 .dark-box-group {
   background-color: rgba(0,0,0,.5);
-  padding: 60px;
+  padding: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
