@@ -146,3 +146,8 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Front Page 5', 'author' ),
 	'description' => __( 'This is the front page 5 section.', 'author' ),
 ) );
+genesis_register_sidebar( array(
+	'id'		=> 'presswidget',
+	'name'		=> __( 'Press Widget', 'faf' ),
+	'description'	=> __( 'This is the widget area for press image widgets.', 'faf' ),
+) );

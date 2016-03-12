@@ -52,7 +52,20 @@ function faf_home_add_cta_imgs() {
 		</div>';
 }
 
+/* add the press image widget area */
 
+
+
+add_action( 'genesis_after_content', 'faf_home_add_press_sb' );
+function faf_home_add_press_sb() {
+	genesis_widget_area ('presswidget', array(
+        'before' => '<div class="presswidget"><div class="wrap">asdfsadfads',
+        'after' => '</div></div>',
+	) );
+}
+
+
+// This stuff all came with the theme. The front page breaks without it //
 function author_front_page_genesis_meta() {
 
 	if ( is_active_sidebar( 'front-page-1' ) || is_active_sidebar( 'front-page-2' ) || is_active_sidebar( 'front-page-3' ) || is_active_sidebar( 'front-page-4' ) || is_active_sidebar( 'front-page-5' ) ) {
