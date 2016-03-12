@@ -1347,7 +1347,6 @@ div .book-featured-text-banner {
 #home-hero {
     border-bottom: 11px solid #776f93;
     position: relative;
-    /*top: -20px;*/
 }
 
 #home-hero img {
@@ -1383,14 +1382,22 @@ div .book-featured-text-banner {
 --------------------------------------------- */
 
 .dark-box-group {
-    background-color: rgba(0,0,0,.5);
-    padding: 10%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
+  background-color: rgba(0,0,0,.5);
+  padding: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+}
+
+.dark-box-content-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 .dark-box-group p {
@@ -1407,6 +1414,8 @@ div .book-featured-text-banner {
   top: 50%;  /* position the top  edge of the element at the middle of the parent */
   left: 50%; /* position the left edge of the element at the middle of the parent */
   transform: translate(-50%, -50%); /* translateX(-50%) and translateY(-50%) */
+  width: auto;
+  height: auto;
 }
 
 #hero-dark-box-group p {

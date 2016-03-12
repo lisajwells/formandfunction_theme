@@ -25,8 +25,10 @@ function faf_home_add_cta_imgs() {
 			<div class="home-cta-img">
 				<img src="'. get_home_url() .'/wp-content/uploads/2016/03/home2-Rustic-Industrial-Kitchen.jpg" alt="Rustic-Industrial Kitchen" />
 			<div class="dark-box-group">
-				<p>Custom Diy</p>
-				<a class="button">Learn More</a>
+				<div class="dark-box-content-wrap">
+					<p>Custom Diy</p>
+					<a class="button">Learn More</a>
+				</div>
 			</div>
 			</div>
 		</div>';
