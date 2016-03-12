@@ -1157,7 +1157,7 @@ div .book-featured-text-banner {
 	opacity: 0;
 	padding: 10px 0;
 	position: absolute;
-  top: 87px;
+  top: 70px;
 	-webkit-transition: opacity .3s ease-in-out;
 	-moz-transition:    opacity .3s ease-in-out;
 	-ms-transition:     opacity .3s ease-in-out;
@@ -1165,6 +1165,9 @@ div .book-featured-text-banner {
 	transition:         opacity .3s ease-in-out;
 	width: 200px;
 	z-index: 499;
+}
+.shrink .sub-menu {
+  top: 45px;
 }
 
 .genesis-nav-menu .sub-menu li a {
@@ -1177,7 +1180,7 @@ div .book-featured-text-banner {
 }
 
 .genesis-nav-menu .sub-menu li.current_page_item a {
-    background-color: pink;
+    background-color: green;
   color: #fff;
 
 }
@@ -1983,7 +1986,7 @@ p.entry-meta {
 
 @media only screen and (max-width: 980px) { /* 980 again for navigation only */
 
-    .nav-primary .wrap {
+  .nav-primary .wrap {
     padding: 0;
   }
 
@@ -2001,6 +2004,17 @@ p.entry-meta {
   .genesis-nav-menu.responsive-menu .menu-item:hover {
     position: static;
   }
+
+  ul#menu-main-menu {
+    background-color: pink;
+    padding: 0 9px;
+  }
+  .genesis-nav-menu > .menu-item-has-children > a::after {
+    content: "";
+}
+.genesis-nav-menu .sub-menu {
+  top: 0;
+}
 
   .menu.genesis-nav-menu.responsive-menu li.current-menu-item > a,
   .menu.genesis-nav-menu.responsive-menu li a,
