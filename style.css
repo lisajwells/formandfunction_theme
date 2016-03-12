@@ -159,7 +159,7 @@ body {
 	font-family: Lato, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
-	line-height: 1.4;
+	line-height: 1.2;
 	margin: 0;
 }
 
@@ -419,18 +419,23 @@ input[type="reset"],
 input[type="submit"],
 .button,
 .featured-content .more-link {
-	background-color: transparent;
-	border: 1px solid #000;
-	border-radius: 3px;
-	color: #000;
-	cursor: pointer;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.625;
-	padding: 16px 32px;
-	text-align: center;
-	white-space: normal;
-	width: auto;
+  background-color: #9b9b2f;
+  color: #fff;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.625;
+  margin: 22px auto;
+  padding: 7px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: normal;
+  width: auto;
+  max-width: 500px;
+}
+
+.button-light {
+	background-color: #c2ca66;
 }
 
 button:hover,
@@ -480,7 +485,7 @@ input[type="submit"].small,
 }
 
 .button {
-	display: inline-block;
+	display: block;
 }
 
 .more-link {
@@ -1348,6 +1353,35 @@ div .book-featured-text-banner {
 .front-page-3,
 .front-page-5 {
 	background-color: #f9f9f9;
+}
+
+/* ## CTA Groups (black transparent box, type, button)
+--------------------------------------------- */
+
+.cta-group {
+  background-color: rgba(0,0,0,.5);
+  padding: 70px;
+  width: auto;
+}
+
+.cta-group p {
+  font-size: 66px;
+  color: #fff;
+  font-family: 'La Belle Aurore', cursive;
+  text-align: center;
+}
+#hero-cta-group {
+  position: absolute;
+  top: 40px;
+}
+#hero-cta-group p {
+  font-size: 73px;
+}
+#hero-cta-group h1 {
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
 }
 
 /* ## Flexible Widgets
