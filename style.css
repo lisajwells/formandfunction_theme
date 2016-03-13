@@ -2171,24 +2171,36 @@ p.entry-meta {
 
   ul#menu-main-menu {
     background-color: #efefef;
-    padding: 0 9px;
+    /*padding: 0 9px;*/
   }
   .genesis-nav-menu > .menu-item-has-children > a::after {
     content: "";
-}
-.genesis-nav-menu .sub-menu {
-  top: 0;
-}
+  }
+
+  .genesis-nav-menu .sub-menu {
+    top: 0;
+  }
+
+  .genesis-nav-menu .sub-menu li a {
+    width: 100%;
+  }
 
   .menu.genesis-nav-menu.responsive-menu li.current-menu-item > a,
   .menu.genesis-nav-menu.responsive-menu li a,
   .menu.genesis-nav-menu.responsive-menu li a:hover,
   .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a:hover,
   .nav-secondary .menu.genesis-nav-menu.responsive-menu .sub-menu a {
-    background: none;
+    /*background: none;*/
     display: block;
-    padding: 10px 0;
+    padding: 10px 9px;
     text-transform: none;
+    color: #000;
+  }
+
+  .menu.genesis-nav-menu.responsive-menu li.current-menu-item > a,
+  .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a:hover {
+    color: #fff;
+
   }
 
   .nav-secondary .genesis-nav-menu.responsive-menu li a,
