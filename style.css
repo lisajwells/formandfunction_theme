@@ -1205,23 +1205,31 @@ div .book-featured-text-banner {
 	width: 140px;
 	z-index: 499;
 }
+
+.home .genesis-nav-menu .sub-menu {
+  background-color: #fff;
+}
+
 .shrink .sub-menu {
   top: 55px;
 }
 
 .genesis-nav-menu .sub-menu li a {
-	background-color: #efefef;
-	color: #fff;
-	font-size: 12px;
-	padding: 20px;
-	position: relative;
-	width: 140px;
+  background-color: #efefef;
+  color: #fff;
+  font-size: 12px;
+  padding: 20px;
+  position: relative;
+  width: 140px;
+}
+
+.home .genesis-nav-menu .sub-menu li a {
+	background-color: #fff;
 }
 
 .genesis-nav-menu .sub-menu li.current_page_item a {
-    background-color: #9b9b2f;
+  background-color: #9b9b2f; /*green*/
   color: #fff;
-
 }
 
 .genesis-nav-menu .sub-menu .sub-menu {
@@ -2173,6 +2181,11 @@ p.entry-meta {
     background-color: #efefef;
     /*padding: 0 9px;*/
   }
+
+  .home ul#menu-main-menu {
+    background-color: #fff;
+  }
+
   .genesis-nav-menu > .menu-item-has-children > a::after {
     content: "";
   }
@@ -2197,10 +2210,16 @@ p.entry-meta {
     color: #000;
   }
 
-  .menu.genesis-nav-menu.responsive-menu li.current-menu-item > a,
   .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a:hover {
     color: #fff;
+  }
 
+  .menu.genesis-nav-menu.responsive-menu li.current-menu-item > a {
+    color: purple;
+  }
+
+  .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a {
+    color: #fff;
   }
 
   .nav-secondary .genesis-nav-menu.responsive-menu li a,
