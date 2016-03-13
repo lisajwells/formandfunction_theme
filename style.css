@@ -2165,7 +2165,7 @@ p.entry-meta {
   .genesis-nav-menu.responsive-menu {
     display: none;
     float: none;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
   }
 
   .genesis-nav-menu.responsive-menu .menu-item,
