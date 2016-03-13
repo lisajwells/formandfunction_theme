@@ -172,6 +172,7 @@ input[type="reset"],
 input[type="submit"],
 textarea:focus,
 .button,
+.textwidget .button,
 .gallery img {
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition:    all .3s ease-in-out;
@@ -443,6 +444,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button,
+.textwidget .button,
 .featured-content .more-link {
   background-color: #9b9b2f;
   color: #fff;
@@ -469,6 +471,7 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover,
+.textwidget .button:hover,
 .featured-content .more-link:hover {
 	background-color: #776f93;
 	color: #fff;
@@ -486,7 +489,7 @@ input:hover[type="submit"],
 .footer-widgets input[type="submit"],
 .footer-widgets .button,
 .footer-widgets .featured-content .more-link {
-	border-color: #fff;
+	/*border-color: #000;*/
 	color: #fff;
 }
 
@@ -498,8 +501,8 @@ input:hover[type="submit"],
 .footer-widgets input:hover[type="submit"],
 .footer-widgets .button:hover,
 .footer-widgets .featured-content .more-link:hover {
-	background-color: #fff;
-	color: #000;
+	background-color: purple;
+	color: #fff;
 }
 
 button.small,
@@ -1773,7 +1776,7 @@ p.entry-meta {
 .footer-widgets .wrap {
 	background-color: #fff;
 	clear: both;
-	padding: 80px;
+	padding: 0 80px 80px;
 }
 
 .footer-widgets {
@@ -1784,6 +1787,10 @@ p.entry-meta {
 .footer-widgets .widget-title,
 .footer-widgets .wrap a {
 	color: #000;
+}
+
+.footer-widgets .wrap a.button {
+  color: #fff;
 }
 
 .footer-widgets input {

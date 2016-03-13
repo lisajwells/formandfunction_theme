@@ -43,7 +43,7 @@ add_theme_support( 'custom-background' );
 add_theme_support( 'genesis-after-entry-widget-area' );
 
 //* Add support for 3-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 4 );
+add_theme_support( 'genesis-footer-widgets', 4 ); // changed from 3 to 4 //
 
 //* Unregister layout settings
 genesis_unregister_layout( 'content-sidebar-sidebar' );
