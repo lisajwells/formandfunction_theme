@@ -1796,23 +1796,26 @@ p.entry-meta {
 
 .footer-widgets-1,
 .footer-widgets-2,
-.footer-widgets-3 {
-	width: 320px;
+.footer-widgets-3,
+.footer-widgets-4 {
+	width: 25%;
 }
 
 .footer-widgets-1 {
-	margin-right: 80px;
+	/*margin-right: 80px;*/
 }
 
 .footer-widgets-1,
-.footer-widgets-2 {
+.footer-widgets-2,
+.footer-widgets-3,
+.footer-widgets-4 {
 	float: left;
 }
 
-.footer-widgets-3 {
+/*.footer-widgets-3 {
 	float: right;
 }
-
+*/
 
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
