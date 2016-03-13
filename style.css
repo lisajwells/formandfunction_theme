@@ -1842,14 +1842,15 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-	color: #ccc;
-	font-size: 16px;
+	color: #000;
+	font-size: 12px;
 	line-height: 1;
+  text-align: center;
 }
 
 .site-footer .wrap {
-	background-color: #181c1e;
-	padding: 80px;
+	background-color: #fff;
+	padding: 40px;
 }
 
 .site-footer .wrap a {
@@ -1857,7 +1858,7 @@ p.entry-meta {
 }
 
 .site-footer a:hover {
-	color: #0085da;
+	color: green;
 }
 
 .site-footer p {
