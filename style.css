@@ -1830,6 +1830,14 @@ p.entry-meta {
   text-transform: uppercase;
 }
 
+#text-5 .textwidget { /*address*/
+  line-height: 1.4;
+}
+
+.footer-widgets-4 section.widget {
+  margin-bottom: 20px;
+}
+
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
