@@ -501,7 +501,7 @@ input:hover[type="submit"],
 .footer-widgets input:hover[type="submit"],
 .footer-widgets .button:hover,
 .footer-widgets .featured-content .more-link:hover {
-	background-color: purple;
+	background-color: #776f93;
 	color: #fff;
 }
 
@@ -1777,7 +1777,7 @@ p.entry-meta {
 .footer-widgets .wrap {
 	background-color: #fff;
 	clear: both;
-	padding: 0 80px 80px;
+	padding: 0 80px;
 }
 
 .footer-widgets {
@@ -1858,7 +1858,7 @@ p.entry-meta {
 }
 
 .site-footer a:hover {
-	color: green;
+	color:  #9b9b2f;
 }
 
 .site-footer p {
@@ -1872,7 +1872,7 @@ p.entry-meta {
 
 .site-footer p a:hover {
 	margin-bottom: 0;
-  color: green;
+  color:  #9b9b2f;
 }
 
 #footer-logo {
