@@ -1861,11 +1861,23 @@ p.entry-meta {
 	color: green;
 }
 
-.site-footer p a {
-	margin-bottom: 0;
-  color: red;
+.site-footer p {
+  margin-bottom: 10px;
 }
 
+.site-footer p a {
+  margin-bottom: 0;
+  color: #000;
+}
+
+.site-footer p a:hover {
+	margin-bottom: 0;
+  color: green;
+}
+
+#footer-logo {
+  width: 132px;
+}
 
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */

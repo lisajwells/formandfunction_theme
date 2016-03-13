@@ -160,7 +160,7 @@ remove_action( 'genesis_footer', 'genesis_do_footer' );
 add_action( 'genesis_footer', 'faf_custom_footer' );
 function faf_custom_footer() {
 	?>
-	<p><img src="<?php get_home_url() ?>/wp-content/uploads/2016/03/FormFunctionLogoMark.png"></p>
+	<p><img id="footer-logo" src="<?php get_home_url() ?>/wp-content/uploads/2016/03/FormFunctionLogoMark.png"></p>
 	<p><a href="#">Privacy Policy</a> | <a href="#">Sitemap</a></p>
 	<p>Copyright <?php echo date ( 'Y' ) ?> Form & Function Raleigh. All rights reserved.</p>
 	<?php
