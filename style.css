@@ -2209,8 +2209,11 @@ p.entry-meta {
     text-transform: none;
     color: #000;
   }
-
-  .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a:hover {
+  .menu.genesis-nav-menu.responsive-menu li:hover {
+    background-color: #9b9b2f;
+    color: #fff;
+  }
+  .menu.genesis-nav-menu.responsive-menu li a:hover {
     color: #fff;
   }
 
@@ -2218,7 +2221,8 @@ p.entry-meta {
     color: purple;
   }
 
-  .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a {
+  .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a,
+  .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a:hover {
     color: #fff;
   }
 
