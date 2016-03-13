@@ -1854,15 +1854,16 @@ p.entry-meta {
 }
 
 .site-footer .wrap a {
-	color: #fff;
+	/*color: #fff;*/
 }
 
 .site-footer a:hover {
 	color: green;
 }
 
-.site-footer p {
+.site-footer p a {
 	margin-bottom: 0;
+  color: red;
 }
 
 
