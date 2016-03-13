@@ -2221,6 +2221,7 @@ p.entry-meta {
     color: purple;
   }
 
+  .menu.genesis-nav-menu.responsive-menu li.current-menu-item > a:hover,
   .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a,
   .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a:hover {
     color: #fff;
