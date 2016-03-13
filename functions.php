@@ -43,7 +43,7 @@ add_theme_support( 'custom-background' );
 add_theme_support( 'genesis-after-entry-widget-area' );
 
 //* Add support for 3-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 3 );
+add_theme_support( 'genesis-footer-widgets', 4 );
 
 //* Unregister layout settings
 genesis_unregister_layout( 'content-sidebar-sidebar' );
@@ -146,8 +146,20 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Front Page 5', 'author' ),
 	'description' => __( 'This is the front page 5 section.', 'author' ),
 ) );
+
+//*++++++++++++ Custom for Form and Function +++++++++++++*/
+
 genesis_register_sidebar( array(
 	'id'		=> 'presswidget',
 	'name'		=> __( 'Press Widget', 'faf' ),
 	'description'	=> __( 'This is the widget area for press image widgets.', 'faf' ),
 ) );
+
+//* Customize the entire footer
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'faf_custom_footer' );
+function faf_custom_footer() {
+	?>
+	<p>&copy; Copyright 2012 <a href="http://mydomain.com/">My Domain</a> &middot; All Rights Reserved &middot; Powered by <a href="http://wordpress.org/">WordPress</a> &middot; <a href="http://mydomain.com/wp-admin">Admin</a></p>
+	<?php
+}

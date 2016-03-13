@@ -1771,13 +1771,14 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets .wrap {
-	background-color: #181c1e;
+	background-color: #fff;
 	clear: both;
 	padding: 80px;
 }
 
 .footer-widgets {
-	color: #ccc;
+	color: #000;
+  text-align: center;
 }
 
 .footer-widgets .widget-title,
