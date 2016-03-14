@@ -61,6 +61,7 @@
 	- After Entry
 	- Pagination
 	- Comments
+  - What We Do
 - Sidebars
 - Footer Widgets
 - Site Footer
@@ -1757,6 +1758,15 @@ p.entry-meta {
 	padding: 24px;
 }
 
+/* # What We Do
+---------------------------------------------------------------------------------------------------- */
+
+#services-diy:before { /*so go to id doesn't tuck under fixed header*/
+   content: "";
+   display: block;
+   height: 100px;
+   margin: -100px 0 0;
+}
 
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
