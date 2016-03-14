@@ -1923,31 +1923,20 @@ p.entry-meta {
     width: 13%;
   }
 
-/*	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3,
-	.sidebar-primary {
-		width: 300px;
-	}
-
-	.footer-widgets-1 {
-		margin-right: 40px;
-	}
-*/
 }
 
 @media only screen and (max-width: 1200px) {
 
-  .header-image .site-title > a {
-    width: 300px;
+  .header-image .site-title > a { /*shrink to 300*/
+    width: 330px;
   }
 
   .genesis-nav-menu a {
-    padding: 39px 10px;
+    padding: 43px 10px; /*shrink to 27top 32bot*/
   }
 
   .site-header {
-    height: 70px;
+    height: 76px; /*shrink to 60*/
   }
   .site-inner {
     margin-top: 70px;
