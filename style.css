@@ -1821,6 +1821,7 @@ p.entry-meta {
 
 .footer-widgets .wrap a.button {
   color: #fff;
+  line-height: 1.4;
 }
 
 .footer-widgets input {
@@ -1918,7 +1919,7 @@ p.entry-meta {
 		width: 840px;
 	}
 
-	.footer-widgets-1,
+/*	.footer-widgets-1,
 	.footer-widgets-2,
 	.footer-widgets-3,
 	.sidebar-primary {
@@ -1929,7 +1930,7 @@ p.entry-meta {
 		margin-right: 40px;
 	}
 
-}
+}*/
 
 @media only screen and (max-width: 1200px) {
 
