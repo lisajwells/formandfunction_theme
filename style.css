@@ -202,6 +202,7 @@ a:hover {
 }
 
 p {
+  line-height: 1.4;
 	margin: 0 0 28px;
 	padding: 0;
 }
@@ -2084,6 +2085,10 @@ p.entry-meta {
 	.header-image .site-title > a {
 		background-position: center !important;
 	}
+
+  .entry {
+      margin: 0% auto;
+  }
 
   #hero-dark-box-group {
     padding: 30px;
