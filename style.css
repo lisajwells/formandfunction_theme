@@ -1399,16 +1399,11 @@ div.presswidget {
 }
 
 .wrap-images {
-    /* width: 80%; */
-    /* margin: 0 auto; */
-    /* display: block; */
-    /* overflow: hidden; */
     text-align: center;
     margin-bottom: 90px;
 }
 
 .widget_sp_image {
-    /*float: left;*/
     display: inline-block;
     margin: 0 2%;
 }
@@ -1919,6 +1914,14 @@ p.entry-meta {
 		width: 840px;
 	}
 
+  .dark-box-group p {
+    font-size: 54px;
+  }
+
+  .presswidget .widget_sp_image {
+    width: 13%;
+  }
+
 /*	.footer-widgets-1,
 	.footer-widgets-2,
 	.footer-widgets-3,
@@ -1929,8 +1932,8 @@ p.entry-meta {
 	.footer-widgets-1 {
 		margin-right: 40px;
 	}
-
-}*/
+*/
+}
 
 @media only screen and (max-width: 1200px) {
 
