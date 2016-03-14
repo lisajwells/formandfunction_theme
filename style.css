@@ -1948,11 +1948,24 @@ p.entry-meta {
   .site-header {
     height: 70px;
   }
-.site-inner {
+  .site-inner {
     margin-top: 70px;
   }
-  #home-hero {
-    /*top: 60px;*/
+
+  #hero-dark-box-group {
+    padding: 40px;
+  }
+
+  #hero-dark-box-group p {
+    font-size: 66px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+
+  .dark-box-group p {
+      font-size: 44px;
   }
 
   .nav-secondary,
