@@ -2035,6 +2035,18 @@ p.entry-meta {
 
 @media only screen and (max-width: 980px) {
 
+  .header-image .site-title > a {
+    width: 300px;
+  }
+
+  .genesis-nav-menu a {
+    padding: 39px 10px;
+  }
+
+  .site-header {
+    height: 70px;
+  }
+
 	.nav-secondary,
 	.site-inner,
 	.wrap {
@@ -2371,10 +2383,13 @@ p.entry-meta {
 		padding-right: 5%;
 	}
 
-  .site-header > .wrap {
-    /*background-color: #efefef;*/
-    margin-left: -5%; /*to compensate for 5% padding added to any .wrap at 980-*/
-    margin-right: -5%;
+/*  .site-header > .wrap {
+    margin-left: -5%;*/ /*to compensate for 5% padding added to any .wrap at 980-*/
+/*    margin-right: -5%;
+    padding: 0;
+  }
+*/
+.site-header {
     padding: 0;
   }
 
