@@ -1761,7 +1761,9 @@ p.entry-meta {
 /* # What We Do
 ---------------------------------------------------------------------------------------------------- */
 
-#services-diy:before { /*so go to id doesn't tuck under fixed header*/
+#services-diy:before,
+#services-redesign:before,
+#services-works:before { /*so go to id doesn't tuck under fixed header*/
    content: "";
    display: block;
    height: 100px;
