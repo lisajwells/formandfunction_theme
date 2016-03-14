@@ -1963,18 +1963,31 @@ p.entry-meta {
   .button {
     font-size: 18px;
   }
+  a.button.small {
+    font-size: 15px;
+  }
 
   .dark-box-group p {
       font-size: 44px;
   }
 
-  .nav-secondary,
-	.site-inner,
-	.wrap {
-		/*max-width: 960px;*/
-	}
+  .footer-widgets {
+      font-size: 16px;
+  }
 
-	.content {
+  .footer-widgets .wrap a {
+    font-size: 16px;
+  }
+
+  .footer-widgets h4 {
+    font-size: 19px;
+  }
+
+  #footer-logo {
+    width: 100px;
+  }
+
+  .content {
 		width: 660px;
 	}
 
@@ -2026,16 +2039,6 @@ p.entry-meta {
 	.archive.genesis-author-pro .archive-pagination,
 	.archive.genesis-pro-portfolio .archive-pagination {
 		margin: 0 -60px;
-	}
-
-	.footer-widgets-1,
-	.footer-widgets-2,
-	.footer-widgets-3 {
-		width: 260px;
-	}
-
-	.footer-widgets-1 {
-		margin-right: 30px;
 	}
 
 }
