@@ -2066,9 +2066,7 @@ p.entry-meta {
 
   .site-inner {
 		margin-top: 70px; /*to match height of .site-header*/
-
   }
-
 
 	.site-header {
 		background: none;
@@ -2086,6 +2084,37 @@ p.entry-meta {
 	.header-image .site-title > a {
 		background-position: center !important;
 	}
+
+  #hero-dark-box-group {
+    padding: 30px;
+    width: 80%;
+  }
+
+  #hero-dark-box-group p {
+    font-size: 54px;
+  }
+
+  blockquote {
+    font-size: 36px;
+  }
+
+  blockquote footer {
+    font-size: 17px;
+  }
+
+  .dark-box-group p {
+      font-size: 32px;
+  }
+
+  #home-cta-imgs a.button {
+    font-size: 16px;
+    padding: 7px 7px;
+    margin: 0;
+  }
+
+  #home-cta-imgs p {
+      margin-bottom: 13px;
+  }
 
 	.genesis-nav-menu li,
 	.site-header ul.genesis-nav-menu,
