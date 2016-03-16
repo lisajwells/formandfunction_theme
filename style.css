@@ -1410,6 +1410,8 @@ div .book-featured-text-banner {
   position: relative;
 }
 
+/**/
+
 .presswidget {
   clear: both;
   padding: 5% 0;
@@ -1422,19 +1424,31 @@ div .book-featured-text-banner {
 }
 
 .presswidget .wrap-images img {
-  /*width: 20%;*/
   max-width: 100%;
   display: block;
   position: relative;
   margin: 0 auto;
 }
 
+.press-wrap {
+  width: 15.7%;
+    display: inline-block;
+    /*width: auto;*/
+    margin: 0 2%;
+}
+
+
+
 #home-press-houzz {
-  width: 14%;
+  /*width: 15%;*/
+}
+
+#home-press-houzz img {
+
 }
 
 #home-press-midtown {
-  width: 22%;
+  /*width: 18%;*/
 }
 
 #home-press-midtown img {
@@ -1442,51 +1456,25 @@ div .book-featured-text-banner {
 }
 
 #home-press-observer {
-  width: 26%;
+  /*width: 18%;*/
 }
 #home-press-observer img {
   top: -20px;
 }
 
-
 #home-press-walter {
-  width: 42%;
+  /*width: 18%;*/
 }
 #home-press-walter img {
   top: -20px;
 }
 
-
 #home-press-happening {
-  width: 32%;
+  /*width: 15%;*/
 }
 
-.press-wrap {
-    display: inline-block;
-    width: 20%;
-}
+#home-press-happening img {
 
-#home-press-1 .press-wrap {
-    margin: 0 5%;
-}
-
-#home-press-2 .press-wrap {
-    margin: 0 6%;
-}
-
-#home-press-1,
-#home-press-2 {
-  display: inline-block;
-  float: left;
-}
-
-#home-press-1 {
-  width: 67%;
-  margin-top: 1.5%;
-}
-
-#home-press-2 {
-  width: 33%;
 }
 
 .featured-widget-area {
@@ -2048,10 +2036,6 @@ section#simple-social-icons-3 a {
       font-size: 44px;
   }
 
-  #home-press-1 {
-      margin-top: 0.5%;
-  }
-
   .footer-widgets {
       font-size: 16px;
   }
@@ -2557,24 +2541,6 @@ section#simple-social-icons-3 a {
   #hero-dark-box-group h1 {
       font-size: 18px;
   }
-
-
-  #home-press-1,
-  #home-press-2 {
-    display: block;
-    float: none;
-  }
-
-  #home-press-1 {
-    width: 100%;
-    /*margin-top: 1.5%;*/
-  }
-
-  #home-press-2 {
-    width: 50%;
-    margin: 0 auto;
-  }
-
 
 	.footer-widgets .wrap {
 		padding: 40px 40px 0;
