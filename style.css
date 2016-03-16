@@ -1466,6 +1466,7 @@ div .book-featured-text-banner {
 
 #home-press-1 {
   width: 67%;
+  margin-top: 1.5%;
 }
 
 #home-press-2 {
@@ -2030,6 +2031,10 @@ section#simple-social-icons-3 a {
       font-size: 44px;
   }
 
+  #home-press-1 {
+      margin-top: 0.5%;
+  }
+
   .footer-widgets {
       font-size: 16px;
   }
@@ -2501,6 +2506,85 @@ section#simple-social-icons-3 a {
 		font-size: 36px;
 	}
 
+  /*.presswidget {
+    clear: both;
+    padding: 5% 0;
+  }
+
+  .presswidget .wrap-images {
+      padding: 0 40px;
+      text-align: center;
+      margin-bottom: 90px;
+  }
+
+  .presswidget .wrap-images img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  #home-press-houzz {
+    width: 14%;
+  }
+
+  #home-press-midtown {
+    width: 22%;
+  }
+
+  #home-press-midtown img {
+    top: -23px;
+  }
+
+  #home-press-observer {
+    width: 26%;
+  }
+  #home-press-observer img {
+    top: -20px;
+  }
+
+  #home-press-walter {
+    width: 42%;
+  }
+  #home-press-walter img {
+    top: -20px;
+  }
+
+  #home-press-happening {
+    width: 32%;
+  }
+
+  .press-wrap {
+      display: inline-block;
+      width: 20%;
+  }
+
+  #home-press-1 .press-wrap {
+      margin: 0 5%;
+  }
+
+  #home-press-2 .press-wrap {
+      margin: 0 6%;
+  }
+
+  */
+  #home-press-1,
+  #home-press-2 {
+    display: block;
+    float: none;
+  }
+
+  #home-press-1 {
+    width: 100%;
+    /*margin-top: 1.5%;*/
+  }
+
+  #home-press-2 {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+
 	.footer-widgets .wrap {
 		padding: 40px 40px 0;
 	}
@@ -2522,6 +2606,8 @@ section#simple-social-icons-3 a {
   div.title-area, .header-image .site-title > a {
       max-width: 220px;
   }
+
+
 
 }
 
