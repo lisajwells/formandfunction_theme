@@ -1378,11 +1378,37 @@ div .book-featured-text-banner {
     position: relative;
 }
 
+/*div#home-hero-img {
+  background: red;
+  background: url(http://formfunction.flywheelsites.com/wp-content/uploads/2016/03/home1-Chartreuse-Traditional-Industrial-Dining-Room.jpg);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+}
+*/
+
 #home-hero img {
   display: block;
   width: 100%;
   height: auto;
 }
+
+@media only screen and (max-width: 800px) {
+
+  div#home-hero-image {
+    background: url(http://formfunction.flywheelsites.com/wp-content/uploads/2016/03/home1-Chartreuse-Traditional-Industrial-Dining-Room.jpg);
+    background-size: cover;
+    min-height: 312px;
+    background-position: center center;
+  }
+
+  #home-hero img {
+    visibility: hidden;
+  }
+}
+
+/**/
 
 #home-cta-imgs {
   width: 100%;

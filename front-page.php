@@ -15,7 +15,8 @@ add_action( 'genesis_meta', 'author_front_page_genesis_meta' );
 add_action( 'genesis_before_content_sidebar_wrap', 'faf_home_add_hero' );
 function faf_home_add_hero() {
 	echo '<div id="home-hero">
-			<img src="'. get_home_url() .'/wp-content/uploads/2016/03/home1-Chartreuse-Traditional-Industrial-Dining-Room.jpg" alt="Chartreuse Traditional Dining Room" />
+			<div id="home-hero-image"><img src="'. get_home_url() .'/wp-content/uploads/2016/03/home1-Chartreuse-Traditional-Industrial-Dining-Room.jpg" alt="Chartreuse Traditional Dining Room" /></div>
+
 			<div class="dark-box-group" id="hero-dark-box-group"><p>Real people live here.</p><h1>Interior Design and Unique Home Furnishings for the Greater Raleigh Area</h1><a href="'. get_home_url() .'/what-we-do" class="button">Interior Design Services</a><a href="'. get_home_url() .'/retail-shop" class="button button-light">The Shop</a></div></div>';
 }
 
