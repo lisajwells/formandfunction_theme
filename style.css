@@ -605,6 +605,11 @@ th {
 	z-index: 99;
 }
 
+.content-sidebar-wrap { /*so it scrolls under fixed nav*/
+    position: relative;
+    z-index: 5;
+}
+
 .featured-widget-area + .site-inner,
 .landing-page .site-inner {
 	margin-top: 0;
@@ -1338,7 +1343,7 @@ div .book-featured-text-banner {
 
 .nav-secondary .genesis-nav-menu a {
 	color: #fff;
-	padding: 42px 24px;
+	padding: 26px 24px;
 }
 
 .nav-secondary .genesis-nav-menu .sub-menu a {
@@ -1365,11 +1370,12 @@ div .book-featured-text-banner {
 
 .nav-secondary.shrink #menu-services-menu {
 	position: fixed;
-	top:66px;
+	top:60px;
+      border-top: 6px solid #fff;
 }
 
 .nav-secondary.shrink .genesis-nav-menu a {
-    padding: 26px 24px;
+    padding: 16px 24px;
   }
 
 .admin-bar .nav-secondary.fixed {
