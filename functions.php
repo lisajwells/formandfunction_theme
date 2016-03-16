@@ -165,3 +165,15 @@ function faf_custom_footer() {
 	<p>Copyright <?php echo date ( 'Y' ) ?> Form & Function Raleigh. All rights reserved.</p>
 	<?php
 }
+
+//* shortcode with root relative url for sidebar *//
+// function myUrl($atts, $address = null) {
+//   extract(shortcode_atts(array(
+//     "href" => get_home_url() . '/wp-content/'
+//   ), $atts));
+//   return '<img src="'.$href.$address.'">';
+//   // return '<img src="'.$href.'">'.$content.'</a>';
+// }
+// add_filter('widget_text', 'do_shortcode');
+// add_shortcode("url", "myUrl");
+// [url address="uploads/2016/03/FormFunctionLogoMark.png"][/url]
