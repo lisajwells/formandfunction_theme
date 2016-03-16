@@ -1362,7 +1362,7 @@ div .book-featured-text-banner {
 	cursor: pointer;
 	display: none;
 	margin: 28px auto 10px;
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .responsive-menu-icon::before {
@@ -2591,10 +2591,35 @@ section#simple-social-icons-3 a {
 
 }
 
+@media only screen and (max-width: 600px) {
+
+  nav.nav-primary {
+    margin-left: -54px;
+  }
+
+}
+
 @media only screen and (max-width: 500px) {
 
   div.title-area, .header-image .site-title > a {
       max-width: 220px;
+  }
+
+  .rule-above-fifty {
+    margin-top: 60px;
+  }
+
+  blockquote {
+      font-size: 30px;
+      margin: 46px 0;
+  }
+
+  blockquote p {
+    margin-bottom: 16px;
+  }
+
+  blockquote footer {
+    font-size: 14px;
   }
 
   #hero-dark-box-group {
