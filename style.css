@@ -231,8 +231,12 @@ i {
 blockquote {
   font-family: 'La Belle Aurore', cursive;
   font-size: 41px;
-	margin: 46px 30px;
+  margin: 46px 30px;
   text-align: center;
+}
+blockquote p {
+  line-height: 1.1;
+
 }
 
 blockquote footer {
@@ -2497,6 +2501,14 @@ section#simple-social-icons-3 a {
     visibility: hidden;
   }
 
+  .home-cta-img {
+    float: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    line-height: 0;
+  }
+
   .site-header {
     padding: 0;
   }
@@ -2600,6 +2612,7 @@ section#simple-social-icons-3 a {
     font-size: 14px;
   }
 
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -2612,4 +2625,10 @@ section#simple-social-icons-3 a {
 div.title-area, .header-image .site-title > a {
       max-width: 180px;
   }
+
+  .home-cta-img {
+    max-width: 100%;
+  }
+
+
 }
