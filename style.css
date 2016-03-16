@@ -1394,20 +1394,6 @@ div .book-featured-text-banner {
   height: auto;
 }
 
-@media only screen and (max-width: 800px) {
-
-  div#home-hero-image {
-    background: url(http://formfunction.flywheelsites.com/wp-content/uploads/2016/03/home1-Chartreuse-Traditional-Industrial-Dining-Room.jpg);
-    background-size: cover;
-    min-height: 312px;
-    background-position: center center;
-  }
-
-  #home-hero img {
-    visibility: hidden;
-  }
-}
-
 /**/
 
 #home-cta-imgs {
@@ -1548,7 +1534,7 @@ div .book-featured-text-banner {
   max-width: 600px;
   top: 50%;  /* position the top  edge of the element at the middle of the parent */
   left: 50%; /* position the left edge of the element at the middle of the parent */
-  transform: translate(-50%, -50%); /* translateX(-50%) and translateY(-50%) */
+  transform: translate(-50%, -48%); /* translateX(-50%) and translateY(-50%) */
   padding: 60px;
   width: auto;
   height: auto;
@@ -2492,6 +2478,25 @@ section#simple-social-icons-3 a {
 		padding-right: 5%;
 	}
 
+  h2 {
+    font-size: 28px;
+  }
+
+  .button {
+    font-size: 16px;
+  }
+
+  div#home-hero-image {
+    background: url(http://formfunction.flywheelsites.com/wp-content/uploads/2016/03/home1-Chartreuse-Traditional-Industrial-Dining-Room.jpg);
+    background-size: cover;
+    min-height: 336px;
+    background-position: center center;
+  }
+
+  #home-hero img {
+    visibility: hidden;
+  }
+
   .site-header {
     padding: 0;
   }
@@ -2542,71 +2547,6 @@ section#simple-social-icons-3 a {
   }
 
 
-
-
-
-  /*.presswidget {
-    clear: both;
-    padding: 5% 0;
-  }
-
-  .presswidget .wrap-images {
-      padding: 0 40px;
-      text-align: center;
-      margin-bottom: 90px;
-  }
-
-  .presswidget .wrap-images img {
-    max-width: 100%;
-    display: block;
-    position: relative;
-    margin: 0 auto;
-  }
-
-  #home-press-houzz {
-    width: 14%;
-  }
-
-  #home-press-midtown {
-    width: 22%;
-  }
-
-  #home-press-midtown img {
-    top: -23px;
-  }
-
-  #home-press-observer {
-    width: 26%;
-  }
-  #home-press-observer img {
-    top: -20px;
-  }
-
-  #home-press-walter {
-    width: 42%;
-  }
-  #home-press-walter img {
-    top: -20px;
-  }
-
-  #home-press-happening {
-    width: 32%;
-  }
-
-  .press-wrap {
-      display: inline-block;
-      width: 20%;
-  }
-
-  #home-press-1 .press-wrap {
-      margin: 0 5%;
-  }
-
-  #home-press-2 .press-wrap {
-      margin: 0 6%;
-  }
-
-  */
   #home-press-1,
   #home-press-2 {
     display: block;
@@ -2642,11 +2582,23 @@ section#simple-social-icons-3 a {
 }
 
 @media only screen and (max-width: 500px) {
+
   div.title-area, .header-image .site-title > a {
       max-width: 220px;
   }
 
+  #hero-dark-box-group {
+    padding: 22px;
+  }
 
+  #hero-dark-box-group h1 {
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 5px 7px;
+    font-size: 14px;
+  }
 
 }
 
