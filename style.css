@@ -2192,11 +2192,19 @@ section#simple-social-icons-3 a {
 
 	.archive-description,
 	.author-box,
-	.entry,
+	/*.entry,*/
 	.flexible-widgets.widget-full .widget,
 	.site-footer .wrap {
 		padding: 40px;
 	}
+
+  .entry {
+    padding: 40px 0;
+  }
+
+  .entry-content {
+    padding: 0 40px;
+  }
 
 	.archive.genesis-author-pro .content,
 	.archive.genesis-pro-portfolio .content,
