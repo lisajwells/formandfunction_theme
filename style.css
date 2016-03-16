@@ -1081,11 +1081,11 @@ div .book-featured-text-banner {
 .title-area {
 	float: left;
 	padding: 42px 0;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition:    all .3s ease-in-out;
-	-ms-transition:     all .3s ease-in-out;
-	-o-transition:      all .3s ease-in-out;
-	transition:         all .3s ease-in-out;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition:    all .3s ease-out;
+	-ms-transition:     all .3s ease-out;
+	-o-transition:      all .3s ease-out;
+	transition:         all .3s ease-out;
 }
 
 .site-title {
@@ -1199,11 +1199,11 @@ div .book-featured-text-banner {
 	padding: 0 0;
 	position: absolute;
   top: 80px;
-	-webkit-transition: opacity .3s ease-in-out;
-	-moz-transition:    opacity .3s ease-in-out;
-	-ms-transition:     opacity .3s ease-in-out;
-	-o-transition:      opacity .3s ease-in-out;
-	transition:         opacity .3s ease-in-out;
+	-webkit-transition: opacity .3s ease-out;
+	-moz-transition:    opacity .3s ease-out;
+	-ms-transition:     opacity .3s ease-out;
+	-o-transition:      opacity .3s ease-out;
+	transition:         opacity .3s ease-out;
 	width: 140px;
 	z-index: 499;
 }
@@ -1265,11 +1265,11 @@ div .book-featured-text-banner {
 .nav-primary {
 	float: right;
 	text-align: right;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition:    all .3s ease-in-out;
-	-ms-transition:     all .3s ease-in-out;
-	-o-transition:      all .3s ease-in-out;
-	transition:         all .3s ease-in-out;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition:    all .3s ease-out;
+	-ms-transition:     all .3s ease-out;
+	-o-transition:      all .3s ease-out;
+	transition:         all .3s ease-out;
 }
 
 .nav-primary:hover .genesis-nav-menu a {
@@ -1859,6 +1859,15 @@ p.entry-meta {
   margin-bottom: 20px;
 }
 
+section#simple-social-icons-3 a {
+    line-height: 1;
+    font-size: 14px;
+}
+
+.simple-social-icons ul li a {
+    width: 14px !important; /*to override plugin css, which insists on 1em*/
+}
+
 /* # Site Footer
 ---------------------------------------------------------------------------------------------------- */
 
@@ -2134,12 +2143,12 @@ p.entry-meta {
     font-size: 18px;
   }
 
-  .footer-widgets-4 a img {
+/*  .footer-widgets-4 a img {
     max-width: 33px !important;
     margin: 0 -2px;
   }
 
-  .footer-widgets > .wrap {
+*/  .footer-widgets > .wrap {
     padding-bottom: 0;
   }
 
