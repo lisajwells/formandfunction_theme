@@ -1312,12 +1312,11 @@ div .book-featured-text-banner {
     font-weight: 700;
     letter-spacing: 1px;
     max-width: 1570px;
-    position: absolute;
+    position: fixed;
     text-align: right;
-    top: 0;
+    top: 87px;
     width: 100%;
-    z-index: 498;
-}
+    z-index: 498;}
 
 .nav-secondary .wrap {
 	background-color: rgba(255, 255, 255, 0.3);
