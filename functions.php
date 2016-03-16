@@ -78,6 +78,13 @@ remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_header', 'genesis_do_nav', 12 );
 add_action( 'genesis_before_content_sidebar_wrap', 'genesis_do_subnav' );
 
+add_action('template_redirect', 'remove_subnav_specific_pages');
+function remove_subnav_specific_pages() {
+if ( !is_page('14') )
+    remove_action('genesis_before_content_sidebar_wrap', 'genesis_do_subnav');
+}
+
+
 //* Setup widget counts
 function author_count_widgets( $id ) {
 	global $sidebars_widgets;
