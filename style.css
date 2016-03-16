@@ -1316,7 +1316,13 @@ div .book-featured-text-banner {
     text-align: right;
     top: 87px;
     width: 100%;
-    z-index: 498;}
+    z-index: 498;
+    -webkit-transition: all .3s ease-out;
+  -moz-transition:    all .3s ease-out;
+  -ms-transition:     all .3s ease-out;
+  -o-transition:      all .3s ease-out;
+  transition:         all .3s ease-out;
+}
 
 .nav-secondary .wrap {
 	background-color: rgba(255, 255, 255, 0.3);
@@ -1332,7 +1338,7 @@ div .book-featured-text-banner {
 
 .nav-secondary .genesis-nav-menu a {
 	color: #fff;
-	padding: 42px 30px;
+	padding: 42px 24px;
 }
 
 .nav-secondary .genesis-nav-menu .sub-menu a {
@@ -1357,10 +1363,14 @@ div .book-featured-text-banner {
 	color: #000;
 }
 
-.nav-secondary.fixed {
+.nav-secondary.shrink #menu-services-menu {
 	position: fixed;
-	top: 70px;
+	top:66px;
 }
+
+.nav-secondary.shrink .genesis-nav-menu a {
+    padding: 26px 24px;
+  }
 
 .admin-bar .nav-secondary.fixed {
 	top: 102px;

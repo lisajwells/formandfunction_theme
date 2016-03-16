@@ -20,17 +20,17 @@ jQuery(function( $ ){
   });
 
   // Add class for tertiary menu
-  $(window).scroll(function() {
-         var distanceFromTop = $(document).scrollTop();
-         if (distanceFromTop >= $( '.front-page-1' ).height() + 40 )
-         {
-             $( '.nav-secondary' ).addClass( 'fixed' );
-         }
-         else
-         {
-             $( '.nav-secondary' ).removeClass( 'fixed' );
-         }
-     });
+  // $(window).scroll(function() {
+  //        var distanceFromTop = $(document).scrollTop();
+  //        if (distanceFromTop >= $( '.front-page-1' ).height() + 40 )
+  //        {
+  //            $( '.nav-secondary' ).addClass( 'fixed' );
+  //        }
+  //        else
+  //        {
+  //            $( '.nav-secondary' ).removeClass( 'fixed' );
+  //        }
+  //    });
 
 
   $( '.nav-primary .genesis-nav-menu, .nav-secondary .genesis-nav-menu' ).addClass( 'responsive-menu' ).before( '<div class="responsive-menu-icon"></div>' );
