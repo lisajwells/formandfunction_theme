@@ -1414,29 +1414,48 @@ div .book-featured-text-banner {
 }
 
 #home-press-houzz {
-  width: 22%;
+  width: 14%;
 }
 
 #home-press-midtown {
   width: 22%;
 }
 
-#home-press-observer {
-  width: 22%;
+#home-press-midtown img {
+  top: -23px;
 }
+
+#home-press-observer {
+  width: 26%;
+}
+#home-press-observer img {
+  top: -20px;
+}
+
 
 #home-press-walter {
-  width: 39%;
+  width: 42%;
+}
+#home-press-walter img {
+  top: -20px;
 }
 
+
 #home-press-happening {
-  width: 39%;
+  width: 32%;
 }
 
 .press-wrap {
     display: inline-block;
     width: 20%;
+}
+
+#home-press-1 .press-wrap {
     margin: 0 5%;
+}
+
+#home-press-2 .press-wrap {
+    margin: 0 6%;
 }
 
 #home-press-1,
@@ -1446,11 +1465,11 @@ div .book-featured-text-banner {
 }
 
 #home-press-1 {
-  width: 65%;
+  width: 67%;
 }
 
 #home-press-2 {
-  width: 35%;
+  width: 33%;
 }
 
 .featured-widget-area {
