@@ -1418,9 +1418,9 @@ div .book-featured-text-banner {
 }
 
 .presswidget .wrap-images {
-    padding: 0 40px;
     text-align: center;
-    margin-bottom: 90px;
+    max-width: 1228px;
+    margin: 0 auto 90px;
 }
 
 .presswidget .wrap-images img {
@@ -1431,50 +1431,49 @@ div .book-featured-text-banner {
 }
 
 .press-wrap {
-  width: 15.7%;
-    display: inline-block;
-    /*width: auto;*/
-    margin: 0 2%;
+  width: 17.7%;
+  display: inline-block;
+  margin: 0 2%;
 }
 
 
 
-#home-press-houzz {
-  /*width: 15%;*/
+.press-wrap#home-press-houzz {
+  width: 12.7%;
 }
 
-#home-press-houzz img {
+.press-wrap#home-press-houzz img {
 
 }
 
-#home-press-midtown {
+.press-wrap#home-press-midtown {
   /*width: 18%;*/
 }
 
-#home-press-midtown img {
+.press-wrap#home-press-midtown img {
   top: -23px;
 }
 
-#home-press-observer {
+.press-wrap#home-press-observer {
   /*width: 18%;*/
 }
-#home-press-observer img {
+.press-wrap#home-press-observer img {
   top: -20px;
 }
 
-#home-press-walter {
+.press-wrap#home-press-walter {
   /*width: 18%;*/
 }
-#home-press-walter img {
+.press-wrap#home-press-walter img {
   top: -20px;
 }
 
-#home-press-happening {
-  /*width: 15%;*/
+.press-wrap#home-press-happening {
+  width: 12.7%;
 }
 
-#home-press-happening img {
-
+.press-wrap#home-press-happening img {
+    max-height: 84px; /*to match houzz*/
 }
 
 .featured-widget-area {
