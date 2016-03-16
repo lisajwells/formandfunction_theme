@@ -1297,14 +1297,26 @@ div .book-featured-text-banner {
 /* ## Secondary Navigation
 --------------------------------------------- */
 
-.nav-secondary {
-	background-color: #e1e9ee;
-	display: block;
-	max-width: 1570px;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: 498;
+/*.genesis-nav-menu {
+    clear: both;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1;
+    width: 100%;
+}*/
+.nav-secondary #menu-services-menu {
+    background-color: #9b9b2f;
+    color: #fff;
+    font-size: 13px;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    max-width: 1570px;
+    position: absolute;
+    text-align: right;
+    top: 0;
+    width: 100%;
+    z-index: 498;
 }
 
 .nav-secondary .wrap {
@@ -1320,7 +1332,7 @@ div .book-featured-text-banner {
 }
 
 .nav-secondary .genesis-nav-menu a {
-	color: #000;
+	color: #fff;
 	padding: 42px 30px;
 }
 
@@ -1332,12 +1344,12 @@ div .book-featured-text-banner {
 .nav-secondary .genesis-nav-menu a:hover,
 .nav-secondary .genesis-nav-menu .current-menu-item > a,
 .nav-secondary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-	background-color: #181c1e;
+	background-color: purple;
 	color: #fff;
 }
 
 .nav-secondary .genesis-nav-menu .highlight > a {
-	background-color: #0085da;
+	background-color: purple;
 	color: #fff;
 }
 
