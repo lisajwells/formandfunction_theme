@@ -17,7 +17,7 @@ function faf_add_three_top() {
             <img src="'. get_home_url() . genesis_get_custom_field( 'Image_2_url' ) .'" alt="'. genesis_get_custom_field( 'Image_2_alt' ) .'">
             <div class="dark-box-group">
                 <div class="dark-box-content-wrap">
-                <h1>The Title</h1>
+                <h1>'. get_the_title() .'</h1>
                 </div>
             </div>
         </div>
