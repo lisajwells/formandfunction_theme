@@ -216,6 +216,7 @@ ul {
 
 li {
 	list-style-type: none;
+  line-height: 1.4;
 }
 
 b,
@@ -306,7 +307,7 @@ h2 {
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 34px;
 }
 
 h4 {
@@ -1887,6 +1888,20 @@ p.entry-meta {
    display: block;
    height: 140px;
    margin: -140px 0 0;
+}
+
+.services-group {
+  /*border-left: 1px solid purple;*/
+  position: relative;
+  padding-left: 2em;
+}
+
+.border-services  {
+    border-left: 1px solid purple;
+    position: absolute;
+    top: 147px;
+    bottom: 5px;
+    left: 0px;
 }
 
 /* # Sidebars
