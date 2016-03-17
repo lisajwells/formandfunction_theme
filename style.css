@@ -335,7 +335,7 @@ video,
 
 img {
 	height: auto;
-  display: block;
+  /*display: block;*/
 }
 
 .featured-content img,
@@ -610,6 +610,10 @@ th {
 .content-sidebar-wrap { /*so it scrolls under fixed nav*/
     position: relative;
     z-index: 5;
+}
+
+.entry-content {
+  margin: 0 224px;
 }
 
 .featured-widget-area + .site-inner,
@@ -1536,6 +1540,8 @@ div .book-featured-text-banner {
     position: relative;
 }
 
+
+
 /* ## Dark-box Groups (black transparent box, type, button)
 --------------------------------------------- */
 
@@ -2036,6 +2042,10 @@ section#simple-social-icons-3 a {
 	.wrap {
 		/*max-width: 1140px;*/
 	}
+
+  .entry-content {
+    margin: 0 180px;
+  }
 
 	.content {
 		width: 840px;
