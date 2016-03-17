@@ -1082,6 +1082,7 @@ div .book-featured-text-banner {
 .site-header .wrap {
     position: relative;
     top: -15%;
+    height: 68px; /*so it doesn't interfere with secondary nav*/
 }
 
 /* ## Title Area
@@ -1851,13 +1852,11 @@ p.entry-meta {
 /* # What We Do
 ---------------------------------------------------------------------------------------------------- */
 
-#services-diy:before,
-#services-redesign:before,
-#services-works:before { /*so go to id doesn't tuck under fixed header*/
+.post-14 h3:before { /*so go to id doesn't tuck under fixed header*/
    content: "";
    display: block;
-   height: 100px;
-   margin: -100px 0 0;
+   height: 140px;
+   margin: -140px 0 0;
 }
 
 /* # Sidebars
