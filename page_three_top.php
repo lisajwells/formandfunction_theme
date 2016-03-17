@@ -3,6 +3,8 @@
  * Template Name: Three-top
  */
 
+//* Remove the entry title (requires HTML5 theme support)
+remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 
 add_action( 'genesis_before_content_sidebar_wrap', 'faf_add_three_top' );
 function faf_add_three_top() {
