@@ -335,7 +335,7 @@ video,
 
 img {
 	height: auto;
-  /*display: block;*/
+  display: block;
 }
 
 .featured-content img,
@@ -613,7 +613,7 @@ th {
 }
 
 .entry-content {
-  margin: 0 224px;
+  padding: 0 224px;
 }
 
 .featured-widget-area + .site-inner,
@@ -2030,6 +2030,7 @@ section#simple-social-icons-3 a {
 
 #footer-logo {
   width: 132px;
+  display: inline;
 }
 
 /* # Media Queries
@@ -2044,7 +2045,7 @@ section#simple-social-icons-3 a {
 	}
 
   .entry-content {
-    margin: 0 180px;
+    padding: 0 180px;
   }
 
 	.content {
@@ -2073,6 +2074,10 @@ section#simple-social-icons-3 a {
   }
   .site-inner {
     margin-top: 70px;
+  }
+
+  .entry-content {
+    padding: 0 100px;
   }
 
   #hero-dark-box-group {
