@@ -335,6 +335,7 @@ video,
 
 img {
 	height: auto;
+  display: block;
 }
 
 .featured-content img,
@@ -1313,6 +1314,7 @@ div .book-featured-text-banner {
 }*/
 .nav-secondary #menu-services-menu {
     background-color: #9b9b2f;
+    border-top: 6px solid #fff; /*to hide what scrolls under*/
     color: #fff;
     font-size: 13px;
     display: block;
@@ -1321,7 +1323,7 @@ div .book-featured-text-banner {
     max-width: 1570px;
     position: fixed;
     text-align: right;
-    top: 87px;
+    top: 81px; /*height of header minus depth of rule above*/
     width: 100%;
     z-index: 498;
     -webkit-transition: all .3s ease-out;
@@ -1523,12 +1525,15 @@ div .book-featured-text-banner {
 
 .three-top-wrap {
   margin: 0 -.5%;
+  position: relative;
+  top: 78px;
 }
 
 .three-top-img-div {
     width: 32.33333333333%;
     float: left;
     margin: 0 .5%;
+    position: relative;
 }
 
 /* ## Dark-box Groups (black transparent box, type, button)
