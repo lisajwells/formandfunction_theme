@@ -8,7 +8,7 @@ add_action( 'genesis_before_content_sidebar_wrap', 'faf_add_three_top' );
 function faf_add_three_top() {
     echo '<div class="three-top-wrap">
         <div class="three-top-img-div">
-            <img src="'. get_home_url() .'/wp-content/uploads/2016/03/home2-Rustic-Industrial-Kitchen.jpg" alt="Rustic-Industrial Kitchen">
+            <img src="'. get_home_url() . genesis_get_custom_field( 'Image_1_url' ) .'">
         </div>
 
         <div class="three-top-img-div">
@@ -25,7 +25,6 @@ function faf_add_three_top() {
         </div>
     </div>';
 }
-
 
 
 
