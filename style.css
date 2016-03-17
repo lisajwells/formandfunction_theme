@@ -1558,12 +1558,17 @@ div .book-featured-text-banner {
   width:80%;
 }
 
-.dark-box-group p {
+.dark-box-group p,
+.dark-box-group h1 {
   font-size: 66px;
   color: #fff;
   font-family: 'La Belle Aurore', cursive;
   line-height: 1;
   text-align: center;
+}
+
+.dark-box-group h1 {
+  margin: 10% 0 0 0;
 }
 
 #hero-dark-box-group { /*home-hero*/
