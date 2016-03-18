@@ -20,7 +20,7 @@ jQuery(function( $ ){
   });
 
   $( "#mobile-menu-button" ).click(function() {
-    $( "#menu-services-menu" ).toggle();
+    $( "nav.nav-secondary" ).toggle();
   });
 
   // Add class for tertiary menu

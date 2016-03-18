@@ -1389,7 +1389,7 @@ div#mobile-menu-button {
 .nav-secondary.shrink #menu-services-menu {
   position: fixed;
   top:60px;
-      border-top: 6px solid #fff;
+  border-top: 6px solid #fff;
 }
 
 .nav-secondary.shrink .genesis-nav-menu a {
