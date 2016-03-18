@@ -594,6 +594,12 @@ th {
   max-width: 1570px;
 }
 
+.page-template-page_three_top .site-container {
+  background-image: url(http://lisas-imac.local:5757/wp-content/uploads/2016/03/blob_1_medium.jpg), url(http://lisas-imac.local:5757/wp-content/uploads/2016/03/blob_2_medium.jpg), url(http://lisas-imac.local:5757/wp-content/uploads/2016/03/blob_3_medium.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left 0 top 100px, right, left 0 bottom 930px;
+}
+
 .site-inner,
 .wrap {
 	margin: 0 auto;
@@ -601,7 +607,7 @@ th {
 }
 
 .site-inner {
-	background-color: #fff;
+	background-color: transparent;
 	clear: both;
 	margin-top: 87px; /*height of .site-header*/
 	position: relative;
