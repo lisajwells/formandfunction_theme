@@ -2577,10 +2577,19 @@ div#mobile-menu-button {
     top: 70px;
     right: 0;
     margin-top: 0;
+    width: 160px;
+}
+.shrink div#mobile-menu-button {
+    top: 60px;
 }
 
-nav.nav-secondary {
-  display: none;
+.nav-secondary.shrink #menu-services-menu,
+.nav-secondary #menu-services-menu {
+    position: fixed;
+    top: 114px;
+    border-top: none;
+    width: 160px;
+    padding-right: 0;
 }
 
 .nav-secondary {
