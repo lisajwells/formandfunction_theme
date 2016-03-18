@@ -308,6 +308,7 @@ h2 {
 
 h3 {
 	font-size: 34px;
+  margin-top: 60px; /*for services page*/
 }
 
 h4 {
@@ -1900,7 +1901,7 @@ p.entry-meta {
 
 .services-group {
   position: relative;
-  padding-left: 2em;
+  padding-left: 216px;
 }
 
 .border-services  {
@@ -1908,12 +1909,21 @@ p.entry-meta {
     position: absolute;
     top: 147px;
     bottom: 5px;
-    left: 0px;
+    left: 160px;
+}
+
+img.services-number {
+    float: left;
+    display: block;
+    position: absolute;
+    top: 130px;
+    left: -34px;
+    width: 160px;
 }
 
 .services-subhed {
-      margin-top: -16px;
-      margin-bottom: 16px;
+    margin-top: -16px;
+    margin-bottom: 16px;
     font-weight: 700;
     font-style: italic;
 }
