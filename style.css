@@ -237,7 +237,7 @@ blockquote {
   text-align: center;
 }
 blockquote p {
-  line-height: 1.1;
+  line-height: 1.4;
 
 }
 
@@ -308,7 +308,6 @@ h2 {
 
 h3 {
 	font-size: 34px;
-  margin-top: 60px; /*for services page*/
 }
 
 h4 {
@@ -1333,6 +1332,7 @@ div .book-featured-text-banner {
     font-weight: 700;
     letter-spacing: 1px;
     max-width: 1570px;
+    padding-right: 40px;
     position: fixed;
     text-align: right;
     top: 81px; /*height of header minus depth of rule above*/
@@ -1359,7 +1359,7 @@ div .book-featured-text-banner {
 
 .nav-secondary .genesis-nav-menu a {
 	color: #fff;
-	padding: 26px 24px;
+	padding: 26px 16px;
 }
 
 .nav-secondary .genesis-nav-menu .sub-menu a {
@@ -1391,7 +1391,7 @@ div .book-featured-text-banner {
 }
 
 .nav-secondary.shrink .genesis-nav-menu a {
-    padding: 16px 24px;
+    padding: 16px 16px;
   }
 
 .admin-bar .nav-secondary.fixed {
@@ -1892,6 +1892,11 @@ p.entry-meta {
 /* # What We Do
 ---------------------------------------------------------------------------------------------------- */
 
+.post-14 h2, h3 {
+   margin-top: 60px;
+}
+
+
 .post-14 h3:before { /*so go to id doesn't tuck under fixed header*/
    content: "";
    display: block;
@@ -2106,6 +2111,10 @@ section#simple-social-icons-3 a {
 
   .genesis-nav-menu a {
     padding: 43px 10px; /*shrink to 27top 32bot*/
+  }
+
+  .nav-secondary.shrink .genesis-nav-menu a {
+      padding: 16px 18px;
   }
 
   .site-header {
