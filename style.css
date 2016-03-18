@@ -1321,13 +1321,6 @@ div .book-featured-text-banner {
 /* ## Secondary Navigation
 --------------------------------------------- */
 
-/*.genesis-nav-menu {
-    clear: both;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1;
-    width: 100%;
-}*/
 .nav-secondary #menu-services-menu {
     background-color: #9b9b2f;
     border-top: 6px solid #fff; /*to hide what scrolls under*/
@@ -1344,10 +1337,10 @@ div .book-featured-text-banner {
     width: 100%;
     z-index: 498;
     -webkit-transition: all .3s ease-out;
-  -moz-transition:    all .3s ease-out;
-  -ms-transition:     all .3s ease-out;
-  -o-transition:      all .3s ease-out;
-  transition:         all .3s ease-out;
+    -moz-transition:    all .3s ease-out;
+    -ms-transition:     all .3s ease-out;
+    -o-transition:      all .3s ease-out;
+    transition:         all .3s ease-out;
 }
 
 .nav-secondary .wrap {
@@ -2499,8 +2492,7 @@ section#simple-social-icons-3 a {
   .menu.genesis-nav-menu.responsive-menu li.current-menu-item > a,
   .menu.genesis-nav-menu.responsive-menu li a,
   .menu.genesis-nav-menu.responsive-menu li a:hover,
-  .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a:hover,
-  .nav-secondary .menu.genesis-nav-menu.responsive-menu .sub-menu a {
+  .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a:hover {
     /*background: none;*/
     display: block;
     padding: 10px 9px;
@@ -2523,12 +2515,6 @@ section#simple-social-icons-3 a {
   .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a,
   .menu.genesis-nav-menu.responsive-menu .sub-menu li.current-menu-item > a:hover {
     color: #fff;
-  }
-
-  .nav-secondary .genesis-nav-menu.responsive-menu li a,
-  .nav-secondary .genesis-nav-menu.responsive-menu li a:hover,
-  .nav-secondary .genesis-nav-menu.responsive-menu .sub-menu a {
-    color: #000;
   }
 
   .genesis-nav-menu.responsive-menu .menu-item-has-children {
@@ -2575,10 +2561,45 @@ section#simple-social-icons-3 a {
     float: none;
   }
 
+/*.nav-secondary*/
+
+div#mobile-menu-button {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    margin-top: 0;
+}
+
+ul#menu-services-menu {
+  display: none;
+}
+
+.nav-secondary {
+  margin-left: 80%;
+}
+
+.nav-secondary .responsive-menu-icon {
+  display: none;
+}
+
+  .nav-secondary .menu.genesis-nav-menu.responsive-menu .sub-menu a {
+    /*background: none;*/
+    display: block;
+    padding: 10px 9px;
+    text-transform: none;
+    color: #000;
+  }
+
+  .nav-secondary .genesis-nav-menu.responsive-menu li a,
+  .nav-secondary .genesis-nav-menu.responsive-menu li a:hover,
+  .nav-secondary .genesis-nav-menu.responsive-menu .sub-menu a {
+    color: #fff;
+  }
+
   .nav-secondary .genesis-nav-menu li.highlight > a,
   .nav-secondary .genesis-nav-menu li.highlight > a:hover {
     background: none;
-    color: #000;
+    color: #fff;
   }
 
 
