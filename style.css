@@ -597,7 +597,7 @@ th {
 .page-template-page_three_top .site-container {
   background-image: url(http://lisas-imac.local:5757/wp-content/uploads/2016/03/blob_1_medium.jpg), url(http://lisas-imac.local:5757/wp-content/uploads/2016/03/blob_2_medium.jpg), url(http://lisas-imac.local:5757/wp-content/uploads/2016/03/blob_3_medium.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: left 0 top 100px, right, left 0 bottom 930px;
+  background-position: left 0 top 3%, right 40%, left 0 bottom 40%;
 }
 
 .site-inner,
