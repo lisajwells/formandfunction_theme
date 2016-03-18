@@ -2571,7 +2571,12 @@ section#simple-social-icons-3 a {
 
 /*.nav-secondary*/
 
-div#mobile-menu-button {
+nav.nav-secondary {
+  display: none;
+}
+
+div#mobile-menu-button,
+.shrink div#mobile-menu-button {
     display: block;
     position: fixed;
     top: 70px;
@@ -2580,10 +2585,10 @@ div#mobile-menu-button {
     width: 160px;
     z-index: 10;
 }
-.shrink div#mobile-menu-button {
+/*.shrink div#mobile-menu-button {
     top: 60px;
 }
-
+*/
 .nav-secondary.shrink #menu-services-menu,
 .nav-secondary #menu-services-menu {
     position: fixed;
@@ -2755,6 +2760,22 @@ div#mobile-menu-button {
 	.footer-widgets-4 {
 		width: 100%;
 	}
+
+}
+
+@media only screen and (max-width: 650px) {
+  .three-top-img-div:first-of-type,
+    .three-top-img-div:last-of-type {
+    display: none;
+  }
+.three-top-img-div {
+    width: 100%;
+    /* max-width: 338px; */
+    float: none;
+    margin: 0 auto;
+}
+
+
 
 }
 

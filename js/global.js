@@ -19,6 +19,10 @@ jQuery(function( $ ){
 
   });
 
+  $( "#mobile-menu-button" ).click(function() {
+    $( "#menu-services-menu" ).toggle();
+  });
+
   // Add class for tertiary menu
   // $(window).scroll(function() {
   //        var distanceFromTop = $(document).scrollTop();
