@@ -1361,7 +1361,7 @@ div .book-featured-text-banner {
 }
 
 .nav-secondary .genesis-nav-menu a:hover,
-.nav-secondary .genesis-nav-menu .current-menu-item > a,
+/*.nav-secondary .genesis-nav-menu .current-menu-item > a,*/
 .nav-secondary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
 	background-color: #776f93;
 	color: #fff;
