@@ -1321,6 +1321,10 @@ div .book-featured-text-banner {
 /* ## Secondary Navigation
 --------------------------------------------- */
 
+div#mobile-menu-button {
+  display: none;
+}
+
 .nav-secondary #menu-services-menu {
     background-color: #9b9b2f;
     border-top: 6px solid #fff; /*to hide what scrolls under*/
@@ -2103,6 +2107,10 @@ section#simple-social-icons-3 a {
 
 @media only screen and (max-width: 1200px) {
 
+  .dark-box-group h1 {
+    font-size: 55px;
+  }
+
   .header-image .site-title > a { /*shrink to 300*/
     width: 330px;
   }
@@ -2564,13 +2572,14 @@ section#simple-social-icons-3 a {
 /*.nav-secondary*/
 
 div#mobile-menu-button {
+    display: block;
     position: fixed;
     top: 70px;
     right: 0;
     margin-top: 0;
 }
 
-ul#menu-services-menu {
+nav.nav-secondary {
   display: none;
 }
 
