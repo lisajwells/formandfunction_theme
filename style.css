@@ -241,23 +241,31 @@ blockquote {
   margin: 46px 10px;
   text-align: center;
 }
+
 blockquote p {
   line-height: 1.4;
-
 }
+
 blockquote a {
 	color:#000;
-	}
+}
+
 blockquote footer {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
 }
+
 blockquote footer::before {
 	content: "\2014";
-
 }
+
+blockquote.block-boxed {
+  background-color: gray;
+  padding: 36px 100px;
+}
+
 /*.rule-below-fifty {
   position: relative;
 */  /*margin-bottom: 90px;*/
@@ -1542,6 +1550,11 @@ div#mobile-menu-button {
     float: left;
     margin: 0 .5%;
     position: relative;
+}
+
+.three-top-img-div:last-of-type {
+    width: 32.3371%;
+    float: right;
 }
 
 
