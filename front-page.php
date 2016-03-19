@@ -57,7 +57,7 @@ function faf_home_add_cta_imgs() {
 add_action( 'genesis_after_content', 'faf_home_add_press_sb' );
 function faf_home_add_press_sb() {
 	genesis_widget_area ('presswidget', array(
-        'before' => '<div class="presswidget rule-below-fifty"><div class="wrap-images">',
+        'before' => '<div class="presswidget"><div class="wrap-images">',
         'after' => '</div></div>',
 	) );
 }
