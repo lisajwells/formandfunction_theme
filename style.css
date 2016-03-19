@@ -262,7 +262,7 @@ blockquote footer::before {
 }
 
 blockquote.block-boxed {
-  background-color: gray;
+  background-color: #efefef;
   padding: 36px 100px;
 }
 
@@ -1540,21 +1540,22 @@ div#mobile-menu-button {
 --------------------------------------------- */
 
 .three-top-wrap {
-  margin: 0 -.5%;
+  /*margin: 0 -.5%;*/
   position: relative;
   top: 78px;
 }
 
 .three-top-img-div {
-    width: 32.33333333333%;
+    width: 32.666666666%;
     float: left;
-    margin: 0 .5%;
+    margin-right: 1%;
     position: relative;
 }
 
 .three-top-img-div:last-of-type {
-    width: 32.3371%;
+    width: 32.67%%;
     float: right;
+    margin-right: 0;
 }
 
 
