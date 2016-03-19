@@ -176,6 +176,15 @@ function faf_custom_footer() {
 	<?php
 }
 
+//* from https://www.itsupportguides.com/wordpress/how-to-use-a-non-breaking-space-in-wordpress/
+function itsg_allow_nbsp_in_tinymce( $init ) {
+    $init['entities'] = '160,nbsp,38,amp,60,lt,62,gt';
+    $init['entity_encoding'] = 'named';
+    return $init;
+}
+add_filter( 'tiny_mce_before_init', 'itsg_allow_nbsp_in_tinymce');
+
+
 //* shortcode with root relative url for sidebar *//
 // function myUrl($atts, $address = null) {
 //   extract(shortcode_atts(array(
