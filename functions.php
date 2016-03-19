@@ -156,6 +156,9 @@ genesis_register_sidebar( array(
 
 //*++++++++++++ Custom for Form and Function +++++++++++++*/
 
+//* Remove the edit link on page
+add_filter ( 'genesis_edit_post_link' , '__return_false' );
+
 genesis_register_sidebar( array(
 	'id'		=> 'presswidget',
 	'name'		=> __( 'Press Widget', 'faf' ),

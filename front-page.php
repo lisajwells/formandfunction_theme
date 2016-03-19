@@ -3,9 +3,6 @@
  * This file adds the Home Page to the Form and Function theme.
  */
 
-//* Remove the edit link on page
-add_filter ( 'genesis_edit_post_link' , '__return_false' );
-
 add_action( 'genesis_meta', 'author_front_page_genesis_meta' );
 /**
  * Add widget support for homepage. If no widgets active, display the default loop.
