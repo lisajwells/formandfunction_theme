@@ -266,6 +266,18 @@ blockquote.block-boxed {
   padding: 36px 100px;
 }
 
+.rule-above-fifty {
+  position: relative;
+  margin-top: 90px;
+}
+.rule-above-fifty:before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    border-top: 1px solid #776f93;
+}
+
 /*.rule-below-fifty {
   position: relative;
 */  /*margin-bottom: 90px;*/
@@ -1553,7 +1565,6 @@ div#mobile-menu-button {
 }
 
 .three-top-img-div:last-of-type {
-    width: 32.67%%;
     float: right;
     margin-right: 0;
 }
@@ -2664,6 +2675,10 @@ div#mobile-menu-button,
 		padding-left: 5%;
 		padding-right: 5%;
 	}
+
+  .dark-box-group h1 {
+    font-size: 42px;
+  }
 
   h2 {
     font-size: 28px;
