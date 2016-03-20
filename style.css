@@ -2184,8 +2184,10 @@ section#simple-social-icons-3 a {
   .button {
     font-size: 18px;
   }
-  a.button.small {
+  a.button.small,
+  .footer-widgets a.button.small {
     font-size: 15px;
+    margin-top: 32px;
   }
 
   .dark-box-group p {
@@ -2357,6 +2359,34 @@ section#simple-social-icons-3 a {
       margin-bottom: 13px;
   }
 
+  /*what we do*/
+
+  img.services-number {
+      float: none;
+      display: block;
+      padding-bottom: 14px;
+      position: relative;
+      top: 19px;
+      left: 0;
+      width: 100px;
+      border-bottom: 1px solid purple;
+  }
+
+  .services-group {
+      position: relative;
+      padding-left: 0;
+  }
+
+  .border-services {
+    display: none;
+  }
+
+  .services-group h3 {
+    margin-top: 0px;
+  }
+
+  /**/
+
   .footer-widgets {
       font-size: 15px;
   }
@@ -2369,12 +2399,7 @@ section#simple-social-icons-3 a {
     font-size: 18px;
   }
 
-/*  .footer-widgets-4 a img {
-    max-width: 33px !important;
-    margin: 0 -2px;
-  }
-
-*/  .footer-widgets > .wrap {
+  .footer-widgets > .wrap {
     padding-bottom: 0;
   }
 
