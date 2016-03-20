@@ -1652,6 +1652,12 @@ div#mobile-menu-button {
   letter-spacing:1px;
 }
 
+/* Two-column content */
+
+.two-col-img-div {
+  position: relative;
+  margin-top: 6px;
+}
 
 /* ## Flexible Widgets
 --------------------------------------------- */
