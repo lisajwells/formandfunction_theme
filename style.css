@@ -1772,7 +1772,7 @@ div#mobile-menu-button {
 .entry-content ol,
 .entry-content ul {
 	margin-bottom: 28px;
-	margin-left: 40px;
+	margin-left: 20px;
 }
 
 .entry-content ol > li {
@@ -2368,8 +2368,8 @@ section#simple-social-icons-3 a {
       position: relative;
       top: 19px;
       left: 0;
-      width: 100px;
-      border-bottom: 1px solid purple;
+      width: 84px;
+      border-bottom: 1px solid #776f93;
   }
 
   .services-group {
@@ -2383,6 +2383,14 @@ section#simple-social-icons-3 a {
 
   .services-group h3 {
     margin-top: 0px;
+    font-size: 24px;
+  }
+
+  .post-14 h3:before {
+    content: "";
+    display: block;
+    height: 220px;
+    margin: -220px 0 0;
   }
 
   /**/
@@ -2922,6 +2930,27 @@ div#mobile-menu-button,
     width: 39%;
     margin-top: 0;
   }
+
+  /*what we do*/
+
+  img.services-number {
+/*      float: none;
+      display: block;
+      padding-bottom: 14px;
+      position: relative;
+      top: 19px;
+      left: 0;
+*/      width: 64px;
+      /*border-bottom: 1px solid #776f93;*/
+  }
+
+  .services-group h3 {
+    /*margin-top: 0px;*/
+    font-size: 20px;
+  }
+
+  /**/
+
 
 
 
