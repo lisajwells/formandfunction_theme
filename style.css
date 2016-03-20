@@ -2895,6 +2895,11 @@ div#mobile-menu-button,
     font-size: 14px;
   }
 
+  blockquote.block-boxed {
+    font-size: 26px;
+    padding: 24px 24px;
+  }
+
   #hero-dark-box-group {
     padding: 22px;
   }
