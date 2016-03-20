@@ -1941,10 +1941,16 @@ p.entry-meta {
 /* # What We Do
 ---------------------------------------------------------------------------------------------------- */
 
+#schedule-consult-button {
+    position: fixed;
+    right: 0;
+    top: 500px;
+    width: 200px;
+}
+
 .post-14 h2, h3 {
    margin-top: 60px;
 }
-
 
 .post-14 h3:before { /*so go to id doesn't tuck under fixed header*/
    content: "";
