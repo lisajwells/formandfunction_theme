@@ -238,7 +238,7 @@ i {
 blockquote {
   font-family: 'La Belle Aurore', cursive;
   font-size: 40px;
-  margin: 46px 10px;
+  margin: 46px 0;
   text-align: center;
 }
 
@@ -2719,6 +2719,14 @@ div#mobile-menu-button,
 
   .button {
     font-size: 16px;
+  }
+
+  blockquote.block-boxed {
+    padding: 36px 36px;
+  }
+
+  blockquote p {
+    margin-bottom: 6px;
   }
 
   div#home-hero-image {
