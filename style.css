@@ -1944,7 +1944,7 @@ p.entry-meta {
 #schedule-consult-button {
     position: fixed;
     right: 0;
-    top: 500px;
+    top: 32rem;
     width: 200px;
 }
 
@@ -2165,6 +2165,9 @@ section#simple-social-icons-3 a {
     font-size: 54px;
   }
 
+  #schedule-consult-button {
+      top: 30rem;
+  }
 
 }
 
@@ -2186,14 +2189,17 @@ section#simple-social-icons-3 a {
       padding: 16px 18px;
   }
 
-.nav-secondary .genesis-nav-menu a {
-    padding: 26px 12px;
+  .nav-secondary .genesis-nav-menu a {
+      padding: 26px 12px;
   }
 
-.nav-secondary.shrink .genesis-nav-menu a {
-    padding: 16px 12px;
+  .nav-secondary.shrink .genesis-nav-menu a {
+      padding: 16px 12px;
   }
 
+  #schedule-consult-button {
+      top: 25rem;
+  }
 
   .site-header {
     height: 76px; /*shrink to 60*/
