@@ -277,6 +277,14 @@ blockquote.praise-blockquote {
   text-align: left;
 }
 
+blockquote.praise-blockquote footer {
+  margin: -14px 0 28px 0;
+}
+
+blockquote.praise-block-boxed {
+  padding: 36px 36px;
+}
+
 .rule-above-fifty {
   position: relative;
   margin-top: 90px;
