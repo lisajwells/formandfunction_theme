@@ -2217,6 +2217,15 @@ section#simple-social-icons-3 a {
     padding: 0 100px;
   }
 
+  .page-id-14 .entry-content {
+    padding: 0 180px; /*to accomm consult button */
+  }
+
+  .page-id-14 blockquote.block-boxed {
+    padding: 36px 36px;
+  }
+
+
   #hero-dark-box-group {
     padding: 40px;
   }
