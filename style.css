@@ -1942,6 +1942,7 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 #schedule-consult-button {
+    padding: 8px 10px;
     position: fixed;
     right: 0;
     top: 32rem;
@@ -1950,8 +1951,10 @@ p.entry-meta {
     z-index: 50;
 }
 
-.sched-button-low { /*the class added by jquery*/
-  display: none;
+#schedule-consult-button.sched-button-low { /*the class added by jquery*/
+  height: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .post-14 h2, h3 {
@@ -2460,9 +2463,12 @@ section#simple-social-icons-3 a {
     z-index: 50;
   }
 
-  .sched-button-low {
-    display: block;
+  #schedule-consult-button.sched-button-low { /*the class added by jquery*/
+    height: 42px;
+    padding: 8px 16px;
+    /*overflow: hidden;*/
   }
+
 
   .page-id-14 section#text-7 { /*what we do has fixed button already*/
     display: none;
