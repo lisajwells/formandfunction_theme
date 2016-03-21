@@ -2878,7 +2878,7 @@ div#mobile-menu-button,
     top: 46px;
   }
 
-  .nav-secondary #menu-services-menu {
+  .nav-secondary.shrink #menu-services-menu, .nav-secondary #menu-services-menu {
     top: 110px;
   }
 
