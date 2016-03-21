@@ -1947,6 +1947,7 @@ p.entry-meta {
     top: 32rem;
     width: 160px;
     font-size: 16px;
+    z-index: 50;
 }
 
 .sched-button-low { /*the class added by jquery*/
@@ -2444,6 +2445,30 @@ section#simple-social-icons-3 a {
     display: block;
     height: 220px;
     margin: -220px 0 0;
+  }
+
+  #schedule-consult-button {
+    bottom: 0;
+    font-size: 16px;
+    left: 0;
+    margin: 0;
+    position: fixed;
+    right: 0;
+    top: auto;
+    width: 100%;
+    z-index: 50;
+  }
+
+  .sched-button-low {
+    display: block;
+  }
+
+  .page-id-14 section#text-7 { /*what we do has fixed button already*/
+    display: none;
+  }
+
+  body.page-id-14 { /*to accomm fixed button of this height*/
+    margin-bottom: 42px;
   }
 
   /**/
