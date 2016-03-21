@@ -61,27 +61,42 @@ jQuery(function( $ ){
 
   // from house of funk site
 
+  // (function($) {
+
   // $(document).on("mousewheel", function() {
-  //   console.log($('div#services-works-group').offset().top);
-  //     if($(document).scrollTop() < 200){
+  //     if($(document).scrollTop() < 100){
   //         $('#schedule-consult-button').css("display","block");
   //     } else {
   //         $('#schedule-consult-button').css("display","none");
   //     }
   //   });
-$(function() {
-  var eTop = $('#services-works-group').offset().top; //get the offset top of the element
-  console.log(eTop);
 
-  $(window).scroll(function() { //when window is scrolled
-  console.log(eTop - $(window).scrollTop()); //position of the ele w.r.t window
-    if(eTop - $(window).scrollTop() > -500){
-          $('#schedule-consult-button').css("display","block");
-      } else {
-          $('#schedule-consult-button').css("display","none");
-      }
+  // })( jQuery );
+
+
+  // works 500px from bottom
+  // based on http://stackoverflow.com/questions/12797224/getting-the-scrollbottom-using-jquery
+  $(window).scroll(function() {
+
+    if ($(window).scrollTop() + $(window).height() >= $(document).height() - 450) {
+        $('#schedule-consult-button').hide();
+    } else {
+        $('#schedule-consult-button').show();
+    }
   });
-});
+
+  // works on blockquote position
+  // $(function() {
+  //   var eTop = $('#services-works-group').offset().top; //get the offset top of the element
+
+  //   $(window).scroll(function() { //when window is scrolled
+  //     if(eTop - $(window).scrollTop() > -500){
+  //           $('#schedule-consult-button').css("display","block");
+  //       } else {
+  //           $('#schedule-consult-button').css("display","none");
+  //       }
+  //   });
+  // });
 
 
 
