@@ -2863,6 +2863,19 @@ div#mobile-menu-button,
 		padding: 0;
 	}
 
+  div#mobile-menu-button,
+  .shrink div#mobile-menu-button {
+      font-size: 16px;
+  }
+
+  .three-top-wrap {
+    top: 46px;
+  }
+
+  .nav-secondary #menu-services-menu {
+    top: 110px;
+  }
+
 	.archive-pagination li a {
 		margin-bottom: 4px;
 	}
