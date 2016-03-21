@@ -1041,7 +1041,7 @@ img.alignright,
 /* ## Genesis Author Pro
 --------------------------------------------- */
 
-.archive.genesis-author-pro .archive-description,
+/*.archive.genesis-author-pro .archive-description,
 .archive.genesis-author-pro .breadcrumb,
 .archive.genesis-pro-portfolio .archive-description,
 .archive.genesis-pro-portfolio .breadcrumb {
@@ -1085,12 +1085,12 @@ div .book-featured-text-banner {
 
 .single-books .content .book-price {
 	border-bottom: 1px solid #000;
-}
+}*/
 
 /* ## Genesis eNews Extended
 --------------------------------------------- */
 
-.enews-widget input {
+/*.enews-widget input {
 	font-size: 16px;
 	margin-bottom: 16px;
 }
@@ -1102,7 +1102,7 @@ div .book-featured-text-banner {
 
 .enews form + p {
 	margin-top: 24px;
-}
+}*/
 
 /* ## Jetpack
 --------------------------------------------- */
@@ -1327,11 +1327,11 @@ div .book-featured-text-banner {
 .nav-primary {
 	float: right;
 	text-align: right;
-	-webkit-transition: all .3s ease-out;
-	-moz-transition:    all .3s ease-out;
-	-ms-transition:     all .3s ease-out;
-	-o-transition:      all .3s ease-out;
-	transition:         all .3s ease-out;
+  	-webkit-transition: all .3s ease-out;
+  	-moz-transition:    all .3s ease-out;
+  	-ms-transition:     all .3s ease-out;
+  	-o-transition:      all .3s ease-out;
+  	transition:         all .3s ease-out;
 }
 
 .nav-primary:hover .genesis-nav-menu a {
@@ -1349,8 +1349,6 @@ div .book-featured-text-banner {
   background-color: #9b9b2f;
   color: #fff;
 }
-
-
 
 /* ## Secondary Navigation
 --------------------------------------------- */
@@ -1374,11 +1372,11 @@ div#mobile-menu-button {
     top: 51px; /*height of header minus depth of rule above*/
     width: 100%;
     z-index: 498;
-    -webkit-transition: all .3s ease-out;
-    -moz-transition:    all .3s ease-out;
-    -ms-transition:     all .3s ease-out;
-    -o-transition:      all .3s ease-out;
-    transition:         all .3s ease-out;
+      -webkit-transition: all .3s ease-out;
+      -moz-transition:    all .3s ease-out;
+      -ms-transition:     all .3s ease-out;
+      -o-transition:      all .3s ease-out;
+      transition:         all .3s ease-out;
 }
 
 .nav-secondary .wrap {
@@ -1461,23 +1459,11 @@ div#mobile-menu-button {
     position: relative;
 }
 
-/*div#home-hero-img {
-  background: red;
-  background: url(http://formfunction.flywheelsites.com/wp-content/uploads/2016/03/home1-Chartreuse-Traditional-Industrial-Dining-Room.jpg);
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  min-height: 400px;
-}
-*/
-
 #home-hero img {
   display: block;
   width: 100%;
   height: auto;
 }
-
-/**/
 
 #home-cta-imgs {
   width: 100%;
@@ -1489,8 +1475,6 @@ div#mobile-menu-button {
   width: 33.333333333%;
   position: relative;
 }
-
-/**/
 
 .presswidget {
   clear: both;
@@ -1589,8 +1573,6 @@ div#mobile-menu-button {
     float: right;
     margin-right: 0;
 }
-
-
 
 /* ## Dark-box Groups (black transparent box, type, button)
 --------------------------------------------- */
@@ -1973,7 +1955,7 @@ p.entry-meta {
   padding-left: 216px;
 }
 
-.border-services  {
+.border-services  { /*the horizontal border*/
     border-left: 1px solid #776f93;
     position: absolute;
     top: 147px;
@@ -2206,10 +2188,6 @@ section#simple-social-icons-3 a {
       padding: 16px 12px;
   }
 
-  #schedule-consult-button {
-      top: 25rem;
-  }
-
   .site-header {
     height: 76px; /*shrink to 60*/
   }
@@ -2229,6 +2207,9 @@ section#simple-social-icons-3 a {
     padding: 36px 36px;
   }
 
+  #schedule-consult-button {
+      top: 25rem;
+  }
 
   #hero-dark-box-group {
     padding: 40px;
@@ -2468,7 +2449,6 @@ section#simple-social-icons-3 a {
     padding: 8px 16px;
     /*overflow: hidden;*/
   }
-
 
   .page-id-14 section#text-7 { /*what we do has fixed button already*/
     display: none;
@@ -3063,9 +3043,6 @@ div#mobile-menu-button,
   }
 
   /**/
-
-
-
 
 }
 
