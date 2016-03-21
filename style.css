@@ -1945,10 +1945,11 @@ p.entry-meta {
     position: fixed;
     right: 0;
     top: 32rem;
-    width: 200px;
+    width: 160px;
+    font-size: 16px;
 }
 
-.sched-button-low {
+.sched-button-low { /*the class added by jquery*/
   display: none;
 }
 
