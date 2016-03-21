@@ -2456,6 +2456,7 @@ section#simple-social-icons-3 a {
     right: 0;
     top: auto;
     width: 100%;
+    max-width: none;
     z-index: 50;
   }
 
