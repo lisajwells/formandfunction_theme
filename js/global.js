@@ -59,4 +59,30 @@ jQuery(function( $ ){
     });
   });
 
+  // from house of funk site
+
+  // $(document).on("mousewheel", function() {
+  //   console.log($('div#services-works-group').offset().top);
+  //     if($(document).scrollTop() < 200){
+  //         $('#schedule-consult-button').css("display","block");
+  //     } else {
+  //         $('#schedule-consult-button').css("display","none");
+  //     }
+  //   });
+$(function() {
+  var eTop = $('#services-works-group').offset().top; //get the offset top of the element
+  console.log(eTop);
+
+  $(window).scroll(function() { //when window is scrolled
+  console.log(eTop - $(window).scrollTop()); //position of the ele w.r.t window
+    if(eTop - $(window).scrollTop() > -500){
+          $('#schedule-consult-button').css("display","block");
+      } else {
+          $('#schedule-consult-button').css("display","none");
+      }
+  });
+});
+
+
+
 });
