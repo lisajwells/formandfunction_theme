@@ -635,7 +635,7 @@ th {
 .page-template-page_three_top .site-container {
   background-image: url(http://lisas-imac.local:5757/wp-content/uploads/2016/03/blob_1_medium_50.jpg), url(http://lisas-imac.local:5757/wp-content/uploads/2016/03/blob_2_medium_50.jpg), url(http://lisas-imac.local:5757/wp-content/uploads/2016/03/blob_3_medium_50.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: left 0 top 3%, right 40%, left 0 bottom 40%;
+  background-position: left 0 top 0, right 40%, left 0 bottom 40%;
 }
 
 .site-inner,
@@ -1361,7 +1361,7 @@ div#mobile-menu-button {
 
 .nav-secondary #menu-services-menu {
     background-color: #9b9b2f;
-    border-top: 6px solid #fff; /*to hide what scrolls under*/
+    border-top: 36px solid #fff; /*to hide what scrolls under if fast*/
     color: #fff;
     font-size: 13px;
     display: block;
@@ -1371,7 +1371,7 @@ div#mobile-menu-button {
     padding-right: 40px;
     position: fixed;
     text-align: right;
-    top: 81px; /*height of header minus depth of rule above*/
+    top: 51px; /*height of header minus depth of rule above*/
     width: 100%;
     z-index: 498;
     -webkit-transition: all .3s ease-out;
