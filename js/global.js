@@ -79,9 +79,9 @@ jQuery(function( $ ){
   $(window).scroll(function() {
 
     if ($(window).scrollTop() + $(window).height() >= $(document).height() - 450) {
-        $('#schedule-consult-button').hide();
+        $('#schedule-consult-button').addClass("sched-button-low");
     } else {
-        $('#schedule-consult-button').show();
+        $('#schedule-consult-button').removeClass("sched-button-low");
     }
   });
 

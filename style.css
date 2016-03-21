@@ -1948,6 +1948,10 @@ p.entry-meta {
     width: 200px;
 }
 
+.sched-button-low {
+  display: none;
+}
+
 .post-14 h2, h3 {
    margin-top: 60px;
 }
