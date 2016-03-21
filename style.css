@@ -2695,7 +2695,8 @@ div#mobile-menu-button,
 .nav-secondary.shrink #menu-services-menu,
 .nav-secondary #menu-services-menu {
     position: fixed;
-    top: 114px;
+    top: 142px;
+    right: 0;
     border-top: none;
     width: 160px;
     padding-right: 0;
