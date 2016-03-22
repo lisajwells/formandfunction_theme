@@ -196,3 +196,6 @@ add_filter( 'tiny_mce_before_init', 'itsg_allow_nbsp_in_tinymce');
 // add_filter('widget_text', 'do_shortcode');
 // add_shortcode("url", "myUrl");
 // [url address="uploads/2016/03/FormFunctionLogoMark.png"][/url]
+
+//* remove visual form builder css *//
+add_filter( 'visual-form-builder-css', '__return_false' );
