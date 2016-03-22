@@ -63,6 +63,7 @@
 	- Pagination
 	- Comments
   - What We Do
+  - Contact Page
 - Sidebars
 - Footer Widgets
 - Site Footer
@@ -180,6 +181,7 @@ input[type="reset"],
 input[type="submit"],
 textarea:focus,
 .button,
+.vfb-fieldset input[type="submit"],
 .textwidget .button,
 .gallery img {
 	-webkit-transition: all .3s ease-in-out;
@@ -489,6 +491,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button,
+.vfb-fieldset input[type="submit"],
 .textwidget .button,
 .featured-content .more-link {
   background-color: #9b9b2f;
@@ -518,6 +521,7 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover,
+.vfb-fieldset input[type="submit"]:hover,
 .textwidget .button:hover,
 .featured-content .more-link:hover {
 	background-color: #776f93;
@@ -561,7 +565,8 @@ input[type="submit"].small,
   font-size: 18px;
 }
 
-.button {
+.button,
+.vfb-fieldset input[type="submit"] {
 	display: block;
 }
 
@@ -591,8 +596,7 @@ input[type="submit"]:disabled:hover {
 	cursor: not-allowed;
 }
 
-/*visual form builder form*/
-.vfb-fieldset { border:0px #fff solid; }
+/*visual form builder form css with contact page*/
 
 /* ## Tables
 --------------------------------------------- */
@@ -1982,6 +1986,45 @@ img.services-number {
     font-style: italic;
 }
 
+/* # Contact Page
+---------------------------------------------------------------------------------------------------- */
+
+.contact-overline {
+  margin: 60px 0 0 0;
+}
+
+.page-id-35 h3 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.page-id-35 .one-third.first {
+    margin-right: 70px;
+}
+
+.vfb-fieldset {
+  border:0px #fff solid;
+  padding: 0;
+  margin: 0;
+}
+
+.vfb-fieldset ul {
+  margin: 0;
+}
+
+.vfb-fieldset label {
+  font-weight: 700;
+}
+
+.vfb-fieldset input {
+  background-color: #efefef;
+  margin-bottom: 20px;
+}
+
+.vfb-fieldset input[type="submit"] { /*this selector added to .button styles*/
+
+}
+
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
 
@@ -2222,9 +2265,11 @@ section#simple-social-icons-3 a {
     font-size: 66px;
   }
 
-  .button {
+  .button,
+  .vfb-fieldset input[type="submit"] {
     font-size: 18px;
   }
+
   a.button.small,
   .footer-widgets a.button.small {
     font-size: 15px;
@@ -2787,7 +2832,8 @@ div#mobile-menu-button,
     font-size: 28px;
   }
 
-  .button {
+  .button,
+  .vfb-fieldset input[type="submit"] {
     font-size: 16px;
   }
 
@@ -2991,7 +3037,8 @@ div#mobile-menu-button,
     font-size: 16px;
   }
 
-  .button {
+  .button,
+  .vfb-fieldset input[type="submit"] {
     padding: 5px 7px;
     font-size: 14px;
   }
