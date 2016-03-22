@@ -1126,10 +1126,10 @@ div .book-featured-text-banner {
 	z-index: 498;
 }
 
-.home .site-header {
+/*.home .site-header {
   background-color: #fff;
 }
-
+*/
 .site-header .wrap {
     position: relative;
     top: -15%;
@@ -1270,10 +1270,10 @@ div .book-featured-text-banner {
 	z-index: 499;
 }
 
-.home .genesis-nav-menu .sub-menu {
+/*.home .genesis-nav-menu .sub-menu {
   background-color: #fff;
 }
-
+*/
 .shrink .sub-menu {
   top: 55px;
 }
@@ -1287,10 +1287,10 @@ div .book-featured-text-banner {
   width: 140px;
 }
 
-.home .genesis-nav-menu .sub-menu li a {
+/*.home .genesis-nav-menu .sub-menu li a {
 	background-color: #fff;
 }
-
+*/
 .genesis-nav-menu .sub-menu li.current_page_item a {
   background-color: #9b9b2f; /*green*/
   color: #fff;
@@ -2610,10 +2610,10 @@ section#simple-social-icons-3 a {
     /*padding: 0 9px;*/
   }
 
-  .home ul#menu-main-menu {
+/*  .home ul#menu-main-menu {
     background-color: #fff;
   }
-
+*/
   .genesis-nav-menu > .menu-item-has-children > a::after {
     content: "";
   }
