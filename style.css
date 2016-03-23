@@ -640,7 +640,7 @@ th {
 }
 
 .page-id-14 .site-container {
-  background-image: url(http://lisas-imac.local:5757/wp-content/uploads/2016/03/blob_1_medium_50.jpg), url(http://lisas-imac.local:5757/wp-content/uploads/2016/03/blob_2_medium_50.jpg), url(http://lisas-imac.local:5757/wp-content/uploads/2016/03/blob_3_medium_50.jpg);
+  background-image: url(../form-and-function/images/blob_1_medium_50.jpg), url(../form-and-function/images/blob_2_medium_50.jpg), url(../form-and-function/images/blob_3_medium_50.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left 0 top 0, right 40%, left 0 bottom 40%;
 }
