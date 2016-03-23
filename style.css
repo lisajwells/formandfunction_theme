@@ -1366,14 +1366,15 @@ div .book-featured-text-banner {
   color: #fff;
 }
 
-/* ## Secondary Navigation
+/* ## Secondary and Tertiary Navigation
 --------------------------------------------- */
 
 div#mobile-menu-button {
   display: none;
 }
 
-.nav-secondary #menu-services-menu {
+.nav-secondary #menu-services-menu,
+.nav-secondary #menu-inventory-menu {
     background-color: #9b9b2f;
     border-top: 36px solid #fff; /*to hide what scrolls under if fast*/
     color: #fff;
@@ -1434,7 +1435,8 @@ div#mobile-menu-button {
   color: #000;
 }
 
-.nav-secondary.shrink #menu-services-menu {
+.nav-secondary.shrink #menu-services-menu,
+.nav-secondary.shrink #menu-inventory-menu {
   position: fixed;
   top:60px;
   border-top: 6px solid #fff;
@@ -2813,7 +2815,9 @@ div#mobile-menu-button,
 */
 
 .nav-secondary.shrink #menu-services-menu,
-.nav-secondary #menu-services-menu {
+.nav-secondary.shrink #menu-inventory-menu,
+.nav-secondary #menu-services-menu,
+.nav-secondary #menu-inventory-menu {
     position: fixed;
     top: 142px;
     right: 0;
@@ -2967,7 +2971,10 @@ div#mobile-menu-button,
     width: 100%;
   }
 
-  .nav-secondary.shrink #menu-services-menu, .nav-secondary #menu-services-menu {
+  .nav-secondary.shrink #menu-services-menu,
+  .nav-secondary.shrink #menu-inventory-menu,
+  .nav-secondary #menu-services-menu,
+  .nav-secondary #menu-inventory-menu {
     top: 110px;
   }
 

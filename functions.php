@@ -78,12 +78,27 @@ remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_header', 'genesis_do_nav', 12 );
 add_action( 'genesis_before_content_sidebar_wrap', 'genesis_do_subnav' );
 
+//* Form and Function: Add the tertiary navigation menu for Inventory page
+function register_additional_menu() {
+	register_nav_menu( 'third-menu' ,__( 'Third Navigation Menu' ));
+}
+
+add_action( 'init', 'register_additional_menu' );
+add_action( 'genesis_before_content_sidebar_wrap', 'add_third_nav_genesis' );
+
+function add_third_nav_genesis() {
+	echo'<div class="nav-secondary" id="menu-inventory-menu">';
+	wp_nav_menu( array( 'theme_location' => 'third-menu', 'container_class' => 'genesis-nav-menu' ) );
+	echo'</div>';
+}
+//*
+
+//* remove secondary menu from all but What We Do page
 add_action('template_redirect', 'remove_subnav_specific_pages');
 function remove_subnav_specific_pages() {
 if ( !is_page('14') )
     remove_action('genesis_before_content_sidebar_wrap', 'genesis_do_subnav');
 }
-
 
 //* Setup widget counts
 function author_count_widgets( $id ) {
@@ -92,7 +107,6 @@ function author_count_widgets( $id ) {
 	if ( isset( $sidebars_widgets[ $id ] ) ) {
 		return count( $sidebars_widgets[ $id ] );
 	}
-
 }
 
 function author_widget_area_class( $id ) {
@@ -113,7 +127,6 @@ function author_widget_area_class( $id ) {
 	}
 
 	return $class;
-
 }
 
 //* Remove comment form allowed tags
@@ -124,7 +137,6 @@ function author_remove_comment_form_allowed_tags( $defaults ) {
 	$defaults['comment_notes_after'] = '';
 
 	return $defaults;
-
 }
 
 //* Register widget areas
