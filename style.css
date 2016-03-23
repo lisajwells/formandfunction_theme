@@ -2031,7 +2031,9 @@ img.services-number {
 }
 
 .vfb-fieldset input[type="submit"] { /*this selector added to .button styles*/
-
+  margin-left: 0;
+  width: 100%;
+  max-width: 355px;
 }
 
 /* # Sidebars
@@ -2277,6 +2279,10 @@ section#simple-social-icons-3 a {
   .button,
   .vfb-fieldset input[type="submit"] {
     font-size: 18px;
+  }
+
+  .page-id-35 .one-third.first {
+    margin-right: 0;
   }
 
   a.button.small,
