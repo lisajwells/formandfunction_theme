@@ -240,7 +240,7 @@ i {
 
 blockquote {
   font-family: 'La Belle Aurore', cursive;
-  font-size: 40px;
+  font-size: 32px;
   margin: 46px 0;
   text-align: center;
 }
@@ -277,6 +277,7 @@ blockquote.praise-blockquote {
   font-weight: 300;
   line-height: 1.2;
   margin: 0;
+	margin-bottom:60px;
   text-align: left;
 }
 
@@ -453,9 +454,8 @@ input,
 select,
 textarea {
 	background-color: #fff;
-	border: 1px solid #ddd;
-	border-radius: 3px;
 	box-shadow: none;
+	border:#fff solid 1px;
 	color: #000;
 	font-size: 18px;
 	font-weight: 300;
@@ -724,13 +724,13 @@ th {
 .two-sixths,
 .two-thirds {
 	float: left;
-	margin-left: 2.564102564102564%;
+	margin-left: 10.564102564102564%;
 }
 
 .one-half,
 .three-sixths,
 .two-fourths {
-	width: 48.717948717948715%;
+	width: 42.717948717948715%;
 }
 
 .one-third,
@@ -860,7 +860,10 @@ th {
 }
 
 .entry-title {
-	font-size: 36px;
+	margin-top:-40px;
+	font-size: 60px;
+	font-family: 'La Belle Aurore', cursive;
+	text-align:center;
 }
 
 .entry-title a,
@@ -1431,8 +1434,11 @@ div#mobile-menu-button {
   border-top: 6px solid #fff;
 }
 
+.nav-secondary .genesis-nav-menu a {
+    padding: 10px 16px;
+  }
 .nav-secondary.shrink .genesis-nav-menu a {
-    padding: 16px 16px;
+    padding: 10px 16px;
   }
 
 .admin-bar .nav-secondary.fixed {
@@ -1566,7 +1572,7 @@ div#mobile-menu-button {
 .three-top-wrap {
   /*margin: 0 -.5%;*/
   position: relative;
-  top: 78px;
+  top: 55px;
 }
 
 .three-top-img-div {
@@ -2078,7 +2084,7 @@ img.services-number {
 }
 
 .footer-widgets .wrap a {
-  font-size: 19px;
+  font-size: 18px;
   line-height: 2;
 }
 
@@ -2114,7 +2120,7 @@ img.services-number {
 }
 
 .footer-widgets h4 {
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
