@@ -1211,7 +1211,7 @@ div .book-featured-text-banner {
 }
 
 .shrink .genesis-nav-menu li a {
-	padding-bottom: 27px;
+	padding-bottom: 19px;
 	padding-top: 32px;
 }
 
@@ -1244,7 +1244,7 @@ div .book-featured-text-banner {
 .genesis-nav-menu a {
 	color: #000;
 	display: block;
-	padding: 52px 16px;
+  padding: 48px 16px 20px;
 	text-transform: uppercase;
 }
 
@@ -2225,7 +2225,7 @@ section#simple-social-icons-3 a {
   }
 
   .genesis-nav-menu a {
-    padding: 43px 10px; /*shrink to 27top 32bot*/
+    padding: 43px 10px 20px;
   }
 
   .nav-secondary.shrink .genesis-nav-menu a {
