@@ -2004,8 +2004,16 @@ img.services-number {
   font-weight: 700;
 }
 
-.page-id-35 .one-third.first {
-    margin-right: 70px;
+.contact-left {
+  float: left;
+  margin-left: 5%;
+  width: 33%;
+}
+.contact-right {
+  float: left;
+  margin-left: 10%;
+  margin-right: 5%;
+  width: 47%;
 }
 
 .vfb-fieldset {
@@ -2033,7 +2041,12 @@ img.services-number {
 .vfb-fieldset input[type="submit"] { /*this selector added to .button styles*/
   margin-left: 0;
   width: 100%;
-  max-width: 355px;
+  max-width: 336px;
+}
+
+.contact-left .button {
+  max-width: 336px;
+  margin-left: 0;
 }
 
 /* # Sidebars
@@ -2293,6 +2306,17 @@ section#simple-social-icons-3 a {
 
   .dark-box-group p {
       font-size: 44px;
+  }
+
+  .contact-left {
+  margin-left: 0;
+  width: 38%;
+  }
+
+  .contact-right {
+    margin-left: 10%;
+    margin-right: 0;
+    width: 52%;
   }
 
   .footer-widgets {
@@ -2920,6 +2944,15 @@ div#mobile-menu-button,
 
   .three-top-wrap {
     top: 46px;
+  }
+
+  .contact-left {
+  width: 100%;
+  }
+
+  .contact-right {
+    margin-left: 0;
+    width: 100%;
   }
 
   .nav-secondary.shrink #menu-services-menu, .nav-secondary #menu-services-menu {
