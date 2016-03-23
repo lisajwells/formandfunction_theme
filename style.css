@@ -2034,7 +2034,7 @@ img.services-number {
   background-color: #efefef;
   margin-bottom: 20px;
   margin-top: 6px;
-  height: 46px;
+  /*height: 46px;*/
   padding: 8px 12px;
 }
 
@@ -3083,6 +3083,19 @@ div#mobile-menu-button,
 
   #hero-dark-box-group h1 {
     font-size: 16px;
+  }
+
+  .contact-overline {
+      margin: 37px 0 0 0;
+  }
+
+  .contact-left,
+  .contact-right {
+    font-size: 15px;
+  }
+
+  .contact-left p:last-of-type {
+    margin-bottom: 0;
   }
 
   .button,
