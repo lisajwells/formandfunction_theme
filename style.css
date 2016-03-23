@@ -455,7 +455,7 @@ select,
 textarea {
 	background-color: #fff;
 	box-shadow: none;
-	border:#fff solid 1px;
+	border:none;
 	color: #000;
 	font-size: 18px;
 	font-weight: 300;
@@ -2025,6 +2025,9 @@ img.services-number {
 .vfb-fieldset input {
   background-color: #efefef;
   margin-bottom: 20px;
+  margin-top: 6px;
+  height: 46px;
+  padding: 8px 12px;
 }
 
 .vfb-fieldset input[type="submit"] { /*this selector added to .button styles*/
