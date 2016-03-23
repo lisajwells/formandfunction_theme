@@ -22,6 +22,9 @@ jQuery(function( $ ){
   $( "#mobile-menu-button" ).click(function() {
     $( "nav.nav-secondary" ).toggle();
   });
+  $( "div#mobile-inventory-menu-button" ).click(function() {
+    $( "#menu-inventory-menu" ).toggle();
+  });
 
   // Add class for tertiary menu
   // $(window).scroll(function() {
