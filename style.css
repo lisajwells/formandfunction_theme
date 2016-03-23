@@ -63,6 +63,7 @@
 	- Pagination
 	- Comments
   - What We Do
+  - Contact Page
 - Sidebars
 - Footer Widgets
 - Site Footer
@@ -180,6 +181,7 @@ input[type="reset"],
 input[type="submit"],
 textarea:focus,
 .button,
+.vfb-fieldset input[type="submit"],
 .textwidget .button,
 .gallery img {
 	-webkit-transition: all .3s ease-in-out;
@@ -238,7 +240,7 @@ i {
 
 blockquote {
   font-family: 'La Belle Aurore', cursive;
-  font-size: 40px;
+  font-size: 32px;
   margin: 46px 0;
   text-align: center;
 }
@@ -275,6 +277,7 @@ blockquote.praise-blockquote {
   font-weight: 300;
   line-height: 1.2;
   margin: 0;
+	margin-bottom:60px;
   text-align: left;
 }
 
@@ -451,9 +454,8 @@ input,
 select,
 textarea {
 	background-color: #fff;
-	border: 1px solid #ddd;
-	border-radius: 3px;
 	box-shadow: none;
+	border:#fff solid 1px;
 	color: #000;
 	font-size: 18px;
 	font-weight: 300;
@@ -489,6 +491,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"],
 .button,
+.vfb-fieldset input[type="submit"],
 .textwidget .button,
 .featured-content .more-link {
   background-color: #9b9b2f;
@@ -518,6 +521,7 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover,
+.vfb-fieldset input[type="submit"]:hover,
 .textwidget .button:hover,
 .featured-content .more-link:hover {
 	background-color: #776f93;
@@ -561,7 +565,8 @@ input[type="submit"].small,
   font-size: 18px;
 }
 
-.button {
+.button,
+.vfb-fieldset input[type="submit"] {
 	display: block;
 }
 
@@ -591,8 +596,7 @@ input[type="submit"]:disabled:hover {
 	cursor: not-allowed;
 }
 
-/*visual form builder form*/
-.vfb-fieldset { border:0px #fff solid; }
+/*visual form builder form css with contact page*/
 
 /* ## Tables
 --------------------------------------------- */
@@ -720,13 +724,13 @@ th {
 .two-sixths,
 .two-thirds {
 	float: left;
-	margin-left: 2.564102564102564%;
+	margin-left: 10.564102564102564%;
 }
 
 .one-half,
 .three-sixths,
 .two-fourths {
-	width: 48.717948717948715%;
+	width: 42.717948717948715%;
 }
 
 .one-third,
@@ -856,7 +860,10 @@ th {
 }
 
 .entry-title {
-	font-size: 36px;
+	margin-top:-40px;
+	font-size: 60px;
+	font-family: 'La Belle Aurore', cursive;
+	text-align:center;
 }
 
 .entry-title a,
@@ -1427,8 +1434,11 @@ div#mobile-menu-button {
   border-top: 6px solid #fff;
 }
 
+.nav-secondary .genesis-nav-menu a {
+    padding: 10px 16px;
+  }
 .nav-secondary.shrink .genesis-nav-menu a {
-    padding: 16px 16px;
+    padding: 10px 16px;
   }
 
 .admin-bar .nav-secondary.fixed {
@@ -1562,7 +1572,7 @@ div#mobile-menu-button {
 .three-top-wrap {
   /*margin: 0 -.5%;*/
   position: relative;
-  top: 78px;
+  top: 55px;
 }
 
 .three-top-img-div {
@@ -1982,6 +1992,45 @@ img.services-number {
     font-style: italic;
 }
 
+/* # Contact Page
+---------------------------------------------------------------------------------------------------- */
+
+.contact-overline {
+  margin: 60px 0 0 0;
+}
+
+.page-id-35 h3 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.page-id-35 .one-third.first {
+    margin-right: 70px;
+}
+
+.vfb-fieldset {
+  border:0px #fff solid;
+  padding: 0;
+  margin: 0;
+}
+
+.vfb-fieldset ul {
+  margin: 0;
+}
+
+.vfb-fieldset label {
+  font-weight: 700;
+}
+
+.vfb-fieldset input {
+  background-color: #efefef;
+  margin-bottom: 20px;
+}
+
+.vfb-fieldset input[type="submit"] { /*this selector added to .button styles*/
+
+}
+
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
 
@@ -2035,7 +2084,7 @@ img.services-number {
 }
 
 .footer-widgets .wrap a {
-  font-size: 19px;
+  font-size: 18px;
   line-height: 2;
 }
 
@@ -2071,7 +2120,7 @@ img.services-number {
 }
 
 .footer-widgets h4 {
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -2222,9 +2271,11 @@ section#simple-social-icons-3 a {
     font-size: 66px;
   }
 
-  .button {
+  .button,
+  .vfb-fieldset input[type="submit"] {
     font-size: 18px;
   }
+
   a.button.small,
   .footer-widgets a.button.small {
     font-size: 15px;
@@ -2787,7 +2838,8 @@ div#mobile-menu-button,
     font-size: 28px;
   }
 
-  .button {
+  .button,
+  .vfb-fieldset input[type="submit"] {
     font-size: 16px;
   }
 
@@ -2991,7 +3043,8 @@ div#mobile-menu-button,
     font-size: 16px;
   }
 
-  .button {
+  .button,
+  .vfb-fieldset input[type="submit"] {
     padding: 5px 7px;
     font-size: 14px;
   }
