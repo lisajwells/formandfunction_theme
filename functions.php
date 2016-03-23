@@ -100,6 +100,13 @@ if ( !is_page('14') )
     remove_action('genesis_before_content_sidebar_wrap', 'genesis_do_subnav');
 }
 
+//* remove tertiary menu from all but Inventory pages
+add_action('template_redirect', 'remove_tertiary_nav_pages');
+function remove_tertiary_nav_pages() {
+if ( !is_page (array('inventory', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) )
+    remove_action('genesis_before_content_sidebar_wrap', 'add_third_nav_genesis');
+}
+
 //* Setup widget counts
 function author_count_widgets( $id ) {
 	global $sidebars_widgets;
