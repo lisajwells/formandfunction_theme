@@ -1369,7 +1369,8 @@ div .book-featured-text-banner {
 /* ## Secondary and Tertiary Navigation
 --------------------------------------------- */
 
-div#mobile-menu-button {
+div#mobile-menu-button, /*what we do*/
+div#mobile-inventory-menu-button {
   display: none;
 }
 
@@ -2800,7 +2801,9 @@ nav.nav-secondary {
 }
 
 div#mobile-menu-button,
-.shrink div#mobile-menu-button {
+.shrink div#mobile-menu-button,
+div#mobile-inventory-menu-button,
+.shrink div#mobile-inventory-menu-button {
     display: block;
     position: fixed;
     top: 70px;
@@ -2809,10 +2812,6 @@ div#mobile-menu-button,
     width: 160px;
     z-index: 10;
 }
-/*.shrink div#mobile-menu-button {
-    top: 60px;
-}
-*/
 
 .nav-secondary.shrink #menu-services-menu,
 .nav-secondary.shrink #menu-inventory-menu,
@@ -2954,7 +2953,9 @@ div#mobile-menu-button,
 	}
 
   div#mobile-menu-button,
-  .shrink div#mobile-menu-button {
+  .shrink div#mobile-menu-button,
+  div#mobile-inventory-menu-button,
+  .shrink div#mobile-inventory-menu-button {
       font-size: 16px;
   }
 
