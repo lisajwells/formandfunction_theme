@@ -1961,15 +1961,16 @@ p.entry-meta {
 /* # What We Do
 ---------------------------------------------------------------------------------------------------- */
 
-#schedule-consult-button {
+#schedule-consult-button { /*.button already has transitions*/
+    display: block;
+    font-size: 16px;
+    opacity: 1;
     padding: 8px 10px;
     position: fixed;
     right: 0;
     top: 32rem;
     width: 160px;
-    font-size: 16px;
     z-index: 50;
-    opacity: 1;
 }
 
 /*#schedule-consult-button.sched-button-low {*/ /*the class added by jquery*/

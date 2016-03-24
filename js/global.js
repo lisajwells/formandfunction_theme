@@ -69,18 +69,6 @@ jQuery(function( $ ){
     }
   });
 
-  // works on blockquote position
-  // $(function() {
-  //   var eTop = $('#services-works-group').offset().top; //get the offset top of the element
-
-  //   $(window).scroll(function() { //when window is scrolled
-  //     if(eTop - $(window).scrollTop() > -500){
-  //           $('#schedule-consult-button').css("display","block");
-  //       } else {
-  //           $('#schedule-consult-button').css("display","none");
-  //       }
-  //   });
-  // });
 
 
 
