@@ -1973,18 +1973,25 @@ p.entry-meta {
     z-index: 50;
 }
 
+/* collapse the button when scrolled down */
 /*#schedule-consult-button.sched-button-low {*/ /*the class added by jquery*/
 /*  height: 0;
   padding: 0;
   overflow: hidden;
 }
 */
-#schedule-consult-button.sched-button-low { /*the class added by jquery*/
-  opacity: 0; /*because opacity will animate*/
-}
+/* fade the button when scrolled down */
+/*#schedule-consult-button.sched-button-low {*/ /*the class added by jquery*/
+  /*opacity: 0; *//*because opacity will animate*/
+/*}*/
 
-#schedule-consult-button.sched-button-none {
-  display: none; /*on delay, because remove from DOM*/
+/*#schedule-consult-button.sched-button-none {
+  display: none;*/ /*because remove from DOM*/
+/*}*/
+
+/* slide right the button when scrolled down */
+#schedule-consult-button.sched-button-low { /*the class added by jquery*/
+  right: -200px;
 }
 
 .post-14 h2, h3 {
@@ -2573,11 +2580,13 @@ section#simple-social-icons-3 a {
     z-index: 50;
   }
 
+  /* don't collapse the button when mobile */
   /*#schedule-consult-button.sched-button-low {*/ /*the class added by jquery*/
 /*    height: 42px;
     padding: 8px 16px;
   }
 */
+  /* don't fade the button when mobile */
   #schedule-consult-button.sched-button-low { /*the class added by jquery*/
     opacity: 1;
   }

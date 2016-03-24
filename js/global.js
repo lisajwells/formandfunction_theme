@@ -58,14 +58,12 @@ jQuery(function( $ ){
 
     if ($(window).scrollTop() + $(window).height() >= $(document).height() - 450) {
         $('#schedule-consult-button').addClass("sched-button-low");
-        setTimeout(function() {
-          $('#schedule-consult-button').addClass("sched-button-none");
-        }, 1000);
+        // setTimeout(function() {
+        //   $('#schedule-consult-button').addClass("sched-button-none");
+        // }, 3000);
     } else {
-        $('#schedule-consult-button').removeClass("sched-button-none");
-        setTimeout(function() {
-          $('#schedule-consult-button').removeClass("sched-button-low");
-        }, 1000);
+        // $('#schedule-consult-button').removeClass("sched-button-none");
+        $('#schedule-consult-button').removeClass("sched-button-low");
     }
   });
 
