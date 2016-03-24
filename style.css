@@ -1979,7 +1979,11 @@ p.entry-meta {
 }
 */
 #schedule-consult-button.sched-button-low { /*the class added by jquery*/
-  opacity: 0;
+  opacity: 0; /*because opacity will animate*/
+}
+
+#schedule-consult-button.sched-button-none {
+  display: none; /*on delay, because remove from DOM*/
 }
 
 .post-14 h2, h3 {
@@ -2575,6 +2579,10 @@ section#simple-social-icons-3 a {
 */
   #schedule-consult-button.sched-button-low { /*the class added by jquery*/
     opacity: 1;
+  }
+
+  #schedule-consult-button.sched-button-none { /*the class added by jquery*/
+    display: block;
   }
 
   .page-id-14 section#text-7 { /*what we do has fixed button already*/

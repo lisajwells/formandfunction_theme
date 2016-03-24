@@ -60,12 +60,12 @@ jQuery(function( $ ){
         $('#schedule-consult-button').addClass("sched-button-low");
         setTimeout(function() {
           $('#schedule-consult-button').addClass("sched-button-none");
-        }, 2000);
+        }, 1000);
     } else {
-        $('#schedule-consult-button').removeClass("sched-button-low");
+        $('#schedule-consult-button').removeClass("sched-button-none");
         setTimeout(function() {
-          $('#schedule-consult-button').removeClass("sched-button-none");
-        }, 2000);
+          $('#schedule-consult-button').removeClass("sched-button-low");
+        }, 1000);
     }
   });
 
