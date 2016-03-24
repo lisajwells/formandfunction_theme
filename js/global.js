@@ -43,16 +43,16 @@ jQuery(function( $ ){
   //    });
 
 
-  $( '.nav-primary .genesis-nav-menu, .nav-secondary .genesis-nav-menu' ).addClass( 'responsive-menu' ).before( '<div class="responsive-menu-icon"></div>' );
+  $( '.nav-primary .genesis-nav-menu, .nav-secondary .genesis-nav-menu, .nav-tertiary .genesis-nav-menu'  ).addClass( 'responsive-menu' ).before( '<div class="responsive-menu-icon"></div>' );
 
   $( '.responsive-menu-icon' ).click(function(){
-    $(this).next( '.nav-primary .genesis-nav-menu,  .nav-secondary .genesis-nav-menu' ).slideToggle();
+    $(this).next( '.nav-primary .genesis-nav-menu, .nav-secondary .genesis-nav-menu, .nav-tertiary .genesis-nav-menu' ).slideToggle();
   });
 
   $( window ).resize(function(){
     if ( window.innerWidth > 980 ) {
     // if ( window.innerWidth > 800 ) {
-      $( '.nav-primary .genesis-nav-menu,  .nav-secondary .genesis-nav-menu, nav .sub-menu' ).removeAttr( 'style' );
+      $( '.nav-primary .genesis-nav-menu,  .nav-secondary .genesis-nav-menu, .nav-tertiary .genesis-nav-menu, nav .sub-menu' ).removeAttr( 'style' );
       $( '.responsive-menu > .menu-item' ).removeClass( 'menu-open' );
     }
   });
