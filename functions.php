@@ -80,7 +80,7 @@ add_action( 'genesis_before_content_sidebar_wrap', 'genesis_do_subnav' );
 
 //****** Form and Function: Add the tertiary navigation menu for Inventory pages
 function register_additional_menu() {
-	register_nav_menu( 'third-menu' ,__( 'Third Navigation Menu' ));
+	register_nav_menu( 'tertiary' ,__( 'Third Navigation Menu' ));
 }
 
 add_action( 'init', 'register_additional_menu' );
@@ -88,7 +88,7 @@ add_action( 'genesis_before_content_sidebar_wrap', 'add_third_nav_genesis' );
 
 function add_third_nav_genesis() {
 	genesis_nav_menu( array(
-        'theme_location'  => 'third-menu',
+        'theme_location'  => 'tertiary',
         'container'       => 'div',
         'container_class' => 'wrap',
         'menu_class'      => 'menu genesis-nav-menu menu-secondary responsive-menu',
