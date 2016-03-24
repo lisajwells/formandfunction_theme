@@ -1969,12 +1969,17 @@ p.entry-meta {
     width: 160px;
     font-size: 16px;
     z-index: 50;
+    opacity: 1;
 }
 
-#schedule-consult-button.sched-button-low { /*the class added by jquery*/
-  height: 0;
+/*#schedule-consult-button.sched-button-low {*/ /*the class added by jquery*/
+/*  height: 0;
   padding: 0;
   overflow: hidden;
+}
+*/
+#schedule-consult-button.sched-button-low { /*the class added by jquery*/
+  opacity: 0;
 }
 
 .post-14 h2, h3 {
@@ -2516,7 +2521,7 @@ section#simple-social-icons-3 a {
       margin-bottom: 13px;
   }
 
-  /*what we do*/
+  /*what we do max980*/
 
   img.services-number {
       float: none;
@@ -2563,10 +2568,13 @@ section#simple-social-icons-3 a {
     z-index: 50;
   }
 
-  #schedule-consult-button.sched-button-low { /*the class added by jquery*/
-    height: 42px;
+  /*#schedule-consult-button.sched-button-low {*/ /*the class added by jquery*/
+/*    height: 42px;
     padding: 8px 16px;
-    /*overflow: hidden;*/
+  }
+*/
+  #schedule-consult-button.sched-button-low { /*the class added by jquery*/
+    opacity: 1;
   }
 
   .page-id-14 section#text-7 { /*what we do has fixed button already*/

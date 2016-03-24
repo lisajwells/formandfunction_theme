@@ -29,19 +29,6 @@ jQuery(function( $ ){
     $( "nav.nav-tertiary" ).toggle();
   });
 
-  // Add class for tertiary menu
-  // $(window).scroll(function() {
-  //        var distanceFromTop = $(document).scrollTop();
-  //        if (distanceFromTop >= $( '.front-page-1' ).height() + 40 )
-  //        {
-  //            $( '.nav-secondary' ).addClass( 'fixed' );
-  //        }
-  //        else
-  //        {
-  //            $( '.nav-secondary' ).removeClass( 'fixed' );
-  //        }
-  //    });
-
 
   $( '.nav-primary .genesis-nav-menu, .nav-secondary .genesis-nav-menu, .nav-tertiary .genesis-nav-menu'  ).addClass( 'responsive-menu' ).before( '<div class="responsive-menu-icon"></div>' );
 
@@ -65,27 +52,15 @@ jQuery(function( $ ){
     });
   });
 
-  // from house of funk site
-
-  // (function($) {
-
-  // $(document).on("mousewheel", function() {
-  //     if($(document).scrollTop() < 100){
-  //         $('#schedule-consult-button').css("display","block");
-  //     } else {
-  //         $('#schedule-consult-button').css("display","none");
-  //     }
-  //   });
-
-  // })( jQuery );
-
-
-  // works 500px from bottom
+  // disappear #schedule-consult when scroll 450px from bottom
   // based on http://stackoverflow.com/questions/12797224/getting-the-scrollbottom-using-jquery
   $(window).scroll(function() {
 
     if ($(window).scrollTop() + $(window).height() >= $(document).height() - 450) {
         $('#schedule-consult-button').addClass("sched-button-low");
+        setTimeout(function() {
+          $('#schedule-consult-button').addClass("sched-button-none");
+        }, 2000);
     } else {
         $('#schedule-consult-button').removeClass("sched-button-low");
     }
