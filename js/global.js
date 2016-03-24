@@ -4,6 +4,7 @@ jQuery(function( $ ){
   if( $( document ).scrollTop() > 0 ){
     $( '.site-header' ).addClass( 'shrink' );
     $( '.nav-secondary' ).addClass( 'shrink' );
+    $( '.nav-tertiary' ).addClass( 'shrink' );
   }
 
   $( document ).on('scroll', function(){
@@ -11,10 +12,12 @@ jQuery(function( $ ){
     if ( $( document ).scrollTop() > 0 ){
       $( '.site-header' ).addClass( 'shrink' );
       $( '.nav-secondary' ).addClass( 'shrink' );
+      $( '.nav-tertiary' ).addClass( 'shrink' );
 
     } else {
       $( '.site-header' ).removeClass( 'shrink' );
       $( '.nav-secondary' ).removeClass( 'shrink' );
+      $( '.nav-tertiary' ).removeClass( 'shrink' );
     }
 
   });
@@ -23,7 +26,7 @@ jQuery(function( $ ){
     $( "nav.nav-secondary" ).toggle();
   });
   $( "div#mobile-inventory-menu-button" ).click(function() {
-    $( "#menu-inventory-menu" ).toggle();
+    $( "nav.nav-tertiary" ).toggle();
   });
 
   // Add class for tertiary menu

@@ -78,18 +78,22 @@ remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'genesis_header', 'genesis_do_nav', 12 );
 add_action( 'genesis_before_content_sidebar_wrap', 'genesis_do_subnav' );
 
-//* Form and Function: Add the tertiary navigation menu for Inventory pages
+//****** Form and Function: Add the tertiary navigation menu for Inventory pages
 function register_additional_menu() {
-	register_nav_menu( 'third-menu' ,__( 'Third Navigation Menu' ));
+	register_nav_menu( 'tertiary' ,__( 'Third Navigation Menu' ));
 }
 
 add_action( 'init', 'register_additional_menu' );
 add_action( 'genesis_before_content_sidebar_wrap', 'add_third_nav_genesis' );
 
 function add_third_nav_genesis() {
-	echo'<nav class="nav-secondary" itemscope="" itemtype="http://schema.org/SiteNavigationElement" id="menu-inventory-menu"><div class="wrap">';
-	wp_nav_menu( array( 'theme_location' => 'third-menu', 'container_class' => 'genesis-nav-menu' ) );
-	echo'</div></nav>';
+	genesis_nav_menu( array(
+        'theme_location'  => 'tertiary',
+        'container'       => 'div',
+        'container_class' => 'wrap',
+        'menu_class'      => 'menu genesis-nav-menu menu-secondary responsive-menu',
+        'depth'           => 1
+	) );
 }
 //*
 
