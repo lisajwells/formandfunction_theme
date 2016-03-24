@@ -63,6 +63,9 @@ jQuery(function( $ ){
         }, 2000);
     } else {
         $('#schedule-consult-button').removeClass("sched-button-low");
+        setTimeout(function() {
+          $('#schedule-consult-button').removeClass("sched-button-none");
+        }, 2000);
     }
   });
 
