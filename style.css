@@ -1579,9 +1579,11 @@ div#mobile-inventory-menu-button {
 --------------------------------------------- */
 
 .three-top-wrap {
-  /*margin: 0 -.5%;*/
   position: relative;
-  top: 55px;
+  top: 15px;
+}
+.page-id-14 .three-top-wrap {
+  top: 52px;
 }
 
 .three-top-img-div {
