@@ -449,6 +449,11 @@ img {
 	border: 1px solid #999;
 }
 
+/* ## Essential Grid
+--------------------------------------------- */
+.eg-georgebush-container {
+    background-color: #9B9B2F !important;
+}
 /* ## Forms
 --------------------------------------------- */
 
@@ -709,6 +714,7 @@ th {
 .sidebar-primary {
 	float: right;
 	width: 380px;
+	margin-top: 130px;
 }
 
 .sidebar-content .sidebar-primary {
@@ -3236,7 +3242,7 @@ div#mobile-inventory-menu-button,
 
   /**/
 
-}
+} /*end max-width 500*/
 
 @media only screen and (max-width: 400px) {
   .responsive-menu-icon::before {
@@ -3253,5 +3259,82 @@ div.title-area, .header-image .site-title > a {
     max-width: 100%;
   }
 
+
+} /*end max-width 400*/
+
+
+
+/* Single and Archive templates for Items CPT
+----------------------------------------------- */
+
+.button:hover {
+	color: #fff;
+}
+
+.type-item .entry-meta {
+	border-top: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+/* items CPT archive page */
+
+.post-type-archive-item .item-meta p {
+	margin-bottom: 5px;
+}
+
+.post-type-archive-item .item-meta .button {
+	padding: 8px 15px;
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*.post-type-archive-item .cpt-archive-description {
+	background: #fff url(images/book-shelf.png) no-repeat right bottom;
+}
+*/
+
+/* books CPT single pages */
+
+.single-item .item-meta {
+	background: #EFEFEF;
+	color: #111;
+	padding: 40px;
+	margin-bottom: 40px;
+}
+
+.single-item .entry-title, .post-type-archive-items .entry-title {
+	margin-bottom: 30px;
+}
+
+.prev-next-post-links {
+	overflow: hidden;
+	margin-bottom: 40px;
+	clear: both;
+}
+
+.previous-post-link {
+	float: left;
+}
+
+.next-post-link {
+	float: right;
+}
+
+@media only screen and (max-width: 568px) {
+
+	.type-items .entry-content {
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	.type-items .entry-content img.alignleft {
+		float: none;
+	}
 
 }

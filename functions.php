@@ -95,7 +95,6 @@ function add_third_nav_genesis() {
         'depth'           => 1
 	) );
 }
-//*
 
 //* remove secondary menu from all but What We Do page
 add_action('template_redirect', 'remove_subnav_specific_pages');
@@ -107,9 +106,87 @@ if ( !is_page('14') )
 //* remove tertiary menu from all but Inventory pages
 add_action('template_redirect', 'remove_tertiary_nav_pages');
 function remove_tertiary_nav_pages() {
-if ( !is_page (array('inventory', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) )
+if ( !is_page (array('inventory', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) && !is_page_template('single-item.php'))
     remove_action('genesis_before_content_sidebar_wrap', 'add_third_nav_genesis');
 }
+
+//*
+
+
+
+//* [Site-wide] Modify the Excerpt read more link
+add_filter('excerpt_more', 'new_excerpt_more');
+function new_excerpt_more($more) {
+	return '... <a class="more-link" href="' . get_permalink() . '">Read More</a>';
+}
+//* [Dashboard] Add Archive Settings option to Items CPT
+add_post_type_support( 'item', 'genesis-cpt-archives-settings' );
+/**
+ * [Dashboard] Add Genre Taxonomy to columns at http://example.com/wp-admin/edit.php?post_type=books
+ * URL: http://make.wordpress.org/core/2012/12/11/wordpress-3-5-admin-columns-for-custom-taxonomies/
+ */
+add_filter( 'manage_taxonomies_for_item_columns', 'item_columns' );
+function books_columns( $taxonomies ) {
+	$taxonomies[] = 'groups';
+	return $taxonomies;
+}
+//* [All Item pages] Function to display values of custom fields (if not empty)
+//* called in single-item.php
+function sk_display_custom_fields() {
+	$item_price = get_field( 'item_price' );
+	$item_dimensions = get_field( 'item_dimensions' );
+	$item_number = get_field( 'item_number' );
+	if ( $item_price || $item_dimensions || $item_number ) {
+		echo '<div class="item-meta">';
+			if ( $item_price ) {
+				echo '<p><strong>Price</strong>: $' . $item_price . '</p>';
+			}
+			if ( $item_dimensions ) {
+				echo '<p><strong>Dimensions</strong>: ' . $item_dimensions . '</p>';
+			}
+			if ( $item_number ) {
+				echo '<p><strong>Item Number</strong>: #' . $item_number . '</p>';
+			}
+		echo '</div>';
+	}
+}
+//* [All Item pages] Show Genre custom taxonomy terms for Items CPT single pages, archive page and Group taxonomy term pages
+add_filter( 'genesis_post_meta', 'custom_post_meta' );
+function custom_post_meta( $post_meta ) {
+	if ( is_singular( 'item' ) || is_post_type_archive( 'item' ) || is_tax( 'groups' ) ) {
+		$post_meta = '[post_terms taxonomy="groups" before="Groups: "]';
+	}
+	return $post_meta;
+}
+/**
+ * [All Item pages] Display Post meta only if the entry has been assigned to any Group term
+ * Removes empty markup, '<p class="entry-meta"></p>' for entries that have not been assigned to any Group
+ */
+//* called in single-item.php
+function sk_custom_post_meta() {
+	if ( has_term( '', 'groups' ) ) {
+		genesis_post_meta();
+	}
+}
+/**
+ * [WordPress] Template Redirect
+ * Use archive-items.php for Genre taxonomy archives.
+ */
+add_filter( 'template_include', 'sk_template_redirect' );
+function sk_template_redirect( $template ) {
+	if ( is_tax( 'groups' ) )
+		$template = get_query_template( 'archive-item' );
+	return $template;
+}
+//* [Single Book pages] Custom Primary Sidebar for single Book entries
+genesis_register_sidebar( array(
+	'id'			=> 'primary-sidebar-item',
+	'name'			=> 'Primary Sidebar - Item',
+	'description'	=> 'This is the primary sidebar for Item CPT entry'
+) );
+
+
+
 
 //* Setup widget counts
 function author_count_widgets( $id ) {
