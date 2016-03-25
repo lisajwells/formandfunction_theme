@@ -10,7 +10,13 @@ add_action( 'genesis_before_content', 'genesis_do_breadcrumbs' );
 //* Remove the entry meta in the entry header
 remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 add_action( 'genesis_entry_content', 'sk_show_featured_image_single_item_pages', 9 );
+
+
+
+add_action( 'genesis_before_content_sidebar_wrap', 'add_third_nav_genesis' );
 /**
+
+
 
 * Display Featured Image floated to the right in single Posts.
 */

@@ -95,7 +95,6 @@ function add_third_nav_genesis() {
         'depth'           => 1
 	) );
 }
-
 //* remove secondary menu from all but What We Do page
 add_action('template_redirect', 'remove_subnav_specific_pages');
 function remove_subnav_specific_pages() {
@@ -106,7 +105,7 @@ if ( !is_page('14') )
 //* remove tertiary menu from all but Inventory pages
 add_action('template_redirect', 'remove_tertiary_nav_pages');
 function remove_tertiary_nav_pages() {
-if ( !is_page (array('inventory', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) && !is_page_template('single-item.php'))
+if ( !is_page (array('inventory', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) )
     remove_action('genesis_before_content_sidebar_wrap', 'add_third_nav_genesis');
 }
 
