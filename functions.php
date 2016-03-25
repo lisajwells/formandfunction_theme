@@ -79,13 +79,12 @@ add_action( 'genesis_header', 'genesis_do_nav', 12 );
 add_action( 'genesis_before_content_sidebar_wrap', 'genesis_do_subnav' );
 
 //****** Form and Function: Add the tertiary navigation menu for Inventory pages
+add_action( 'init', 'register_additional_menu' );
 function register_additional_menu() {
 	register_nav_menu( 'tertiary' ,__( 'Third Navigation Menu' ));
 }
 
-add_action( 'init', 'register_additional_menu' );
 add_action( 'genesis_before_content_sidebar_wrap', 'add_third_nav_genesis' );
-
 function add_third_nav_genesis() {
 	genesis_nav_menu( array(
         'theme_location'  => 'tertiary',
@@ -103,6 +102,8 @@ if ( !is_page('14') )
 }
 
 //* remove tertiary menu from all but Inventory pages
+//* see single-item.php where it's added back in for those (couldn't get this to see is_page_template)
+//* best refactor that later
 add_action('template_redirect', 'remove_tertiary_nav_pages');
 function remove_tertiary_nav_pages() {
 if ( !is_page (array('inventory', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) )
