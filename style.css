@@ -712,7 +712,7 @@ th {
 /* ### Primary Sidebar */
 
 .sidebar-primary {
-	float: right;
+	float: left;
 	width: 380px;
 	margin-top: 130px;
 }
