@@ -130,6 +130,7 @@ function item_columns( $taxonomies ) {
 	return $taxonomies;
 }
 //* [All Item pages] Function to display values of custom fields (if not empty)
+/* called in archive-item.php and single-item.php */
 function sk_display_custom_fields() {
 	$item_price = get_field( 'item_price' );
 	$item_dimensions = get_field( 'item_dimensions' );
@@ -160,6 +161,7 @@ function custom_post_meta( $post_meta ) {
  * [All Item pages] Display Post meta only if the entry has been assigned to any Group term
  * Removes empty markup, '<p class="entry-meta"></p>' for entries that have not been assigned to any Group
  */
+/* called in archive-item.php and single-item.php */
 function sk_custom_post_meta() {
 	if ( has_term( '', 'groups' ) ) {
 		genesis_post_meta();
