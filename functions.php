@@ -188,7 +188,6 @@ genesis_register_sidebar( array(
 
 
 
-
 //* Setup widget counts
 function author_count_widgets( $id ) {
 	global $sidebars_widgets;
@@ -255,11 +254,11 @@ genesis_register_sidebar( array(
 	'description' => __( 'This is the front page 5 section.', 'author' ),
 ) );
 
-//*++++++++++++ Custom for Form and Function +++++++++++++*/
 
 //* Remove the edit link on page
 add_filter ( 'genesis_edit_post_link' , '__return_false' );
 
+//* Presswidget sidebar for home page
 genesis_register_sidebar( array(
 	'id'		=> 'presswidget',
 	'name'		=> __( 'Press Widget', 'faf' ),

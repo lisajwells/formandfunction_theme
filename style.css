@@ -3292,11 +3292,11 @@ div.title-area, .header-image .site-title > a {
 	margin-bottom: 10px;
 }
 
-.post-type-archive-item .cpt-archive-description {
+/*.post-type-archive-item .cpt-archive-description {
 	background: #fff url(images/book-shelf.png) no-repeat right bottom;
-}
+}*/
 
-/* books CPT single pages */
+/* items CPT single pages */
 
 .single-item .item-meta {
 	background: #EFEFEF;
