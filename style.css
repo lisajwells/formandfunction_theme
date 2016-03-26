@@ -725,10 +725,10 @@ th {
 }
 
 .sidebar-primary section.widget {
-padding: 0;
-    margin-top: 30px;
-     background-color: #efefef;
-  }
+  padding: 0;
+  margin-top: 40px;
+  background-color: #efefef;
+}
 
 
 /* ## Column Classes
