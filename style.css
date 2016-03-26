@@ -714,7 +714,6 @@ th {
 .sidebar-primary {
 	float: left;
 	width: 380px;
-	margin-top: 130px;
 }
 
 .sidebar-content .sidebar-primary {
@@ -1799,9 +1798,11 @@ div#mobile-inventory-menu-button {
 --------------------------------------------- */
 
 .entry {
-	/*padding: 80px;*/
-	position: relative;
+  position: relative;
   margin: 7% auto;
+}
+.content-sidebar .entry { /*single-item page*/
+  margin: 0;
 }
 
 .narrow {
