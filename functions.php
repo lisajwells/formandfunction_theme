@@ -125,7 +125,7 @@ add_post_type_support( 'item', 'genesis-cpt-archives-settings' );
  * URL: http://make.wordpress.org/core/2012/12/11/wordpress-3-5-admin-columns-for-custom-taxonomies/
  */
 add_filter( 'manage_taxonomies_for_item_columns', 'item_columns' );
-function books_columns( $taxonomies ) {
+function item_columns( $taxonomies ) {
 	$taxonomies[] = 'groups';
 	return $taxonomies;
 }
