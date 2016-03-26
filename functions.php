@@ -100,7 +100,7 @@ function add_third_nav_genesis() {
 
 //* [Site-wide] Modify the Excerpt read more link
 add_filter('excerpt_more', 'new_excerpt_more');
-function new_excerpt_more($more) { 
+function new_excerpt_more($more) {
 	return '... <a class="more-link" href="' . get_permalink() . '">Read More</a>';
 }
 //* [Dashboard] Add Archive Settings option to Items CPT
@@ -178,6 +178,7 @@ if ( !is_page('14') )
 }
 
 //* remove tertiary menu from all but Inventory pages
+//* see single-item.php where it's added back in for those (couldn't get this to see is_page_template)
 add_action('template_redirect', 'remove_tertiary_nav_pages');
 function remove_tertiary_nav_pages() {
 if ( !is_page (array('inventory', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) )
