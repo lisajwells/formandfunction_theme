@@ -62,5 +62,10 @@ function sk_do_sidebar() {
 remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
 add_action( 'genesis_entry_footer', 'sk_custom_post_meta' );
 
+//* Use content-sidebar layout on these single-item pages
 add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_content_sidebar' );
+
+//* Include tertiary nav on these single-item pages (override remove_action in functions.php)
+add_action( 'genesis_before_content_sidebar_wrap', 'add_third_nav_genesis' );
+
 genesis();
