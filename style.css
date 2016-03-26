@@ -3309,7 +3309,8 @@ div.title-area, .header-image .site-title > a {
 
 /* items CPT single pages */
 
-/*.single-item .item-meta {*/ /*move this to .sidebar-primary*/
+/*moved this to .sidebar-primary*/
+/*.single-item .item-meta {*/
 /*	background: #EFEFEF;
 	color: #111;
 	padding: 40px;
