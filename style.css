@@ -714,6 +714,10 @@ th {
 .sidebar-primary {
 	float: left;
 	width: 380px;
+  background: #EFEFEF;
+  color: #000;
+  padding: 40px;
+  margin-bottom: 40px;
 }
 
 .sidebar-content .sidebar-primary {
@@ -3299,12 +3303,12 @@ div.title-area, .header-image .site-title > a {
 
 /* items CPT single pages */
 
-.single-item .item-meta {
-	background: #EFEFEF;
+/*.single-item .item-meta {*/ /*move this to .sidebar-primary*/
+/*	background: #EFEFEF;
 	color: #111;
 	padding: 40px;
 	margin-bottom: 40px;
-}
+}*/
 
 .single-item .entry-title, .post-type-archive-items .entry-title {
 	margin-bottom: 30px;
