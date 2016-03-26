@@ -95,9 +95,24 @@ function add_third_nav_genesis() {
         'depth'           => 1
 	) );
 }
+
+//* remove secondary menu from all but What We Do page
+add_action('template_redirect', 'remove_subnav_specific_pages');
+function remove_subnav_specific_pages() {
+if ( !is_page('14') )
+    remove_action('genesis_before_content_sidebar_wrap', 'genesis_do_subnav');
+}
+
+//* remove tertiary menu from all but Inventory pages
+//* see single-item.php where it's added back in for those (couldn't get this to see is_page_template)
+add_action('template_redirect', 'remove_tertiary_nav_pages');
+function remove_tertiary_nav_pages() {
+if ( !is_page (array('inventory', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) )
+    remove_action('genesis_before_content_sidebar_wrap', 'add_third_nav_genesis');
+}
 //*
 
-
+//****** Single Item CPT ******//
 //* [Site-wide] Modify the Excerpt read more link
 add_filter('excerpt_more', 'new_excerpt_more');
 function new_excerpt_more($more) {
@@ -167,23 +182,10 @@ genesis_register_sidebar( array(
 	'description'	=> 'This is the primary sidebar for Item CPT entry'
 ) );
 
+//****** end Single Item CPT ******//
 
 
 
-//* remove secondary menu from all but What We Do page
-add_action('template_redirect', 'remove_subnav_specific_pages');
-function remove_subnav_specific_pages() {
-if ( !is_page('14') )
-    remove_action('genesis_before_content_sidebar_wrap', 'genesis_do_subnav');
-}
-
-//* remove tertiary menu from all but Inventory pages
-//* see single-item.php where it's added back in for those (couldn't get this to see is_page_template)
-add_action('template_redirect', 'remove_tertiary_nav_pages');
-function remove_tertiary_nav_pages() {
-if ( !is_page (array('inventory', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) )
-    remove_action('genesis_before_content_sidebar_wrap', 'add_third_nav_genesis');
-}
 
 //* Setup widget counts
 function author_count_widgets( $id ) {
