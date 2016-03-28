@@ -392,6 +392,11 @@ img {
 /* ## Gallery
 --------------------------------------------- */
 
+.image-wrapper {
+    border: solid 1px #fff !important;
+}
+
+/* default from theme here
 .gallery {
 	overflow: hidden;
 }
@@ -448,7 +453,7 @@ img {
 .gallery img:hover {
 	border: 1px solid #999;
 }
-
+*/
 /* ## Essential Grid
 --------------------------------------------- */
 .eg-georgebush-container {
@@ -679,6 +684,10 @@ th {
 
 .entry-content {
   padding: 0 224px;
+}
+
+.parent-pageid-42 .entry-content { /*gallery pages*/
+  padding: 0;
 }
 
 .featured-widget-area + .site-inner,
