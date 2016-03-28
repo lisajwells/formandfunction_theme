@@ -2058,6 +2058,12 @@ img.services-number {
     max-width: 916px;
 }
 
+.prev-next-post-links {
+    margin: 0 auto 40px;
+    max-width: 916px;
+
+}
+
 .content-sidebar .single-item-img.alignleft {
   margin: 0;
   width: 100% !important;
@@ -2674,6 +2680,10 @@ section#simple-social-icons-3 a {
       margin: 0 auto;
       max-width: 500px;
       width: 100%;
+  }
+
+  .prev-next-post-links {
+    max-width: 500px;
   }
 
   .sidebar-primary {
