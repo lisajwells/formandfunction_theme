@@ -1655,6 +1655,10 @@ div#mobile-inventory-menu-button {
   text-align: center;
 }
 
+  .page-id-42 .dark-box-group p { /*portfolio main*/
+    font-size: 54px;
+  }
+
 .dark-box-group h1 {
   margin: 10% 0 0 0;
 }
