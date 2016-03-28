@@ -1689,6 +1689,13 @@ div#mobile-inventory-menu-button {
   margin-top: 6px;
 }
 
+.dark-box-img-div { /*inventory*/
+  float: left;
+  width: 33.333333333%;
+  position: relative;
+}
+
+
 /* ## Flexible Widgets
 --------------------------------------------- */
 
