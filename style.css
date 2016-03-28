@@ -687,7 +687,7 @@ th {
   padding: 0 224px;
 }
 
-.page-id-42 .entry-content {
+.page-id-42 .entry-content { /*portfolio page*/
   padding: 0 124px;
 }
 
@@ -3253,14 +3253,18 @@ div#mobile-inventory-menu-button,
     .three-top-img-div:last-of-type {
     display: none;
   }
-.three-top-img-div {
-    width: 100%;
-    /* max-width: 338px; */
-    float: none;
-    margin: 0 auto;
-}
+  .three-top-img-div {
+      width: 100%;
+      /* max-width: 338px; */
+      float: none;
+      margin: 0 auto;
+  }
 
-
+  .page-id-46 .entry-content,
+  .page-id-42 .entry-content,
+  .entry-content {
+    padding: 0 20px;
+  }
 
 }
 
