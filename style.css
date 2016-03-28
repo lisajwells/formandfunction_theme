@@ -3137,6 +3137,19 @@ div#mobile-inventory-menu-button,
     top: 46px;
   }
 
+  .dark-box-img-div {
+    margin: 2%;
+    width: 46%;
+  }
+
+  .dark-box-img-div:nth-of-type(5) { /*reset*/
+    margin: 2%;
+  }
+
+  .dark-box-img-div:nth-of-type(6) {
+    margin-left: 27%;
+  }
+
   .contact-left {
   width: 100%;
   }
@@ -3278,6 +3291,21 @@ div#mobile-inventory-menu-button,
   #hero-dark-box-group h1 {
     font-size: 16px;
   }
+
+  .dark-box-img-div {
+    margin: 4% 0;
+    width: 100%;
+  }
+
+  .dark-box-img-div:nth-of-type(5) { /*reset*/
+    margin: 4% 0;
+  }
+
+  .dark-box-img-div:nth-of-type(6) {
+    margin: 4% 0;
+  }
+
+
 
   .contact-overline {
       margin: 37px 0 0 0;
