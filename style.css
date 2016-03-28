@@ -683,8 +683,12 @@ th {
     z-index: 5;
 }
 
-.entry-content {
+.entry-content { /*portfolio main needs bigger pics*/
   padding: 0 224px;
+}
+
+.page-id-42 .entry-content {
+  padding: 0 124px;
 }
 
 .single-item .entry-content {
@@ -2348,6 +2352,10 @@ section#simple-social-icons-3 a {
     padding: 0 180px;
   }
 
+  .page-id-42 .entry-content {
+    padding: 0 80px;
+  }
+
 	.content {
 		width: 840px;
 	}
@@ -2400,6 +2408,10 @@ section#simple-social-icons-3 a {
 
   .entry-content {
     padding: 0 100px;
+  }
+
+  .page-id-42 .entry-content {
+    padding: 0 60px;
   }
 
   .page-id-14 .entry-content {
