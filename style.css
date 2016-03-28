@@ -2092,6 +2092,10 @@ img.services-number {
     display: inline-block;
 }
 
+.sidebar-primary .textwidget .button.call-button {
+  display: none;
+}
+
 /* # Contact Page
 ---------------------------------------------------------------------------------------------------- */
 
@@ -3313,6 +3317,13 @@ div#mobile-inventory-menu-button,
     /*margin-top: 0px;*/
     font-size: 20px;
   }
+
+  /*single-item*/
+
+  .sidebar-primary .textwidget .button.call-button {
+    display: inline-block;
+  }
+
 
   /**/
 
