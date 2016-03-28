@@ -1695,6 +1695,13 @@ div#mobile-inventory-menu-button {
   position: relative;
 }
 
+.dark-box-content-wrap p {
+  margin: 0;
+}
+
+#home-cta-imgs .dark-box-content-wrap p {
+    margin: 0 0 28px;
+}
 
 /* ## Flexible Widgets
 --------------------------------------------- */
