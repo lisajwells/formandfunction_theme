@@ -1684,15 +1684,20 @@ div#mobile-inventory-menu-button {
 
 /* Two-column content */
 
-.two-col-img-div {
+.two-col-img-div { /*on praise, no longer dark*/
   position: relative;
   margin-top: 6px;
 }
 
 .dark-box-img-div { /*inventory*/
   float: left;
-  width: 33.333333333%;
+  margin: 1.66%;
   position: relative;
+  width: 30%;
+}
+
+.dark-box-img-div:nth-of-type(5) { /*to center 2's*/
+    margin-left: 18.34%;
 }
 
 .dark-box-content-wrap p {
