@@ -681,7 +681,6 @@ th {
 .content-sidebar-wrap { /*so it scrolls under fixed nav*/
     position: relative;
     z-index: 5;
-    /*overflow: auto;*/
 }
 
 .entry-content {
@@ -2730,6 +2729,10 @@ section#simple-social-icons-3 a {
 
   .entry {
     padding: 40px 0;
+  }
+
+  .content-sidebar .entry { /*single-item*/
+    padding: 0;
   }
 
   .page-id-14 .entry-content,
