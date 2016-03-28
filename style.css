@@ -1353,6 +1353,7 @@ div .book-featured-text-banner {
 
 .nav-primary {
 	float: right;
+  margin-top: 12px;
 	text-align: right;
   	-webkit-transition: all .3s ease-out;
   	-moz-transition:    all .3s ease-out;
