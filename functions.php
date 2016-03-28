@@ -107,7 +107,7 @@ if ( !is_page('14') )
 //* see single-item.php where it's added back in for those (couldn't get this to see is_page_template)
 add_action('template_redirect', 'remove_tertiary_nav_pages');
 function remove_tertiary_nav_pages() {
-if ( !is_page (array('inventory', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) )
+if ( !is_page (array('decor', 'lighting', 'seating', 'storage', 'tables' ) ) )
     remove_action('genesis_before_content_sidebar_wrap', 'add_third_nav_genesis');
 }
 //*
