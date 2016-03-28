@@ -1157,13 +1157,9 @@ div .book-featured-text-banner {
 	z-index: 498;
 }
 
-/*.home .site-header {
-  background-color: #fff;
-}
-*/
 .site-header .wrap {
     position: relative;
-    top: -15%;
+    top: -12px;
     height: 68px; /*so it doesn't interfere with secondary nav*/
 }
 
