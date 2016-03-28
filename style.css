@@ -1690,8 +1690,6 @@ div#mobile-inventory-menu-button {
   letter-spacing:1px;
 }
 
-/* Two-column content */
-
 .two-col-img-div { /*on praise, no longer dark*/
   position: relative;
   margin-top: 6px;
@@ -1704,7 +1702,9 @@ div#mobile-inventory-menu-button {
   width: 30%;
 }
 
-.page-id-46 .dark-box-img-div:nth-of-type(4) { /*inventory to center 2's*/
+/*inventory and portfolio main to center 2's*/
+.page-id-42 .dark-box-img-div:nth-of-type(10),
+.page-id-46 .dark-box-img-div:nth-of-type(4) {
     margin-left: 18.34%;
 }
 
