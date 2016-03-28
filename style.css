@@ -2049,7 +2049,7 @@ img.services-number {
 
 .content-sidebar .content {
     width: 55%;
-    margin-right: 5.4%;
+    margin-right: 5%;
     max-width: 500px;
 }
 
@@ -2659,6 +2659,24 @@ section#simple-social-icons-3 a {
 
   body.page-id-14 { /*to accomm fixed button of this height*/
     margin-bottom: 42px;
+  }
+
+  /**/
+
+  /** single-item max980 **/
+
+  .content-sidebar .content {
+      float: none;
+      margin: 0 auto;
+      max-width: 500px;
+      width: 100%;
+  }
+
+  .sidebar-primary {
+    float: none;
+    margin: 0 auto 40px;
+    max-width: 500px;
+    width: 100%;
   }
 
   /**/
