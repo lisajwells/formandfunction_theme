@@ -687,7 +687,8 @@ th {
   padding: 0 224px;
 }
 
-.page-id-42 .entry-content { /*portfolio page*/
+.page-id-42 .entry-content, /*inventory page*/
+.page-id-46 .entry-content { /*portfolio page*/
   padding: 0 124px;
 }
 
@@ -2356,6 +2357,7 @@ section#simple-social-icons-3 a {
     padding: 0 180px;
   }
 
+  .page-id-46 .entry-content,
   .page-id-42 .entry-content {
     padding: 0 80px;
   }
@@ -2418,6 +2420,7 @@ section#simple-social-icons-3 a {
     padding: 0 100px;
   }
 
+  .page-id-46 .entry-content,
   .page-id-42 .entry-content {
     padding: 0 60px;
   }
