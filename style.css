@@ -1427,11 +1427,11 @@ div#mobile-inventory-menu-button {
 	margin-top: 70px;
 }
 
-.nav-secondary .genesis-nav-menu a,
+/*.nav-secondary .genesis-nav-menu a,
 .nav-tertiary .genesis-nav-menu a {
   color: #fff;
   padding: 26px 16px;
-}
+}*/
 
 .nav-secondary .genesis-nav-menu .sub-menu a,
 .nav-tertiary .genesis-nav-menu .sub-menu a {
@@ -1469,6 +1469,8 @@ div#mobile-inventory-menu-button {
 
 .nav-secondary .genesis-nav-menu a,
 .nav-tertiary .genesis-nav-menu a {
+    color: #fff;
+
     padding: 10px 16px;
   }
 .nav-secondary.shrink .genesis-nav-menu a,
@@ -2399,14 +2401,14 @@ section#simple-social-icons-3 a {
       padding: 16px 18px;
   }
 
-  .nav-secondary .genesis-nav-menu a,
+/*  .nav-secondary .genesis-nav-menu a,
   .nav-tertiary .genesis-nav-menu a {
       padding: 26px 12px;
-  }
+  }*/
 
   .nav-secondary.shrink .genesis-nav-menu a,
   .nav-tertiary.shrink .genesis-nav-menu a {
-      padding: 16px 12px;
+      padding: 10px 12px;
   }
 
   .site-header {
