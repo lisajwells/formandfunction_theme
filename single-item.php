@@ -19,7 +19,7 @@ function sk_show_featured_image_single_item_pages() {
 	$image_args = array(
 		'size' => 'medium',
 		'attr' => array(
-			'class' => 'alignleft',
+			'class' => 'alignleft single-item-img',
 		),
 	);
 	genesis_image( $image_args );

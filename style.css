@@ -147,6 +147,7 @@ input[type="search"]{
 .nav-secondary:after,
 .nav-tertiary:after,
 .pagination:after,
+.sidebar-primary:after, /*inventory*/
 .site-container:after,
 .site-footer:after,
 .site-header:after,
@@ -392,6 +393,11 @@ img {
 /* ## Gallery
 --------------------------------------------- */
 
+.image-wrapper {
+    border: solid 1px #fff !important;
+}
+
+/* default from theme here
 .gallery {
 	overflow: hidden;
 }
@@ -448,7 +454,7 @@ img {
 .gallery img:hover {
 	border: 1px solid #999;
 }
-
+*/
 /* ## Essential Grid
 --------------------------------------------- */
 .eg-georgebush-container {
@@ -646,13 +652,13 @@ th {
   max-width: 1570px;
 }
 
-.page-id-14 .site-container {
+.page-id-14 .site-container { /*what we do*/
   background-image: url(../form-and-function/images/blob_1_medium_50.jpg), url(../form-and-function/images/blob_2_medium_50.jpg), url(../form-and-function/images/blob_3_medium_50.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left 0 top 0, right 40%, left 0 bottom 40%;
 }
 
-.page-id-35 .site-container {
+.page-id-35 .site-container { /*contact*/
   background-image: url(../form-and-function/images/blob_2_180.jpg), url(../form-and-function/images/blob_3_180.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: left -84px bottom 670px, right 0 top 53px;
@@ -675,10 +681,19 @@ th {
 .content-sidebar-wrap { /*so it scrolls under fixed nav*/
     position: relative;
     z-index: 5;
+    /*overflow: auto;*/
 }
 
 .entry-content {
   padding: 0 224px;
+}
+
+.single-item .entry-content {
+  padding: 0;
+}
+
+.parent-pageid-42 .entry-content { /*gallery pages*/
+  padding: 0;
 }
 
 .featured-widget-area + .site-inner,
@@ -707,27 +722,6 @@ th {
 .archive.genesis-author-pro .content,
 .archive.genesis-pro-portfolio .content {
 	padding: 80px 80px 0;
-}
-
-/* ### Primary Sidebar */
-
-.sidebar-primary {
-	float: left;
-	width: 380px;
-  background: #EFEFEF;
-  color: #000;
-  padding: 40px;
-  margin-bottom: 40px;
-}
-
-.sidebar-content .sidebar-primary {
-	float: left;
-}
-
-.sidebar-primary section.widget {
-  padding: 0;
-  margin-top: 40px;
-  background-color: #efefef;
 }
 
 
@@ -1807,7 +1801,7 @@ div#mobile-inventory-menu-button {
 /* ## Entries
 --------------------------------------------- */
 
-.entry {
+.entry { /*article*/
   position: relative;
   margin: 7% auto;
 }
@@ -2049,6 +2043,54 @@ img.services-number {
     margin-bottom: 16px;
     font-weight: 700;
     font-style: italic;
+}
+
+/* # Inventory Single
+---------------------------------------------------------------------------------------------------- */
+
+.content-sidebar .content {
+    width: 55%;
+    margin-right: 5.4%;
+    max-width: 500px;
+}
+
+.content-sidebar .content-sidebar-wrap {
+    margin: 0 auto;
+    max-width: 916px;
+}
+
+.content-sidebar .single-item-img.alignleft {
+  margin: 0;
+  width: 100% !important;
+}
+
+
+
+/* ### Primary Sidebar */
+
+.sidebar-primary {
+  float: left;
+  width: 40%;
+  background: #EFEFEF;
+  color: #000;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.sidebar-content .sidebar-primary {
+  float: left;
+}
+
+.sidebar-primary section.widget {
+  padding: 0;
+  margin-top: 40px;
+  background-color: #efefef;
+}
+
+.sidebar-primary .textwidget .button {
+    width: auto;
+    text-align: left;
+    display: inline-block;
 }
 
 /* # Contact Page
@@ -3309,7 +3351,8 @@ div.title-area, .header-image .site-title > a {
 
 /* items CPT single pages */
 
-/*.single-item .item-meta {*/ /*move this to .sidebar-primary*/
+/*moved this to .sidebar-primary*/
+/*.single-item .item-meta {*/
 /*	background: #EFEFEF;
 	color: #111;
 	padding: 40px;
