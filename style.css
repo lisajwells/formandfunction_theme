@@ -1833,7 +1833,7 @@ div#mobile-inventory-menu-button {
 
 .entry { /*article*/
   position: relative;
-  margin: 7% auto;
+  margin: 0 auto;
 }
 .content-sidebar .entry { /*single-item page*/
   margin: 0;
