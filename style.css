@@ -1228,8 +1228,8 @@ div .book-featured-text-banner {
 }
 
 .shrink .genesis-nav-menu li a {
-	padding-bottom: 19px;
-	padding-top: 32px;
+    padding-bottom: 15px;
+    padding-top: 27px;
 }
 
 .header-image .shrink .title-area {
@@ -1360,6 +1360,10 @@ div .book-featured-text-banner {
   	-ms-transition:     all .3s ease-out;
   	-o-transition:      all .3s ease-out;
   	transition:         all .3s ease-out;
+}
+
+.shrink .nav-primary {
+  margin-top: 19px;
 }
 
 .nav-primary:hover .genesis-nav-menu a {
