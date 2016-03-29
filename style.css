@@ -887,6 +887,10 @@ th {
 	text-align:center;
 }
 
+.single-item .entry-title {
+    margin-top: 109px;
+}
+
 .entry-title a,
 .sidebar .widget-title a {
 	color: #000;
@@ -1660,6 +1664,7 @@ div#mobile-inventory-menu-button {
   text-align: center;
 }
 
+  .page-id-46 .dark-box-group p, /*inventory main*/
   .page-id-42 .dark-box-group p { /*portfolio main*/
     font-size: 48px;
   }
@@ -2366,6 +2371,7 @@ section#simple-social-icons-3 a {
     padding: 0 80px;
   }
 
+  .page-id-46 .dark-box-group p,
   .page-id-42 .dark-box-group p {
     font-size: 44px;
   }
@@ -2442,7 +2448,8 @@ section#simple-social-icons-3 a {
     padding: 0 180px; /*to accomm consult button */
   }
 
-  /** portfolio main max1200 **/
+  /** portfolio+inventory mains max1200 **/
+  .page-id-46 .dark-box-group p,
   .page-id-42 .dark-box-group p {
     font-size: 36px;
   }
@@ -2650,7 +2657,8 @@ section#simple-social-icons-3 a {
   .dark-box-group p {
       font-size: 32px;
   }
-  /** portfolio main max980 **/
+  /** portfolio+inventory mains max980 **/
+  .page-id-46 .dark-box-group p,
   .page-id-42 .dark-box-group p {
     font-size: 30px;
   }
