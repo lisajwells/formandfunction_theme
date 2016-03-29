@@ -1509,6 +1509,7 @@ div#mobile-inventory-menu-button {
 #home-hero {
     border-bottom: 11px solid #776f93;
     position: relative;
+    margin-bottom: 5%;
 }
 
 #home-hero img {
