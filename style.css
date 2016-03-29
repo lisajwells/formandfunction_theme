@@ -1464,7 +1464,7 @@ div#mobile-inventory-menu-button {
 .nav-secondary.shrink #menu-services-menu,
 .nav-tertiary.shrink #menu-inventory-menu {
   position: fixed;
-  top:60px;
+  top: 54px;
   border-top: 6px solid #fff;
 }
 
@@ -2415,6 +2415,15 @@ section#simple-social-icons-3 a {
   .site-header {
     height: 76px; /*shrink to 60*/
   }
+
+  .nav-secondary #menu-services-menu, .nav-tertiary #menu-inventory-menu {
+    top: 40px;
+  }
+
+  .nav-secondary .genesis-nav-menu a, .nav-tertiary .genesis-nav-menu a {
+    padding: 10px 12px;
+  }
+
   .site-inner {
     margin-top: 70px;
   }
