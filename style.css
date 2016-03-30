@@ -147,6 +147,7 @@ input[type="search"]{
 .nav-secondary:after,
 .nav-tertiary:after,
 .pagination:after,
+.sidebar-primary:after, /*inventory*/
 .site-container:after,
 .site-footer:after,
 .site-header:after,
@@ -230,6 +231,7 @@ li {
 }
 
 b,
+.bold,
 strong {
 	font-weight: 700;
 }
@@ -322,7 +324,10 @@ hr {
 	clear: both;
 	margin: 40px 0;
 }
-
+.clearIt {
+	clear:both;
+	padding-top:40px;
+	}
 
 /* ## Headings
 --------------------------------------------- */
@@ -392,6 +397,11 @@ img {
 /* ## Gallery
 --------------------------------------------- */
 
+.image-wrapper {
+    border: solid 1px #fff !important;
+}
+
+/* default from theme here
 .gallery {
 	overflow: hidden;
 }
@@ -448,7 +458,7 @@ img {
 .gallery img:hover {
 	border: 1px solid #999;
 }
-
+*/
 /* ## Essential Grid
 --------------------------------------------- */
 .eg-georgebush-container {
@@ -646,13 +656,13 @@ th {
   max-width: 1570px;
 }
 
-.page-id-14 .site-container {
+.page-id-14 .site-container { /*what we do*/
   background-image: url(../form-and-function/images/blob_1_medium_50.jpg), url(../form-and-function/images/blob_2_medium_50.jpg), url(../form-and-function/images/blob_3_medium_50.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left 0 top 0, right 40%, left 0 bottom 40%;
 }
 
-.page-id-35 .site-container {
+.page-id-35 .site-container { /*contact*/
   background-image: url(../form-and-function/images/blob_2_180.jpg), url(../form-and-function/images/blob_3_180.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: left -84px bottom 670px, right 0 top 53px;
@@ -677,8 +687,21 @@ th {
     z-index: 5;
 }
 
-.entry-content {
+.entry-content { /*portfolio main needs bigger pics*/
   padding: 0 224px;
+}
+
+.page-id-42 .entry-content, /*inventory page*/
+.page-id-46 .entry-content { /*portfolio page*/
+  padding: 0 124px;
+}
+
+.single-item .entry-content {
+  padding: 0;
+}
+
+.parent-pageid-42 .entry-content { /*gallery pages*/
+  padding: 0;
 }
 
 .featured-widget-area + .site-inner,
@@ -707,27 +730,6 @@ th {
 .archive.genesis-author-pro .content,
 .archive.genesis-pro-portfolio .content {
 	padding: 80px 80px 0;
-}
-
-/* ### Primary Sidebar */
-
-.sidebar-primary {
-	float: left;
-	width: 380px;
-  background: #EFEFEF;
-  color: #000;
-  padding: 40px;
-  margin-bottom: 40px;
-}
-
-.sidebar-content .sidebar-primary {
-	float: left;
-}
-
-.sidebar-primary section.widget {
-  padding: 0;
-  margin-top: 40px;
-  background-color: #efefef;
 }
 
 
@@ -883,10 +885,14 @@ th {
 }
 
 .entry-title {
-	margin-top:-40px;
+  margin-top: 68px;
 	font-size: 60px;
 	font-family: 'La Belle Aurore', cursive;
 	text-align:center;
+}
+
+.single-item .entry-title {
+    margin-top: 109px;
 }
 
 .entry-title a,
@@ -1015,7 +1021,7 @@ img.alignright,
 /* ## Featured Content
 --------------------------------------------- */
 
-.featured-content .entry {
+/*.featured-content .entry {
 	margin-bottom: 20px;
 	padding: 0;
 }
@@ -1066,7 +1072,7 @@ img.alignright,
 .content .widget-full .featuredpage .entry-title a:hover {
 	color: #ccc;
 }
-
+*/
 
 /* # Plugins
 ---------------------------------------------------------------------------------------------------- */
@@ -1159,13 +1165,9 @@ div .book-featured-text-banner {
 	z-index: 498;
 }
 
-/*.home .site-header {
-  background-color: #fff;
-}
-*/
 .site-header .wrap {
     position: relative;
-    top: -15%;
+    top: -12px;
     height: 68px; /*so it doesn't interfere with secondary nav*/
 }
 
@@ -1234,8 +1236,8 @@ div .book-featured-text-banner {
 }
 
 .shrink .genesis-nav-menu li a {
-	padding-bottom: 19px;
-	padding-top: 32px;
+    padding-bottom: 15px;
+    padding-top: 27px;
 }
 
 .header-image .shrink .title-area {
@@ -1359,12 +1361,17 @@ div .book-featured-text-banner {
 
 .nav-primary {
 	float: right;
+  margin-top: 12px;
 	text-align: right;
   	-webkit-transition: all .3s ease-out;
   	-moz-transition:    all .3s ease-out;
   	-ms-transition:     all .3s ease-out;
   	-o-transition:      all .3s ease-out;
   	transition:         all .3s ease-out;
+}
+
+.shrink .nav-primary {
+  margin-top: 19px;
 }
 
 .nav-primary:hover .genesis-nav-menu a {
@@ -1421,19 +1428,19 @@ div#mobile-inventory-menu-button {
 
 .nav-secondary + .content-sidebar-wrap,
 .nav-tertiary + .content-sidebar-wrap {
-	margin-top: 100px;
+	margin-top: 32px;
 }
 
 .nav-secondary.shrink + .content-sidebar-wrap,
 .nav-tertiary.shrink + .content-sidebar-wrap {
-	margin-top: 70px;
+	/*margin-top: 70px;*/
 }
 
-.nav-secondary .genesis-nav-menu a,
+/*.nav-secondary .genesis-nav-menu a,
 .nav-tertiary .genesis-nav-menu a {
   color: #fff;
   padding: 26px 16px;
-}
+}*/
 
 .nav-secondary .genesis-nav-menu .sub-menu a,
 .nav-tertiary .genesis-nav-menu .sub-menu a {
@@ -1465,12 +1472,14 @@ div#mobile-inventory-menu-button {
 .nav-secondary.shrink #menu-services-menu,
 .nav-tertiary.shrink #menu-inventory-menu {
   position: fixed;
-  top:60px;
+  top: 54px;
   border-top: 6px solid #fff;
 }
 
 .nav-secondary .genesis-nav-menu a,
 .nav-tertiary .genesis-nav-menu a {
+    color: #fff;
+
     padding: 10px 16px;
   }
 .nav-secondary.shrink .genesis-nav-menu a,
@@ -1508,6 +1517,7 @@ div#mobile-inventory-menu-button {
 #home-hero {
     border-bottom: 11px solid #776f93;
     position: relative;
+    margin-bottom: 5%;
 }
 
 #home-hero img {
@@ -1658,6 +1668,11 @@ div#mobile-inventory-menu-button {
   text-align: center;
 }
 
+  .page-id-46 .dark-box-group p, /*inventory main*/
+  .page-id-42 .dark-box-group p { /*portfolio main*/
+    font-size: 48px;
+  }
+
 .dark-box-group h1 {
   margin: 10% 0 0 0;
 }
@@ -1689,11 +1704,29 @@ div#mobile-inventory-menu-button {
   letter-spacing:1px;
 }
 
-/* Two-column content */
-
-.two-col-img-div {
+.two-col-img-div { /*on praise, no longer dark*/
   position: relative;
   margin-top: 6px;
+}
+
+.dark-box-img-div { /*inventory and portfolio main*/
+  float: left;
+  margin: 1.66%;
+  position: relative;
+  width: 30%;
+}
+
+/*inventory and portfolio main to center 2's*/
+.page-id-42 .dark-box-img-div:nth-of-type(4) {
+    margin-left: 18.34%;
+}
+
+.dark-box-content-wrap p {
+  margin: 0;
+}
+
+#home-cta-imgs .dark-box-content-wrap p {
+    margin: 0 0 28px;
 }
 
 /* ## Flexible Widgets
@@ -1807,9 +1840,9 @@ div#mobile-inventory-menu-button {
 /* ## Entries
 --------------------------------------------- */
 
-.entry {
+.entry { /*article*/
   position: relative;
-  margin: 7% auto;
+  margin: 0 auto 40px;
 }
 .content-sidebar .entry { /*single-item page*/
   margin: 0;
@@ -1863,10 +1896,12 @@ div#mobile-inventory-menu-button {
 p.entry-meta {
 	font-size: 16px;
 	margin-bottom: 0;
+	text-align:center;
 }
 
 .entry-header .entry-meta {
 	margin-bottom: 24px;
+	text-align:center;
 }
 
 .entry-categories,
@@ -2049,6 +2084,64 @@ img.services-number {
     margin-bottom: 16px;
     font-weight: 700;
     font-style: italic;
+}
+
+/* # Inventory Single
+---------------------------------------------------------------------------------------------------- */
+
+.content-sidebar .content {
+    width: 55%;
+    margin-right: 5%;
+    max-width: 500px;
+}
+
+.content-sidebar .content-sidebar-wrap {
+    margin: 0 auto;
+    max-width: 916px;
+}
+
+.prev-next-post-links {
+    margin: 0 auto 40px;
+    max-width: 916px;
+
+}
+
+.content-sidebar .single-item-img.alignleft {
+  margin: 0;
+  width: 100% !important;
+}
+
+
+
+/* ### Primary Sidebar */
+
+.sidebar-primary {
+  float: left;
+  width: 40%;
+  background: #EFEFEF;
+  color: #000;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.sidebar-content .sidebar-primary {
+  float: left;
+}
+
+.sidebar-primary section.widget {
+  padding: 0;
+  margin-top: 40px;
+  background-color: #efefef;
+}
+
+.sidebar-primary .textwidget .button {
+    width: auto;
+    text-align: left;
+    display: inline-block;
+}
+
+.sidebar-primary .textwidget .button.call-button {
+  display: none;
 }
 
 /* # Contact Page
@@ -2278,6 +2371,16 @@ section#simple-social-icons-3 a {
     padding: 0 180px;
   }
 
+  .page-id-46 .entry-content,
+  .page-id-42 .entry-content {
+    padding: 0 80px;
+  }
+
+  .page-id-46 .dark-box-group p,
+  .page-id-42 .dark-box-group p {
+    font-size: 44px;
+  }
+
 	.content {
 		width: 840px;
 	}
@@ -2311,19 +2414,28 @@ section#simple-social-icons-3 a {
       padding: 16px 18px;
   }
 
-  .nav-secondary .genesis-nav-menu a,
+/*  .nav-secondary .genesis-nav-menu a,
   .nav-tertiary .genesis-nav-menu a {
       padding: 26px 12px;
-  }
+  }*/
 
   .nav-secondary.shrink .genesis-nav-menu a,
   .nav-tertiary.shrink .genesis-nav-menu a {
-      padding: 16px 12px;
+      padding: 10px 12px;
   }
 
   .site-header {
     height: 76px; /*shrink to 60*/
   }
+
+  .nav-secondary #menu-services-menu, .nav-tertiary #menu-inventory-menu {
+    top: 40px;
+  }
+
+  .nav-secondary .genesis-nav-menu a, .nav-tertiary .genesis-nav-menu a {
+    padding: 10px 12px;
+  }
+
   .site-inner {
     margin-top: 70px;
   }
@@ -2332,8 +2444,19 @@ section#simple-social-icons-3 a {
     padding: 0 100px;
   }
 
+  .page-id-46 .entry-content,
+  .page-id-42 .entry-content {
+    padding: 0 60px;
+  }
+
   .page-id-14 .entry-content {
     padding: 0 180px; /*to accomm consult button */
+  }
+
+  /** portfolio+inventory mains max1200 **/
+  .page-id-46 .dark-box-group p,
+  .page-id-42 .dark-box-group p {
+    font-size: 36px;
   }
 
   .page-id-14 blockquote.block-boxed {
@@ -2515,10 +2638,10 @@ section#simple-social-icons-3 a {
 		background-position: center !important;
 	}
 
-  .entry {
+/*  .entry {
       margin: 0% auto;
   }
-
+*/
   #hero-dark-box-group {
     padding: 30px;
     width: 80%;
@@ -2539,6 +2662,12 @@ section#simple-social-icons-3 a {
   .dark-box-group p {
       font-size: 32px;
   }
+  /** portfolio+inventory mains max980 **/
+  .page-id-46 .dark-box-group p,
+  .page-id-42 .dark-box-group p {
+    font-size: 30px;
+  }
+
 
   #home-cta-imgs a.button {
     font-size: 16px;
@@ -2622,6 +2751,28 @@ section#simple-social-icons-3 a {
 
   /**/
 
+  /** single-item max980 **/
+
+  .content-sidebar .content {
+      float: none;
+      margin: 0 auto;
+      max-width: 500px;
+      width: 100%;
+  }
+
+  .prev-next-post-links {
+    max-width: 500px;
+  }
+
+  .sidebar-primary {
+    float: none;
+    margin: 0 auto 40px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  /**/
+
   .footer-widgets {
       font-size: 15px;
   }
@@ -2686,8 +2837,12 @@ section#simple-social-icons-3 a {
 		padding: 40px;
 	}
 
-  .entry {
+/*  .entry {
     padding: 40px 0;
+  }*/
+
+  .content-sidebar .entry { /*single-item*/
+    padding: 0;
   }
 
   .page-id-14 .entry-content,
@@ -3041,6 +3196,20 @@ div#mobile-inventory-menu-button,
     top: 46px;
   }
 
+  .dark-box-img-div {
+    margin: 2%;
+    width: 46%;
+  }
+
+  /*reset*/
+  .page-id-42 .dark-box-img-div:nth-of-type(10) {
+    margin: 2%;
+  }
+
+  .page-id-42 .dark-box-img-div:nth-of-type(11) {
+    margin-left: 27%;
+  }
+
   .contact-left {
   width: 100%;
   }
@@ -3128,14 +3297,18 @@ div#mobile-inventory-menu-button,
     .three-top-img-div:last-of-type {
     display: none;
   }
-.three-top-img-div {
-    width: 100%;
-    /* max-width: 338px; */
-    float: none;
-    margin: 0 auto;
-}
+  .three-top-img-div {
+      width: 100%;
+      /* max-width: 338px; */
+      float: none;
+      margin: 0 auto;
+  }
 
-
+  .page-id-46 .entry-content,
+  .page-id-42 .entry-content,
+  .entry-content {
+    padding: 0 20px;
+  }
 
 }
 
@@ -3182,6 +3355,22 @@ div#mobile-inventory-menu-button,
   #hero-dark-box-group h1 {
     font-size: 16px;
   }
+
+  .dark-box-img-div {
+    margin: 4% 0;
+    width: 100%;
+  }
+
+  /*reset*/
+  .page-id-42 .dark-box-img-div:nth-of-type(10) {
+    margin: 4% 0;
+  }
+
+  .page-id-42 .dark-box-img-div:nth-of-type(11) {
+    margin: 4% 0;
+  }
+
+
 
   .contact-overline {
       margin: 37px 0 0 0;
@@ -3251,6 +3440,13 @@ div#mobile-inventory-menu-button,
     font-size: 20px;
   }
 
+  /*single-item*/
+
+  .sidebar-primary .textwidget .button.call-button {
+    display: inline-block;
+  }
+
+
   /**/
 
 }
@@ -3309,7 +3505,8 @@ div.title-area, .header-image .site-title > a {
 
 /* items CPT single pages */
 
-/*.single-item .item-meta {*/ /*move this to .sidebar-primary*/
+/*moved this to .sidebar-primary*/
+/*.single-item .item-meta {*/
 /*	background: #EFEFEF;
 	color: #111;
 	padding: 40px;
