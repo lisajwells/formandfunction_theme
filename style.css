@@ -1657,6 +1657,7 @@ div#mobile-inventory-menu-button {
     width: 32.666666666%;
     float: left;
     margin-right: 1%;
+    margin-bottom: 40px;
     position: relative;
 }
 
@@ -2054,7 +2055,7 @@ p.entry-meta {
     padding: 8px 10px;
     position: fixed;
     right: 0;
-    top: 32rem;
+    top: 512px;
     width: 160px;
     z-index: 50;
 }
@@ -2440,7 +2441,7 @@ section#simple-social-icons-3 a {
   }
 
   #schedule-consult-button {
-      top: 30rem;
+      top: 480px;
   }
 
 }
@@ -2508,7 +2509,10 @@ section#simple-social-icons-3 a {
     padding: 0 60px;
   }
 
-  .page-id-14 .entry-content {
+  .page-id-14 .entry-content,
+  .page-id-58 .entry-content,
+  .page-id-60 .entry-content,
+  .page-id-62 .entry-content {
     padding: 0 180px; /*to accomm consult button */
   }
 
@@ -2523,7 +2527,7 @@ section#simple-social-icons-3 a {
   }
 
   #schedule-consult-button {
-      top: 25rem;
+      top: 400px;
   }
 
   #hero-dark-box-group {
@@ -2911,6 +2915,9 @@ section#simple-social-icons-3 a {
   }
 
   .page-id-14 .entry-content,
+  .page-id-58 .entry-content,
+  .page-id-60 .entry-content,
+  .page-id-62 .entry-content,
   .entry-content {
     padding: 0 40px;
   }
