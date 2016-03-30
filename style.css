@@ -1855,9 +1855,12 @@ div#mobile-inventory-menu-button {
 }
 
 .blog .content-sidebar,
-.single-post .content-sidebar,
-.content-sidebar .entry { /*single-item page*/
+.single-post .content-sidebar {
   margin: 0;
+}
+
+.content-sidebar .entry { /*single-item page*/
+  margin: 0 0 40px;
 }
 
 .narrow {
