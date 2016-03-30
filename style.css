@@ -3353,6 +3353,13 @@ div#mobile-inventory-menu-button,
     margin-left: 27%;
   }
 
+  .blog.content-sidebar img.alignleft,
+  .archive.category img.alignleft,
+  .archive.category img.alignleft {
+    margin: 0 0 24px 0;
+    width: 100%;
+  }
+
   .contact-left {
   width: 100%;
   }
