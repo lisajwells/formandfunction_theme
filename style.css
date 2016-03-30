@@ -890,9 +890,14 @@ th {
 
 .entry-title {
   margin-top: 68px;
-	font-size: 60px;
-	font-family: 'La Belle Aurore', cursive;
-	text-align:center;
+  font-size: 60px;
+  font-family: 'La Belle Aurore', cursive;
+  text-align:center;
+}
+
+.blog aside,
+.single aside {
+  margin-top: 68px;
 }
 
 .single-item .entry-title {
@@ -3536,7 +3541,8 @@ div.title-area, .header-image .site-title > a {
 	margin-bottom: 40px;
 }*/
 
-.single-item .entry-title, .post-type-archive-items .entry-title {
+.single-item .entry-title,
+.post-type-archive-items .entry-title {
 	margin-bottom: 30px;
 }
 
