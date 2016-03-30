@@ -3285,11 +3285,11 @@ div#mobile-inventory-menu-button,
   }
 
   /*reset*/
-  .page-id-42 .dark-box-img-div:nth-of-type(10) {
+  .page-id-42 .dark-box-img-div:nth-of-type(4) {
     margin: 2%;
   }
 
-  .page-id-42 .dark-box-img-div:nth-of-type(11) {
+  .page-id-42 .dark-box-img-div:nth-of-type(5) {
     margin-left: 27%;
   }
 
@@ -3447,15 +3447,9 @@ div#mobile-inventory-menu-button,
   }
 
   /*reset*/
-  .page-id-42 .dark-box-img-div:nth-of-type(10) {
+  .page-id-42 .dark-box-img-div:nth-of-type(5) {
     margin: 4% 0;
   }
-
-  .page-id-42 .dark-box-img-div:nth-of-type(11) {
-    margin: 4% 0;
-  }
-
-
 
   .contact-overline {
       margin: 37px 0 0 0;
