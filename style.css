@@ -2141,27 +2141,34 @@ img.services-number {
 /* # Inventory Single
 ---------------------------------------------------------------------------------------------------- */
 
-.blog .content,
-.archive.category .content,
-.single-post .content,
 .content-sidebar .content {
     width: 55%;
     margin-right: 5%;
     max-width: 500px;
 }
 
-.blog .content-sidebar-wrap,
-.archive.category .content-sidebar-wrap,
-.single-post .content-sidebar-wrap,
+.blog .content,
+.archive.category .content,
+.single-post .content {
+    width: 55%;
+    margin-right: 5%;
+}
+
 .content-sidebar .content-sidebar-wrap {
     margin: 0 auto;
     max-width: 916px;
 }
 
+.blog .content-sidebar-wrap,
+.archive.category .content-sidebar-wrap,
+.single-post .content-sidebar-wrap {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 .prev-next-post-links {
     margin: 0 auto 40px;
     max-width: 916px;
-
 }
 
 .blog .single-item-img.alignleft,
