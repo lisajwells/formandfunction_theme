@@ -2539,13 +2539,13 @@ section#simple-social-icons-3 a {
   .blog.content-sidebar .content,
   .archive.category .content,
   .single-post .content {
-    width: 68.333%;
+    width: 60%;
   }
 
   .blog aside,
   .archive.category aside,
   .single-post aside {
-    width: 26.666%;
+    width: 35%;
   }
 
   .blog .entry-content,
@@ -2786,6 +2786,21 @@ section#simple-social-icons-3 a {
     font-size: 30px;
   }
 
+  .blog.content-sidebar .content,
+  .archive.category .content,
+  .single-post .content {
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .blog aside,
+  .archive.category aside,
+  .single-post aside {
+    width: auto;
+    max-width: 100%;
+    margin: 40px;
+    float: none;
+  }
 
   #home-cta-imgs a.button {
     font-size: 16px;
