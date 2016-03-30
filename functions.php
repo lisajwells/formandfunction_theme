@@ -316,7 +316,7 @@ add_action( 'get_header', 'child_sidebar_logic' );
  * @link http://dreamwhisperdesigns.com/?p=1034
  */
 function child_sidebar_logic() {
-	if ( is_page_template( 'home.php' ) || is_archive() || is_single() ) { /*not working for home*/
+	if ( is_page_template( 'home.php' ) || is_archive() || is_singular('post') ) { /*not working for home*/
 		//* Use content-sidebar layout on these pages
 		add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_content_sidebar' );
 
