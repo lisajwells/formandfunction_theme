@@ -2055,9 +2055,13 @@ p.entry-meta {
     padding: 8px 10px;
     position: fixed;
     right: 0;
-    top: 512px;
+    top: 212px;
     width: 160px;
     z-index: 50;
+}
+
+.page-id-14 #schedule-consult-button {
+    top: 512px;
 }
 
 /* collapse the button when scrolled down */
@@ -2441,6 +2445,9 @@ section#simple-social-icons-3 a {
   }
 
   #schedule-consult-button {
+      top: 180px;
+  }
+  .page-id-14 #schedule-consult-button {
       top: 480px;
   }
 
@@ -2527,6 +2534,9 @@ section#simple-social-icons-3 a {
   }
 
   #schedule-consult-button {
+      top: 200px;
+  }
+  .page-id-14 #schedule-consult-button {
       top: 400px;
   }
 
