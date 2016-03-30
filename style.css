@@ -1437,6 +1437,12 @@ div#mobile-inventory-menu-button {
       transition:         all .3s ease-out;
 }
 
+/*lower menus 32px when admin bar present*/
+.admin-bar .nav-secondary #menu-services-menu,
+.admin-bar .nav-tertiary #menu-inventory-menu {
+    top: 83px;
+}
+
 .nav-secondary .wrap,
 .nav-tertiary .wrap {
 	background-color: rgba(255, 255, 255, 0.3);
@@ -1492,6 +1498,12 @@ div#mobile-inventory-menu-button {
   border-top: 6px solid #fff;
 }
 
+/*lower menus 32px when admin bar present*/
+.admin-bar .nav-secondary.shrink #menu-services-menu,
+.admin-bar .nav-tertiary.shrink #menu-inventory-menu {
+    top: 86px;
+}
+
 .nav-secondary .genesis-nav-menu a,
 .nav-tertiary .genesis-nav-menu a {
     color: #fff;
@@ -1503,7 +1515,7 @@ div#mobile-inventory-menu-button {
     padding: 10px 16px;
   }
 
-.admin-bar .nav-secondary.fixed,
+.admin-bar .nav-secondary.fixed, /*do we use .fixed?*/
 .admin-bar .nav-tertiary.fixed {
 	top: 102px;
 }
@@ -2466,11 +2478,18 @@ section#simple-social-icons-3 a {
     height: 76px; /*shrink to 60*/
   }
 
-  .nav-secondary #menu-services-menu, .nav-tertiary #menu-inventory-menu {
+  .nav-secondary #menu-services-menu,
+  .nav-tertiary #menu-inventory-menu {
     top: 40px;
   }
 
-  .nav-secondary .genesis-nav-menu a, .nav-tertiary .genesis-nav-menu a {
+  .admin-bar .nav-secondary #menu-services-menu,
+  .admin-bar .nav-tertiary #menu-inventory-menu {
+    top: 72px;
+  }
+
+  .nav-secondary .genesis-nav-menu a,
+  .nav-tertiary .genesis-nav-menu a {
     padding: 10px 12px;
   }
 
@@ -3083,6 +3102,13 @@ div#mobile-inventory-menu-button,
     z-index: 10;
 }
 
+.admin-bar div#mobile-menu-button,
+.admin-bar .shrink div#mobile-menu-button,
+.admin-bar div#mobile-inventory-menu-button,
+.admin-bar .shrink div#mobile-inventory-menu-button {
+    top: 102px;
+}
+
 .nav-secondary.shrink #menu-services-menu,
 .nav-tertiary.shrink #menu-inventory-menu,
 .nav-secondary #menu-services-menu,
@@ -3093,6 +3119,12 @@ div#mobile-inventory-menu-button,
     border-top: none;
     width: 160px;
     padding-right: 0;
+}
+.admin-bar .nav-secondary.shrink #menu-services-menu,
+.admin-bar .nav-tertiary.shrink #menu-inventory-menu,
+.admin-bar .nav-secondary #menu-services-menu,
+.admin-bar .nav-tertiary #menu-inventory-menu {
+    top: 174px;
 }
 
 .nav-secondary,
@@ -3271,6 +3303,13 @@ div#mobile-inventory-menu-button,
   .nav-secondary #menu-services-menu,
   .nav-tertiary #menu-inventory-menu {
     top: 110px;
+  }
+
+  .admin-bar .nav-secondary.shrink #menu-services-menu,
+  .admin-bar .nav-tertiary.shrink #menu-inventory-menu,
+  .admin-bar .nav-secondary #menu-services-menu,
+  .admin-bar .nav-tertiary #menu-inventory-menu {
+    top: 142px;
   }
 
 	.archive-pagination li a {
