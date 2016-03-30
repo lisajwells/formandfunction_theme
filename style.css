@@ -1869,13 +1869,13 @@ div#mobile-inventory-menu-button {
 
 }
 
-.entry:after {
+/*.entry:after {
 	content: '';
 	border-bottom: 1px solid #000;
 	bottom: 0;
 	position: absolute;
 	width: 40px;
-}
+}*/
 
 .content .entry:last-of-type:after {
 	display: none;
