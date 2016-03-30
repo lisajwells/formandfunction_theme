@@ -705,6 +705,7 @@ th {
 }
 
 .blog .entry-content,
+.archive.category .entry-content,
 .single-post .entry-content,
 .single-item .entry-content {
   padding: 0;
@@ -731,6 +732,7 @@ th {
 
 .content-sidebar .content,
 .blog .content,
+.archive.category .content,
 .single-post .content {
 	float: left;
 }
@@ -904,6 +906,7 @@ th {
 }
 
 .blog aside,
+.archive.category aside,
 .single-post aside {
   margin-top: 68px;
 }
@@ -1876,6 +1879,7 @@ div#mobile-inventory-menu-button {
 }
 
 .blog .content-sidebar,
+.archive.category .content-sidebar,
 .single-post .content-sidebar {
   margin: 0;
 }
@@ -2138,6 +2142,7 @@ img.services-number {
 ---------------------------------------------------------------------------------------------------- */
 
 .blog .content,
+.archive.category .content,
 .single-post .content,
 .content-sidebar .content {
     width: 55%;
@@ -2146,6 +2151,7 @@ img.services-number {
 }
 
 .blog .content-sidebar-wrap,
+.archive.category .content-sidebar-wrap,
 .single-post .content-sidebar-wrap,
 .content-sidebar .content-sidebar-wrap {
     margin: 0 auto;
@@ -2159,6 +2165,7 @@ img.services-number {
 }
 
 .blog .single-item-img.alignleft,
+.archive.category .single-item-img.alignleft,
 .single-post .single-item-img.alignleft,
 .content-sidebar .single-item-img.alignleft {
   margin: 0;
@@ -2426,6 +2433,7 @@ section#simple-social-icons-3 a {
   }
 
   .blog .entry-content,
+  .archive.category .entry-content,
   .single-post .entry-content,
   .page-id-46 .entry-content,
   .page-id-42 .entry-content {
@@ -2511,6 +2519,7 @@ section#simple-social-icons-3 a {
   }
 
   .blog .entry-content,
+  .archive.category .entry-content,
   .single-post .entry-content,
   .page-id-46 .entry-content,
   .page-id-42 .entry-content {
@@ -2830,6 +2839,7 @@ section#simple-social-icons-3 a {
   /** single-item max980 **/
 
   .blog .content,
+  .archive.category .content,
   .single-post .content,
   .content-sidebar .content {
       float: none;
@@ -2920,6 +2930,7 @@ section#simple-social-icons-3 a {
   }*/
 
   .blog .entry,
+  .archive.category .entry,
   .single-post .entry,
   .content-sidebar .entry { /*single-item*/
     padding: 0;
@@ -3389,6 +3400,7 @@ div#mobile-inventory-menu-button,
   }
 
   .blog .entry-content,
+  .archive.category .entry-content,
   .single-post .entry-content,
   .page-id-46 .entry-content,
   .page-id-42 .entry-content,
