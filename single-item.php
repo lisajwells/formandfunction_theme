@@ -41,8 +41,8 @@ add_action( 'genesis_before_sidebar_widget_area', 'sk_display_custom_fields' );
 add_action('genesis_after_content_sidebar_wrap', 'sk_custom_post_nav');
 function sk_custom_post_nav() {
 	echo '<div class="prev-next-post-links">';
-		previous_post_link('<div class="previous-post-link">&laquo; %link</div>', '<strong>%title</strong>' );
-		next_post_link('<div class="next-post-link">%link &raquo;</div>', '<strong>%title</strong>' );
+		previous_post_link('<div class="previous-post-link">&laquo; %link</div>', '<strong>%title</strong>', TRUE, ' ', 'group' );
+		next_post_link('<div class="next-post-link">%link &raquo;</div>', '<strong>%title</strong>', TRUE, ' ', 'group'  );
 	echo '</div>';
 }
 
