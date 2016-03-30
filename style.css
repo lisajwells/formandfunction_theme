@@ -697,7 +697,7 @@ th {
 }
 
 .blog .entry-content,
-.single .entry-content,
+.single-post .entry-content,
 .single-item .entry-content {
   padding: 0;
 }
@@ -723,7 +723,7 @@ th {
 
 .content-sidebar .content,
 .blog .content,
-.single .content {
+.single-post .content {
 	float: left;
 }
 
@@ -896,7 +896,7 @@ th {
 }
 
 .blog aside,
-.single aside {
+.single-post aside {
   margin-top: 68px;
 }
 
@@ -1855,7 +1855,7 @@ div#mobile-inventory-menu-button {
 }
 
 .blog .content-sidebar,
-.single .content-sidebar,
+.single-post .content-sidebar,
 .content-sidebar .entry { /*single-item page*/
   margin: 0;
 }
@@ -2102,7 +2102,7 @@ img.services-number {
 ---------------------------------------------------------------------------------------------------- */
 
 .blog .content,
-.single .content,
+.single-post .content,
 .content-sidebar .content {
     width: 55%;
     margin-right: 5%;
@@ -2110,7 +2110,7 @@ img.services-number {
 }
 
 .blog .content-sidebar-wrap,
-.single .content-sidebar-wrap,
+.single-post .content-sidebar-wrap,
 .content-sidebar .content-sidebar-wrap {
     margin: 0 auto;
     max-width: 916px;
@@ -2123,7 +2123,7 @@ img.services-number {
 }
 
 .blog .single-item-img.alignleft,
-.single .single-item-img.alignleft,
+.single-post .single-item-img.alignleft,
 .content-sidebar .single-item-img.alignleft {
   margin: 0;
   width: 100% !important;
@@ -2390,7 +2390,7 @@ section#simple-social-icons-3 a {
   }
 
   .blog .entry-content,
-  .single .entry-content,
+  .single-post .entry-content,
   .page-id-46 .entry-content,
   .page-id-42 .entry-content {
     padding: 0 80px;
@@ -2465,7 +2465,7 @@ section#simple-social-icons-3 a {
   }
 
   .blog .entry-content,
-  .single .entry-content,
+  .single-post .entry-content,
   .page-id-46 .entry-content,
   .page-id-42 .entry-content {
     padding: 0 60px;
@@ -2776,7 +2776,7 @@ section#simple-social-icons-3 a {
   /** single-item max980 **/
 
   .blog .content,
-  .single .content,
+  .single-post .content,
   .content-sidebar .content {
       float: none;
       margin: 0 auto;
@@ -2866,7 +2866,7 @@ section#simple-social-icons-3 a {
   }*/
 
   .blog .entry,
-  .single .entry,
+  .single-post .entry,
   .content-sidebar .entry { /*single-item*/
     padding: 0;
   }
@@ -3331,7 +3331,7 @@ div#mobile-inventory-menu-button,
   }
 
   .blog .entry-content,
-  .single .entry-content,
+  .single-post .entry-content,
   .page-id-46 .entry-content,
   .page-id-42 .entry-content,
   .entry-content {
