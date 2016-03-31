@@ -2101,6 +2101,11 @@ img.services-number {
   display: table;
 }
 
+#comment {
+  border: 1px solid #000;
+  margin-top: 6px;
+}
+
 /* see Primary Sidebar below for blog sidebar */
 
 /* # Inventory Single
