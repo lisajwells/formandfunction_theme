@@ -2111,15 +2111,7 @@ img.services-number {
   width: 320px;
 }
 
-section#text-10 { /* ten ways box */
-    margin: 0;
-    text-align: center;
-    padding: 16px;
-}
-
-section#text-10 p {
-    text-transform: none;
-}
+/* see Primary Sidebar below for blog sidebar */
 
 /* # Inventory Single
 ---------------------------------------------------------------------------------------------------- */
@@ -2193,6 +2185,19 @@ section#text-10 p {
 .sidebar-primary .textwidget .button.call-button {
   display: none;
 }
+
+/* BLOG */
+section#text-10 { /* ten ways box */
+    margin: 0;
+    text-align: center;
+    padding: 16px;
+}
+
+section#text-10 p {
+    text-transform: none;
+}
+
+
 
 /* # Contact Page
 ---------------------------------------------------------------------------------------------------- */
