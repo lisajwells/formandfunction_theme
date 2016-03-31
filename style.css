@@ -2223,6 +2223,12 @@ section#text-11 img {
     margin: 0;
 }
 
+.blog .sidebar li a,
+.archive.category .sidebar li a,
+.single-post .sidebar li a {
+    line-height: 2;
+}
+
 /* # Contact Page
 ---------------------------------------------------------------------------------------------------- */
 
