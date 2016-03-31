@@ -1871,14 +1871,6 @@ div#mobile-inventory-menu-button {
   margin: 0 auto 40px;
 }
 
-.blog aside,
-.archive.category aside,
-.single-post aside {
-  margin-top: 68px;
-  width: 320px;
-  margin-left: 5%;
-}
-
 .content-sidebar .entry { /*single-item page*/
   margin: 0 0 40px;
 }
@@ -2108,6 +2100,18 @@ img.services-number {
   width: auto;
   display: table;
 }
+
+.blog aside,
+.archive.category aside,
+.single-post aside {
+  background-color: #fff;
+  margin-left: 5%;
+  margin-top: 68px;
+  padding: 0;
+  width: 320px;
+}
+
+
 
 /* # Inventory Single
 ---------------------------------------------------------------------------------------------------- */
