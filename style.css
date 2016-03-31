@@ -2111,7 +2111,15 @@ img.services-number {
   width: 320px;
 }
 
+section#text-10 { /* ten ways box */
+    margin: 0;
+    text-align: center;
+    padding: 16px;
+}
 
+section#text-10 p {
+    text-transform: none;
+}
 
 /* # Inventory Single
 ---------------------------------------------------------------------------------------------------- */
@@ -3292,7 +3300,7 @@ div#mobile-inventory-menu-button,
   /* 800 */
 
   .page-id-35 .site-container {
-    background-image: url(../form-and-function/images/blob_3_180.jpg);
+    background-image: url(../wp-content/themes/form-and-function/images/blob_3_180.jpg);
     background-repeat: no-repeat;
     background-position: right 0 top 53px;
   }
