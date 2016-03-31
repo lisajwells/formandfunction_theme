@@ -2116,7 +2116,7 @@ img.services-number {
 .archive.category .content,
 .single-post .content {
     width: auto;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     max-width: 820px;
 }
 
