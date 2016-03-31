@@ -2101,16 +2101,6 @@ img.services-number {
   display: table;
 }
 
-.blog aside,
-.archive.category aside,
-.single-post aside {
-  background-color: #fff;
-  margin-left: 5%;
-  margin-top: 68px;
-  padding: 0;
-  width: 320px;
-}
-
 /* see Primary Sidebar below for blog sidebar */
 
 /* # Inventory Single
@@ -2187,6 +2177,26 @@ img.services-number {
 }
 
 /* BLOG */
+
+.blog aside,
+.archive.category aside,
+.single-post aside {
+  background-color: #fff;
+  margin-left: 5%;
+  margin-top: 68px;
+  padding: 0;
+  width: 320px;
+}
+
+.blog .sidebar-primary section.widget,
+.archive.category .sidebar-primary section.widget,
+.single-post .sidebar-primary section.widget {
+    border: 1px solid #efefef;
+    padding:22px;
+    margin-top: 40px;
+    background-color: #fff;
+}
+
 section#text-10 { /* ten ways box */
     margin: 0;
     text-align: center;
