@@ -2403,6 +2403,19 @@ section#simple-social-icons-3 a {
 ---------------------------------------------------------------------------------------------------- */
 
 
+/* # 1400
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1400px) {
+  .blog .content-sidebar-wrap, .archive.category .content-sidebar-wrap, .single-post .content-sidebar-wrap {
+      max-width: 1000px;
+  }
+  .blog.content-sidebar .content, .archive.category .content, .single-post .content {
+      max-width: 620px;
+  }
+}
+
+
 /* # 1320
 ---------------------------------------------------------------------------------------------------- */
 
