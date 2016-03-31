@@ -2039,7 +2039,7 @@ p.entry-meta {
     padding: 8px 10px;
     position: fixed;
     right: 0;
-    top: 212px;
+    top: 133px;
     width: 160px;
     z-index: 50;
 }
@@ -2500,9 +2500,6 @@ section#simple-social-icons-3 a {
     font-size: 54px;
   }
 
-  #schedule-consult-button {
-      top: 180px;
-  }
   .page-id-14 #schedule-consult-button {
       top: 480px;
   }
@@ -2612,7 +2609,7 @@ section#simple-social-icons-3 a {
   }
 
   #schedule-consult-button {
-      top: 200px;
+      top: 103px;
   }
   .page-id-14 #schedule-consult-button {
       top: 400px;
