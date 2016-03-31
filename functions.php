@@ -27,6 +27,11 @@ function author_enqueue_scripts_styles() {
 	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Lato:300,300italic,700,700italic|La+Belle+Aurore', array(), CHILD_THEME_VERSION );
 }
 
+//* Modify the length of post excerpts
+add_filter( 'excerpt_length', 'sp_excerpt_length' );
+function sp_excerpt_length( $length ) {
+return 80; // pull first 80 words
+}
 //* Add new image sizes
 add_image_size( 'featured-content', 800, 800, TRUE );
 

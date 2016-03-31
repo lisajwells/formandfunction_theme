@@ -467,6 +467,7 @@ img {
 .eg-georgebush-container {
     background-color: #9B9B2F !important;
 }
+
 /* ## Forms
 --------------------------------------------- */
 
@@ -836,8 +837,6 @@ th {
 	padding: 20px 30px;
 }
 
-
-
 .archive-description,
 .author-box {
 	background-color: #f9f9f9;
@@ -903,14 +902,6 @@ th {
   font-size: 60px;
   font-family: 'La Belle Aurore', cursive;
   text-align:center;
-}
-
-.blog aside,
-.archive.category aside,
-.single-post aside {
-  margin-top: 68px;
-  width: 320px;
-  margin-left: 5%;
 }
 
 .single-item .entry-title {
@@ -1880,6 +1871,14 @@ div#mobile-inventory-menu-button {
   margin: 0 auto 40px;
 }
 
+.blog aside,
+.archive.category aside,
+.single-post aside {
+  margin-top: 68px;
+  width: 320px;
+  margin-left: 5%;
+}
+
 .blog .content-sidebar,
 .archive.category .content-sidebar,
 .single-post .content-sidebar {
@@ -1895,14 +1894,6 @@ div#mobile-inventory-menu-button {
   margin: 0 auto;
 
 }
-
-/*.entry:after {
-	content: '';
-	border-bottom: 1px solid #000;
-	bottom: 0;
-	position: absolute;
-	width: 40px;
-}*/
 
 .content .entry:last-of-type:after {
 	display: none;
@@ -2071,22 +2062,6 @@ p.entry-meta {
     top: 512px;
 }
 
-/* collapse the button when scrolled down */
-/*#schedule-consult-button.sched-button-low {*/ /*the class added by jquery*/
-/*  height: 0;
-  padding: 0;
-  overflow: hidden;
-}
-*/
-/* fade the button when scrolled down */
-/*#schedule-consult-button.sched-button-low {*/ /*the class added by jquery*/
-  /*opacity: 0; *//*because opacity will animate*/
-/*}*/
-
-/*#schedule-consult-button.sched-button-none {
-  display: none;*/ /*because remove from DOM*/
-/*}*/
-
 /* slide right the button when scrolled down */
 #schedule-consult-button.sched-button-low { /*the class added by jquery*/
   right: -200px;
@@ -2181,8 +2156,6 @@ img.services-number {
   margin: 0;
   width: 100% !important;
 }
-
-
 
 /* ### Primary Sidebar */
 
@@ -2429,6 +2402,10 @@ section#simple-social-icons-3 a {
 /* # Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
+
+/* # 1320
+---------------------------------------------------------------------------------------------------- */
+
 @media only screen and (max-width: 1320px) {
 
   .nav-secondary,
@@ -2474,6 +2451,9 @@ section#simple-social-icons-3 a {
 
 }
 
+/* # 1200
+---------------------------------------------------------------------------------------------------- */
+
 @media only screen and (max-width: 1200px) {
 
   .dark-box-group h1 {
@@ -2492,11 +2472,6 @@ section#simple-social-icons-3 a {
   .nav-tertiary.shrink .genesis-nav-menu a {
       padding: 16px 18px;
   }
-
-/*  .nav-secondary .genesis-nav-menu a,
-  .nav-tertiary .genesis-nav-menu a {
-      padding: 26px 12px;
-  }*/
 
   .nav-secondary.shrink .genesis-nav-menu a,
   .nav-tertiary.shrink .genesis-nav-menu a {
@@ -2535,6 +2510,8 @@ section#simple-social-icons-3 a {
   .entry-content {
     padding: 0 100px;
   }
+
+  /* 1200 */
 
   .blog.content-sidebar .content,
   .archive.category .content,
@@ -2611,6 +2588,8 @@ section#simple-social-icons-3 a {
   .dark-box-group p {
       font-size: 44px;
   }
+
+  /* 1200 */
 
   .contact-left {
   margin-left: 0;
@@ -2695,6 +2674,9 @@ section#simple-social-icons-3 a {
 
 }
 
+/* # 980
+---------------------------------------------------------------------------------------------------- */
+
 @media only screen and (max-width: 980px) {
 
   .header-image .site-title > a {
@@ -2712,20 +2694,6 @@ section#simple-social-icons-3 a {
   .presswidget .wrap-images {
       width: 90%;
   }
-
-  .nav-secondary,
-	.nav-tertiary,
-	.site-inner,
-	.wrap {
-		/*max-width: 800px;*/
-	}
-
-	.content,
-	.nav-primary,
-	.sidebar-primary,
-	.site-header .title-area {
-		/*width: 100%;*/
-	}
 
   .nav-secondary + .content-sidebar-wrap,
 	.nav-tertiary + .content-sidebar-wrap,
@@ -2756,10 +2724,6 @@ section#simple-social-icons-3 a {
 		background-position: center !important;
 	}
 
-/*  .entry {
-      margin: 0% auto;
-  }
-*/
   #hero-dark-box-group {
     padding: 30px;
     width: 80%;
@@ -2768,6 +2732,8 @@ section#simple-social-icons-3 a {
   #hero-dark-box-group p {
     font-size: 54px;
   }
+
+  /* 980 */
 
   blockquote {
     font-size: 36px;
@@ -2859,12 +2825,6 @@ section#simple-social-icons-3 a {
     z-index: 50;
   }
 
-  /* don't collapse the button when mobile */
-  /*#schedule-consult-button.sched-button-low {*/ /*the class added by jquery*/
-/*    height: 42px;
-    padding: 8px 16px;
-  }
-*/
   /* don't fade the button when mobile */
   #schedule-consult-button.sched-button-low { /*the class added by jquery*/
     opacity: 1;
@@ -2973,10 +2933,6 @@ section#simple-social-icons-3 a {
 		padding: 40px;
 	}
 
-/*  .entry {
-    padding: 40px 0;
-  }*/
-
   .blog .entry,
   .archive.category .entry,
   .single-post .entry,
@@ -2998,6 +2954,8 @@ section#simple-social-icons-3 a {
 	.widget-full .featured-content .entry-header {
 		padding: 40px 40px 0;
 	}
+
+  /* 980 */
 
 	.after-entry,
 	.entry-comments,
@@ -3054,7 +3012,6 @@ section#simple-social-icons-3 a {
   .genesis-nav-menu.responsive-menu {
     display: none;
     float: none;
-    /*padding-bottom: 20px;*/
   }
 
   .genesis-nav-menu.responsive-menu .menu-item,
@@ -3068,13 +3025,8 @@ section#simple-social-icons-3 a {
 
   ul#menu-main-menu {
     background-color: #efefef;
-    /*padding: 0 9px;*/
   }
 
-/*  .home ul#menu-main-menu {
-    background-color: #fff;
-  }
-*/
   .genesis-nav-menu > .menu-item-has-children > a::after {
     content: "";
   }
@@ -3159,7 +3111,7 @@ section#simple-social-icons-3 a {
     float: none;
   }
 
-/*.nav-secondary and tertiary*/
+/*.nav-secondary and tertiary max980 */
 
 nav.nav-secondary,
 nav.nav-tertiary {
@@ -3232,6 +3184,9 @@ div#mobile-inventory-menu-button,
 
 }
 
+/* # 800
+---------------------------------------------------------------------------------------------------- */
+
 @media only screen and (max-width: 800px) {
 
 	body {
@@ -3288,6 +3243,8 @@ div#mobile-inventory-menu-button,
     line-height: 0;
   }
 
+  /* 800 */
+
   .page-id-35 .site-container {
     background-image: url(../form-and-function/images/blob_3_180.jpg);
     background-repeat: no-repeat;
@@ -3343,6 +3300,8 @@ div#mobile-inventory-menu-button,
     margin: 2%;
     width: 46%;
   }
+
+  /* 800 */
 
   /*reset*/
   .page-id-42 .dark-box-img-div:nth-of-type(4) {
@@ -3405,6 +3364,8 @@ div#mobile-inventory-menu-button,
 		padding: 40px;
 	}
 
+  /* 800 */
+
 	.widget-full .featured-content .entry-title {
 		font-size: 36px;
 	}
@@ -3416,14 +3377,6 @@ div#mobile-inventory-menu-button,
   #hero-dark-box-group h1 {
       font-size: 18px;
   }
-
- /* .footer-widgets::before {
-    content: '';
-    position: absolute;
-    width: 50%;
-    left: 25%;
-    border-top: 1px solid #776f93;
-}*/
 
 	.footer-widgets .wrap {
 		padding: 40px 40px 0;
@@ -3465,6 +3418,9 @@ div#mobile-inventory-menu-button,
 
 }
 
+/* # 600
+---------------------------------------------------------------------------------------------------- */
+
 @media only screen and (max-width: 600px) {
 
   nav.nav-primary {
@@ -3473,6 +3429,8 @@ div#mobile-inventory-menu-button,
 
 }
 
+/* # 500
+---------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 500px) {
 
   div.title-area, .header-image .site-title > a {
@@ -3522,6 +3480,8 @@ div#mobile-inventory-menu-button,
   .contact-overline {
       margin: 37px 0 0 0;
   }
+
+  /* 500 */
 
   .contact-left,
   .contact-right {
@@ -3573,31 +3533,22 @@ div#mobile-inventory-menu-button,
   /*what we do*/
 
   img.services-number {
-/*      float: none;
-      display: block;
-      padding-bottom: 14px;
-      position: relative;
-      top: 19px;
-      left: 0;
-*/      width: 64px;
-      /*border-bottom: 1px solid #776f93;*/
+      width: 64px;
   }
 
   .services-group h3 {
-    /*margin-top: 0px;*/
     font-size: 20px;
   }
 
   /*single-item*/
-
   .sidebar-primary .textwidget .button.call-button {
     display: inline-block;
   }
 
-
-  /**/
-
 }
+
+/* # 400
+---------------------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 400px) {
   .responsive-menu-icon::before {
@@ -3613,7 +3564,6 @@ div.title-area, .header-image .site-title > a {
   .home-cta-img {
     max-width: 100%;
   }
-
 
 }
 
