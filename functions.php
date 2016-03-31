@@ -2,6 +2,8 @@
 //* Start the engine
 include_once( get_template_directory() . '/lib/init.php' );
 
+remove_filter( 'widget_title', 'esc_html' );
+
 //* Setup Theme
 include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
 
