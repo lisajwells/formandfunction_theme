@@ -3236,9 +3236,8 @@ div#mobile-inventory-menu-button,
   .blog.content-sidebar .content,
   .archive.category .content,
   .single-post .content {
-    padding: 0 20px;
+    padding: 0 40px;
   }
-
 
   .blog .content .entry-title,
   .archive.category .content .entry-title,
@@ -3525,6 +3524,12 @@ div#mobile-inventory-menu-button,
   }
 
   /* 500 */
+
+  .blog.content-sidebar .content,
+  .archive.category .content,
+  .single-post .content {
+    padding: 0 20px;
+  }
 
   .contact-left,
   .contact-right {
