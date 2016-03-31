@@ -2217,6 +2217,11 @@ section#text-11 img {
   margin-bottom: 22px;
 }
 
+.blog .sidebar li,
+.archive.category .sidebar li,
+.single-post .sidebar li {
+    margin: 0;
+}
 
 /* # Contact Page
 ---------------------------------------------------------------------------------------------------- */
