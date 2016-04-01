@@ -425,6 +425,20 @@ p.prev-next-btns {
   right: 1.66666%;
 }
 
+a#fancybox-right,
+a#fancybox-left {
+    position: fixed;
+    width: 45%;
+}
+
+a#fancybox-right {
+    right: 5%;
+}
+
+a#fancybox-left {
+    left: 5%;
+}
+
 /* default from theme here
 .gallery {
 	overflow: hidden;
