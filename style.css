@@ -401,7 +401,9 @@ img {
 --------------------------------------------- */
 
 .image-wrapper {
-    border: solid 1px #fff !important;
+    border: solid 0 #fff !important;
+    margin: 1.66666% !important;
+    padding: 0 !important;
 }
 
 /* default from theme here
@@ -714,6 +716,7 @@ th {
 
 .parent-pageid-42 .entry-content { /*gallery pages*/
   padding: 0;
+  background-color: khaki;
 }
 
 .featured-widget-area + .site-inner,
