@@ -406,6 +406,24 @@ img {
     padding: 0 !important;
 }
 
+p.prev-next-btns {
+    margin-bottom: 59px;
+}
+
+.button.small.prev-project-button,
+.button.small.next-project-button {
+  position: absolute;
+  margin: 0 0 40px 0;
+}
+
+.button.small.prev-project-button {
+  left: 1.66666%;
+}
+
+.button.small.next-project-button {
+  right: 1.66666%;
+}
+
 /* default from theme here
 .gallery {
 	overflow: hidden;
