@@ -407,7 +407,8 @@ img {
 }
 
 p.prev-next-btns {
-    margin-bottom: 59px;
+    margin-bottom: 99px;
+    margin-top: 40px;
 }
 
 .button.small.prev-project-button,
@@ -734,7 +735,7 @@ th {
 
 .parent-pageid-42 .entry-content { /*gallery pages*/
   padding: 0;
-  background-color: khaki;
+  /*background-color: khaki;*/
 }
 
 .featured-widget-area + .site-inner,
