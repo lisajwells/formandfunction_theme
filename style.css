@@ -2476,6 +2476,10 @@ section#simple-social-icons-3 a {
     padding: 0 2%;
   }
 
+  .parent-pageid-42 .narrow {
+    padding: 0 2%;
+  }
+
   .button.small.prev-project-button {
     left: 3.66666%;
   }
@@ -3571,6 +3575,10 @@ div#mobile-inventory-menu-button,
 
   .button.small.next-project-button {
     right: 4%;
+  }
+
+  .parent-pageid-42 .narrow {
+    padding: 0;
   }
 }
 
