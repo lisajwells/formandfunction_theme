@@ -400,12 +400,6 @@ img {
 /* ## Gallery
 --------------------------------------------- */
 
-.image-wrapper {
-    border: solid 0 #fff !important;
-    margin: 1.66666% !important;
-    padding: 0 !important;
-}
-
 p.prev-next-btns {
     margin-bottom: 99px;
     margin-top: 40px;
@@ -2604,6 +2598,10 @@ section#simple-social-icons-3 a {
   .page-id-46 .dark-box-group p,
   .page-id-42 .dark-box-group p {
     font-size: 36px;
+  }
+
+  .prev-project-button, .next-project-button {
+    width: 200px;
   }
 
   .page-id-14 blockquote.block-boxed {
