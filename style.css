@@ -2475,6 +2475,7 @@ section#simple-social-icons-3 a {
   .parent-pageid-42 .entry-content{ /*gallery pages*/
     padding: 0 2%;
   }
+
   .button.small.prev-project-button {
     left: 3.66666%;
   }
@@ -3554,6 +3555,23 @@ div#mobile-inventory-menu-button,
     width: 100%;
   }
 
+}
+
+/* # 550
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 550px) {
+  .parent-pageid-42 .entry-content{ /*gallery pages*/
+    padding: 0 4%;
+  }
+
+  .button.small.prev-project-button {
+    left: 4%;
+  }
+
+  .button.small.next-project-button {
+    right: 4%;
+  }
 }
 
 /* # 500
