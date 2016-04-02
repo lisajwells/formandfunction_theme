@@ -3699,6 +3699,24 @@ div#mobile-inventory-menu-button,
 
 }
 
+/* # 480
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 480px) {
+
+  .button.small.prev-project-button,
+  .button.small.next-project-button {
+    position: static;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  p.prev-next-btns {
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+}
+
 /* # 400
 ---------------------------------------------------------------------------------------------------- */
 
