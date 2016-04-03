@@ -3247,12 +3247,12 @@ div#mobile-inventory-menu-button.shrink  {
 
 .admin-bar .nav-secondary #menu-services-menu,
 .admin-bar .nav-tertiary #menu-inventory-menu {
-    top: 176px;
+    top: 170px;
 }
 
 .admin-bar .nav-secondary.shrink #menu-services-menu,
 .admin-bar .nav-tertiary.shrink #menu-inventory-menu {
-    top: 166px;
+    top: 160px;
 }
 
 .nav-secondary,
