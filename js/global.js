@@ -5,6 +5,7 @@ jQuery(function( $ ){
     $( '.site-header' ).addClass( 'shrink' );
     $( '.nav-secondary' ).addClass( 'shrink' );
     $( '.nav-tertiary' ).addClass( 'shrink' );
+    $( '#mobile-menu-button' ).addClass( 'shrink' );
   }
 
   $( document ).on('scroll', function(){
@@ -13,11 +14,13 @@ jQuery(function( $ ){
       $( '.site-header' ).addClass( 'shrink' );
       $( '.nav-secondary' ).addClass( 'shrink' );
       $( '.nav-tertiary' ).addClass( 'shrink' );
+      $( '#mobile-menu-button' ).addClass( 'shrink' );
 
     } else {
       $( '.site-header' ).removeClass( 'shrink' );
       $( '.nav-secondary' ).removeClass( 'shrink' );
       $( '.nav-tertiary' ).removeClass( 'shrink' );
+      $( '#mobile-menu-button' ).removeClass( 'shrink' );
     }
 
   });

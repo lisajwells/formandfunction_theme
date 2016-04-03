@@ -3203,9 +3203,9 @@ nav.nav-tertiary {
 }
 
 div#mobile-menu-button,
-.shrink div#mobile-menu-button,
+div#mobile-menu-button.shrink ,
 div#mobile-inventory-menu-button,
-.shrink div#mobile-inventory-menu-button {
+div#mobile-inventory-menu-button.shrink  {
     display: block;
     position: fixed;
     top: 70px;
@@ -3213,6 +3213,16 @@ div#mobile-inventory-menu-button,
     margin-top: 0;
     width: 160px;
     z-index: 10;
+}
+
+.admin-bar div#mobile-menu-button,
+.admin-bar div#mobile-inventory-menu-button {
+    top: 102px;
+}
+
+.admin-bar div#mobile-menu-button.shrink ,
+.admin-bar div#mobile-inventory-menu-button.shrink  {
+    top: 92px;
 }
 
 .nav-secondary.shrink #menu-services-menu,
