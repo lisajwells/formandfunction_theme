@@ -3203,9 +3203,7 @@ nav.nav-tertiary {
 }
 
 div#mobile-menu-button,
-div#mobile-menu-button.shrink ,
-div#mobile-inventory-menu-button,
-div#mobile-inventory-menu-button.shrink  {
+div#mobile-inventory-menu-button  {
     display: block;
     position: fixed;
     top: 70px;
@@ -3219,8 +3217,6 @@ div#mobile-menu-button.shrink ,
 div#mobile-inventory-menu-button.shrink  {
     top: 60px;
 }
-
-
 
 .admin-bar div#mobile-menu-button,
 .admin-bar div#mobile-inventory-menu-button {
@@ -3539,6 +3535,20 @@ div#mobile-inventory-menu-button.shrink  {
 
 }
 
+/* # 782 (the admin bar gets 14px deeper)
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 782px) {
+  .admin-bar div#mobile-menu-button,
+  .admin-bar div#mobile-inventory-menu-button {
+      top: 116px;
+  }
+  .admin-bar div#mobile-menu-button.shrink,
+  .admin-bar div#mobile-inventory-menu-button.shrink {
+      top: 106px;
+  }
+}
+
 /* # 620
 ---------------------------------------------------------------------------------------------------- */
 
@@ -3565,6 +3575,10 @@ div#mobile-inventory-menu-button.shrink  {
 ---------------------------------------------------------------------------------------------------- */
 
 @media only screen and (max-width: 600px) {
+
+  #wpadminbar {
+    position: fixed;
+  }
 
   nav.nav-primary {
     margin-left: -54px;
