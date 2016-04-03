@@ -3240,6 +3240,21 @@ div#mobile-inventory-menu-button.shrink  {
     padding-right: 0;
 }
 
+.nav-secondary.shrink #menu-services-menu,
+.nav-tertiary.shrink #menu-inventory-menu {
+    top: 132px;
+}
+
+.admin-bar .nav-secondary #menu-services-menu,
+.admin-bar .nav-tertiary #menu-inventory-menu {
+    top: 176px;
+}
+
+.admin-bar .nav-secondary.shrink #menu-services-menu,
+.admin-bar .nav-tertiary.shrink #menu-inventory-menu {
+    top: 166px;
+}
+
 .nav-secondary,
 .nav-tertiary {
   margin-left: 80%;
