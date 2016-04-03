@@ -3215,6 +3215,13 @@ div#mobile-inventory-menu-button.shrink  {
     z-index: 10;
 }
 
+div#mobile-menu-button.shrink ,
+div#mobile-inventory-menu-button.shrink  {
+    top: 60px;
+}
+
+
+
 .admin-bar div#mobile-menu-button,
 .admin-bar div#mobile-inventory-menu-button {
     top: 102px;
@@ -3407,9 +3414,9 @@ div#mobile-inventory-menu-button.shrink  {
 	}
 
   div#mobile-menu-button,
-  .shrink div#mobile-menu-button,
+  div#mobile-menu-button.shrink ,
   div#mobile-inventory-menu-button,
-  .shrink div#mobile-inventory-menu-button {
+  div#mobile-inventory-menu-button.shrink  {
       font-size: 16px;
   }
 
