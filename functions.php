@@ -337,7 +337,7 @@ function child_get_blog_sidebar() {
 /** shortcode in widgets so we can use PopUp by Supsystic **/
 add_filter('widget_text', 'do_shortcode');
 
-/** Exclude certain category from posts */
+/** Exclude Press category from posts */
 add_action( 'pre_get_posts', 'be_exclude_category_from_blog' );
 function be_exclude_category_from_blog( $query ) {
 
