@@ -811,9 +811,9 @@ th {
 
 .archive-description,
 .author-box {
-	background-color: #f9f9f9;
+	background-color: #fff;
 	font-size: 16px;
-	padding: 80px;
+	padding: 0;
 }
 
 .author-box {
@@ -869,7 +869,8 @@ th {
 	font-size: 24px;
 }
 
-.entry-title {
+.entry-title,
+.archive-title {
   margin-top: 68px;
   font-size: 60px;
   font-family: 'La Belle Aurore', cursive;
@@ -2209,6 +2210,14 @@ section#text-11 img {
 .archive.category .sidebar li a,
 .single-post .sidebar li a {
     line-height: 2;
+}
+
+/* PRESS */
+
+.category-press article {
+  background-color: #efefef;
+  width: 30%;
+  float: left;
 }
 
 /* # Portfolio Gallery Page
