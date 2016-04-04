@@ -28,10 +28,9 @@ function faf_display_featured_image() {
     }
 }
 
-//* [All Item pages] Function to display values of custom fields (if not empty)
-/* called in archive-item.php and single-item.php */
+//* Display press_date custom field (if not empty)
 
-add_action( 'genesis_entry_content', 'faf_press_display_date_field' );
+add_action( 'genesis_entry_content', 'faf_press_display_date_field', 9 );
 
 function faf_press_display_date_field() {
     $press_date = get_field( 'press_date' );
