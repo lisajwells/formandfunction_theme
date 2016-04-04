@@ -5,6 +5,13 @@
  */
 //* Template Name: Press
 
+/* add schedule button */
+add_action( 'genesis_before_loop', 'faf_display_schedule_button' );
+
+function faf_display_schedule_button() {
+        echo '<a href="http://formandfunction.dev/contact" id="schedule-consult-button" class="button small">Schedule a Consultation</a>';
+}
+
 /* no real post title to show */
 remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 
