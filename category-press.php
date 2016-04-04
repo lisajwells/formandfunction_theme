@@ -62,9 +62,7 @@ remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
 add_action( 'genesis_entry_content', 'faf_press_the_content' );
 
 function faf_press_the_content() {
-
         the_content();
-
 }
 
 

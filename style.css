@@ -1720,6 +1720,10 @@ div#mobile-inventory-menu-button {
     margin-left: 18.34%;
 }
 
+.page-id-42 h2 {
+  margin-left: 1.66%; /*to match .dark-box-img-div*/
+}
+
 .dark-box-content-wrap p {
   margin: 0;
 }
@@ -3455,6 +3459,10 @@ div#mobile-inventory-menu-button.shrink  {
     width: 46%;
   }
 
+  .page-id-42 h2 {
+    margin-left: 2%;
+  }
+
   /* 800 */
 
   /*reset*/
@@ -3704,6 +3712,10 @@ div#mobile-inventory-menu-button.shrink  {
   .dark-box-img-div {
     margin: 4% 0;
     width: 100%;
+  }
+
+  .page-id-42 h2 {
+    margin-left: 4%;
   }
 
   /*reset*/
