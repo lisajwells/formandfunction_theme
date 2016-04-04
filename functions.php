@@ -296,19 +296,6 @@ function itsg_allow_nbsp_in_tinymce( $init ) {
 }
 add_filter( 'tiny_mce_before_init', 'itsg_allow_nbsp_in_tinymce');
 
-
-//* shortcode with root relative url for sidebar *//
-// function myUrl($atts, $address = null) {
-//   extract(shortcode_atts(array(
-//     "href" => get_home_url() . '/wp-content/'
-//   ), $atts));
-//   return '<img src="'.$href.$address.'">';
-//   // return '<img src="'.$href.'">'.$content.'</a>';
-// }
-// add_filter('widget_text', 'do_shortcode');
-// add_shortcode("url", "myUrl");
-// [url address="uploads/2016/03/FormFunctionLogoMark.png"][/url]
-
 //* remove visual form builder css *//
 add_filter( 'visual-form-builder-css', '__return_false' );
 
