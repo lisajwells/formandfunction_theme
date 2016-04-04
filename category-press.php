@@ -29,7 +29,6 @@ function faf_display_featured_image() {
 }
 
 //* Display press_date custom field (if not empty)
-
 add_action( 'genesis_entry_content', 'faf_press_display_date_field', 9 );
 
 function faf_press_display_date_field() {
@@ -39,8 +38,15 @@ function faf_press_display_date_field() {
     }
 }
 
+//* Display button with press_link custom field (if not empty)
+add_action( 'genesis_entry_footer', 'faf_press_display_button_field' );
 
-    // $press_link = get_field( 'press_link' );
+function faf_press_display_button_field() {
+    $press_link = get_field( 'press_link' );
+    if ( $press_link ) {
+        echo '<div class="press-link">' . $press_link . '</div>';
+    }
+}
 
 //* Remove standard post content output
 remove_action( 'genesis_post_content', 'genesis_do_post_content' );
