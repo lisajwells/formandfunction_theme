@@ -677,6 +677,11 @@ th {
   padding: 0 124px;
 }
 
+.category-press .entry-content { /*press page*/
+
+}
+
+
 .blog .entry-content,
 .archive.category .entry-content,
 .single-post .entry-content,
@@ -2102,9 +2107,9 @@ img.services-number {
     max-width: 820px;
 }
 
-.archive.category.category-press .content {
+.category-press.archive.category .content {
     width: 100%;
-    max-width: 1200px;
+    max-width: none;
 }
 
 .content-sidebar .content-sidebar-wrap {
@@ -2117,6 +2122,9 @@ img.services-number {
 .single-post .content-sidebar-wrap {
     margin: 0 auto;
     max-width: 1200px;
+}
+.archive.category .content-sidebar-wrap {
+  max-width: 1322px; /*like full-width portfolio*/
 }
 
 .prev-next-post-links {
@@ -2219,10 +2227,37 @@ section#text-11 img {
 /* PRESS */
 
 .category-press article {
+  vertical-align: top;
   background-color: #efefef;
-  float: left;
+  display: inline-block;
+  margin: 1.66%;
   padding: 2%;
+  position: relative;
+  text-align: center;
   width: 30%;
+}
+
+.category-press .entry-header img {
+  height: auto;
+  width: 100%;
+}
+
+.category-press .entry-content img {
+  display: inline-block;
+  width: auto;
+}
+
+.category-press .entry-content p {
+  text-align: left;
+}
+
+.post-14020 .entry-content p { /*houzz images*/
+  text-align: center;
+}
+
+.category-press .entry-footer .button {
+  display: inline-block;
+  width: auto;
 }
 
 /* # Portfolio Gallery Page
@@ -2457,6 +2492,10 @@ section#simple-social-icons-3 a {
   .single-post .content-sidebar-wrap {
       max-width: 1000px;
   }
+  .category-press.archive.category .content-sidebar-wrap {
+      max-width: 1000px;
+  }
+
   .blog.content-sidebar .content,
   .archive.category .content,
   .single-post .content {
