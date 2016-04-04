@@ -56,7 +56,17 @@ function faf_press_display_button_field() {
 }
 
 //* Remove standard post content output
+//* Use the full content instead of default-for-archive excerpt
 remove_action( 'genesis_post_content', 'genesis_do_post_content' );
+remove_action( 'genesis_entry_content', 'genesis_do_post_content' );
+add_action( 'genesis_entry_content', 'faf_press_the_content' );
+
+function faf_press_the_content() {
+
+        the_content();
+
+}
+
 
 /* no need to show category in entry_footer */
 remove_action( 'genesis_entry_footer', 'genesis_post_meta' );
