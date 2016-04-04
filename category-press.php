@@ -13,9 +13,9 @@ remove_action( 'genesis_entry_header', 'genesis_post_info', 12 );
 
 /* add featured image (press logo) */
 remove_action( 'genesis_entry_content', 'genesis_do_post_image', 8 );
-add_action( 'genesis_entry_header', 'sk_display_featured_image', 8 );
+add_action( 'genesis_entry_header', 'faf_display_featured_image', 8 );
 
-function sk_display_featured_image() {
+function faf_display_featured_image() {
     $image_args = array(
         'size' => 'medium',
         'attr' => array(
@@ -28,6 +28,20 @@ function sk_display_featured_image() {
     }
 }
 
+//* [All Item pages] Function to display values of custom fields (if not empty)
+/* called in archive-item.php and single-item.php */
+
+add_action( 'genesis_entry_content', 'faf_press_display_date_field' );
+
+function faf_press_display_date_field() {
+    $press_date = get_field( 'press_date' );
+    if ( $press_date ) {
+        echo '<div class="press-date">' . $press_date . '</div>';
+    }
+}
+
+
+    // $press_link = get_field( 'press_link' );
 
 //* Remove standard post content output
 remove_action( 'genesis_post_content', 'genesis_do_post_content' );

@@ -2216,8 +2216,9 @@ section#text-11 img {
 
 .category-press article {
   background-color: #efefef;
-  width: 30%;
   float: left;
+  padding: 2%;
+  width: 30%;
 }
 
 /* # Portfolio Gallery Page
