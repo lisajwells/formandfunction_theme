@@ -2230,11 +2230,17 @@ section#text-11 img {
   vertical-align: top;
   background-color: #efefef;
   display: inline-block;
+  font-weight: 700;
   margin: 1.66%;
   padding: 2%;
   position: relative;
   text-align: center;
   width: 30%;
+}
+
+.category-press .entry-header {
+  height: 112px;
+  margin-bottom: 20px;
 }
 
 .category-press .entry-header img {
@@ -2245,6 +2251,15 @@ section#text-11 img {
 .category-press .entry-content img {
   display: inline-block;
   width: auto;
+}
+
+.press-date {
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.press-link {
+  margin-top: 0;
 }
 
 .category-press .entry-content p {
