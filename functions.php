@@ -32,6 +32,7 @@ add_filter( 'excerpt_length', 'sp_excerpt_length' );
 function sp_excerpt_length( $length ) {
 return 80; // pull first 80 words
 }
+
 //* Add new image sizes
 add_image_size( 'featured-content', 800, 800, TRUE );
 
@@ -109,7 +110,7 @@ if ( !is_page('14') )
 }
 
 //* remove tertiary menu from all but Inventory pages
-//* see single-item.php where it's added back in for those (couldn't get this to see is_page_template)
+//* see single-item.php where it's added back in for those (couldn't get this to see !is_page_template)
 add_action('template_redirect', 'remove_tertiary_nav_pages');
 function remove_tertiary_nav_pages() {
 if ( !is_page (array('featured-decor', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) )
@@ -126,9 +127,9 @@ function new_excerpt_more($more) {
 //* [Dashboard] Add Archive Settings option to Items CPT
 add_post_type_support( 'item', 'genesis-cpt-archives-settings' );
 /**
- * [Dashboard] Add Genre Taxonomy to columns at http://example.com/wp-admin/edit.php?post_type=books
- * URL: http://make.wordpress.org/core/2012/12/11/wordpress-3-5-admin-columns-for-custom-taxonomies/
- */
+* [Dashboard] Add Genre Taxonomy to columns at http://example.com/wp-admin/edit.php?post_type=books
+* URL: http://make.wordpress.org/core/2012/12/11/wordpress-3-5-admin-columns-for-custom-taxonomies/
+*/
 add_filter( 'manage_taxonomies_for_item_columns', 'item_columns' );
 function item_columns( $taxonomies ) {
 	$taxonomies[] = 'groups';
@@ -163,9 +164,9 @@ function custom_post_meta( $post_meta ) {
 	return $post_meta;
 }
 /**
- * [All Item pages] Display Post meta only if the entry has been assigned to any Group term
- * Removes empty markup, '<p class="entry-meta"></p>' for entries that have not been assigned to any Group
- */
+* [All Item pages] Display Post meta only if the entry has been assigned to any Group term
+* Removes empty markup, '<p class="entry-meta"></p>' for entries that have not been assigned to any Group
+*/
 /* called in archive-item.php and single-item.php */
 function sk_custom_post_meta() {
 	if ( has_term( '', 'groups' ) ) {
@@ -173,16 +174,16 @@ function sk_custom_post_meta() {
 	}
 }
 /**
- * [WordPress] Template Redirect
- * Use archive-items.php for Genre taxonomy archives.
- */
+* [WordPress] Template Redirect
+* Use archive-items.php for Genre taxonomy archives.
+*/
 add_filter( 'template_include', 'sk_template_redirect' );
 function sk_template_redirect( $template ) {
 	if ( is_tax( 'groups' ) )
 		$template = get_query_template( 'archive-item' );
 	return $template;
 }
-//* [Single Book pages] Custom Primary Sidebar for single Book entries
+//* [Single Item pages] Custom Primary Sidebar for single Item entries
 genesis_register_sidebar( array(
 	'id'			=> 'primary-sidebar-item',
 	'name'			=> 'Primary Sidebar - Item',
