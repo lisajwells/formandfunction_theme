@@ -3129,6 +3129,15 @@ section#simple-social-icons-3 a {
     padding: 0;
   }
 
+  .category-press.archive.category article {
+    padding: 3%;
+  }
+
+  .category-press.archive.category .content-sidebar-wrap {
+    padding: 0;
+    max-width: 860px;
+  }
+
   .page-id-14 .entry-content,
   .page-id-58 .entry-content,
   .page-id-60 .entry-content,
@@ -3675,7 +3684,6 @@ div#mobile-inventory-menu-button.shrink  {
   }
   .three-top-img-div {
       width: 100%;
-      /* max-width: 338px; */
       float: none;
       margin: 0 auto;
   }
@@ -3734,6 +3742,13 @@ div#mobile-inventory-menu-button.shrink  {
     width: 100%;
   }
 
+  .category-press.archive.category article {
+      width: 100%;
+      margin: 6% auto;
+      max-width: 400px;
+      display: block;
+      padding: 5%;
+  }
 }
 
 /* # 550
