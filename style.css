@@ -2123,8 +2123,10 @@ img.services-number {
     margin: 0 auto;
     max-width: 1200px;
 }
-.archive.category .content-sidebar-wrap {
-  max-width: 1322px; /*like full-width portfolio*/
+
+.category-press.archive.category .content-sidebar-wrap {
+    max-width: none;
+    padding: 0 180px;
 }
 
 .prev-next-post-links {
@@ -2231,15 +2233,15 @@ section#text-11 img {
   background-color: #efefef;
   display: inline-block;
   font-weight: 700;
-  margin: 1.66%;
+  margin: 3%;
   padding: 2%;
   position: relative;
   text-align: center;
-  width: 30%;
+  width: 27.333333%;
 }
 
 .category-press .entry-header {
-  height: 112px;
+  height: 100px;
   margin-bottom: 20px;
 }
 
@@ -2496,6 +2498,19 @@ section#simple-social-icons-3 a {
 ---------------------------------------------------------------------------------------------------- */
 
 
+/* # 1440
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1440px) {
+
+  .category-press .entry-header {
+    height: 82px;
+  }
+  .category-press .entry-content img {
+    margin: 1%;
+  }
+}
+
 /* # 1400
 ---------------------------------------------------------------------------------------------------- */
 
@@ -2505,10 +2520,6 @@ section#simple-social-icons-3 a {
   .single-post .content-sidebar-wrap {
       max-width: 1000px;
   }
-  .category-press.archive.category .content-sidebar-wrap {
-      max-width: 1000px;
-  }
-
   .blog.content-sidebar .content,
   .archive.category .content,
   .single-post .content {
@@ -2574,6 +2585,15 @@ section#simple-social-icons-3 a {
 
   .page-id-14 #schedule-consult-button {
       top: 480px;
+  }
+
+  .category-press article {
+    margin: 1.666666%;
+    width: 30%;
+    padding: 3%;
+  }
+  .category-press .entry-header {
+      height: auto;
   }
 
 }
@@ -2698,6 +2718,18 @@ section#simple-social-icons-3 a {
   #hero-dark-box-group p {
     font-size: 66px;
   }
+
+  /*press*/
+  .category-press article {
+    margin: 2%;
+    width: 46%;
+  }
+
+  .category-press.archive.category .content-sidebar-wrap {
+      max-width: 1100px;
+  }
+  /**/
+
 
   .button,
   .more-link,
@@ -2959,7 +2991,9 @@ section#simple-social-icons-3 a {
     margin: -220px 0 0;
   }
 
-  .post-14 #schedule-consult-button {
+  .post-14 #schedule-consult-button,
+  .page-id-62 #schedule-consult-button,
+  .category-34 #schedule-consult-button {
     bottom: 0;
     font-size: 16px;
     left: 0;
