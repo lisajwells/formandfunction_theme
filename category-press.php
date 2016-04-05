@@ -51,7 +51,7 @@ add_action( 'genesis_entry_footer', 'faf_press_display_button_field' );
 function faf_press_display_button_field() {
     $press_link = get_field( 'press_link' );
     if ( $press_link ) {
-        echo '<a class="button small press-link" href="' . $press_link . '">Read More</a>';
+        echo '<a class="button small press-link" target="_blank" href="' . $press_link . '">Read More</a>';
     }
 }
 
