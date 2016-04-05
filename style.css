@@ -2251,6 +2251,7 @@ section#text-11 img {
 .category-press .entry-content img {
   display: inline-block;
   width: auto;
+  margin: 2%;
 }
 
 .press-date {
@@ -2258,15 +2259,12 @@ section#text-11 img {
   text-transform: uppercase;
 }
 
-.press-link {
-  margin-top: 0;
-}
-
 .category-press .entry-content p {
   text-align: left;
+  margin-bottom: 0;
 }
 
-.post-14020 .entry-content p { /*houzz images*/
+.post-14039 .entry-content p { /*houzz images*/
   text-align: center;
 }
 
