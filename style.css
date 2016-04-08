@@ -3940,35 +3940,29 @@ div.title-area, .header-image .site-title > a {
 
 }
 
-
-
-/* Single and Archive templates for Items CPT
+/* Single and Archive templates for Inventory-Items CPT
 ----------------------------------------------- */
 
-/*.button:hover { /*should be like all buttons
-	color: #fff;
-}*/
-
-.type-item .entry-meta {
+/*.type-item .entry-meta { is this used?
 	border-top: none;
 	margin: 0;
 	padding: 0;
 	text-align: right;
-}
+}*/
 
-/* items CPT archive page */
+/* inventory items CPT archive page */
 
-.post-type-archive-item .item-meta p {
+/*.post-type-archive-item .item-meta p {
 	margin-bottom: 5px;
 }
 
-.post-type-archive-item .item-meta .button {
+.post-type-archive-item .item-meta .button { is this used?
 	padding: 8px 15px;
 	font-size: 13px;
 	letter-spacing: 1px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
+}*/
 
 /*.post-type-archive-item .cpt-archive-description {
 	background: #fff url(images/book-shelf.png) no-repeat right bottom;
@@ -4003,17 +3997,17 @@ div.title-area, .header-image .site-title > a {
 	float: right;
 }
 
-@media only screen and (max-width: 568px) {
+/*@media only screen and (max-width: 568px) {
 
-	.type-items .entry-content { /*no such thing?*/
-		margin-top: 20px;
+	.type-items .entry-content {*/ /*no such thing?*/
+/*		margin-top: 20px;
 	}
 }
 
 @media only screen and (max-width: 320px) {
 
-	.type-items .entry-content img.alignleft { /*no such thing?*/
+	.type-items .entry-content img.alignleft {*/ /*no such thing?*//*
 		float: none;
 	}
 
-}
+}*/

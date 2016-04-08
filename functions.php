@@ -110,7 +110,7 @@ if ( !is_page('14') )
 }
 
 //* remove tertiary menu from all but Inventory pages
-//* see single-item.php where it's added back in for those (couldn't get this to see !is_page_template)
+//* see single-inventory-item.php where it's added back in for those (couldn't get this to see !is_page_template)
 add_action('template_redirect', 'remove_tertiary_nav_pages');
 function remove_tertiary_nav_pages() {
 if ( !is_page (array('featured-decor', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) )
@@ -118,14 +118,14 @@ if ( !is_page (array('featured-decor', 'decor', 'lighting', 'seating', 'storage'
 }
 //*
 
-//****** Single Item CPT ******//
+//****** Single Inventory Item CPT ******//
 //* [Site-wide] Modify the Excerpt read more link
 add_filter('excerpt_more', 'new_excerpt_more');
 function new_excerpt_more($more) {
 	return '... <a class="more-link" href="' . get_permalink() . '">Read More</a>';
 }
-//* [Dashboard] Add Archive Settings option to Items CPT
-add_post_type_support( 'item', 'genesis-cpt-archives-settings' );
+//* [Dashboard] Add Archive Settings option to Inventory Items CPT
+add_post_type_support( 'shop-inventory', 'genesis-cpt-archives-settings' );
 /**
 * [Dashboard] Add Genre Taxonomy to columns at http://example.com/wp-admin/edit.php?post_type=books
 * URL: http://make.wordpress.org/core/2012/12/11/wordpress-3-5-admin-columns-for-custom-taxonomies/
@@ -135,8 +135,8 @@ function item_columns( $taxonomies ) {
 	$taxonomies[] = 'groups';
 	return $taxonomies;
 }
-//* [All Item pages] Function to display values of custom fields (if not empty)
-/* called in archive-item.php and single-item.php */
+//* [All Inventory Item pages] Function to display values of custom fields (if not empty)
+/* called in archive-shop-inventory.php and single-shop-inventory.php */
 function sk_display_custom_fields() {
 	$item_price = get_field( 'item_price' );
 	$item_dimensions = get_field( 'item_dimensions' );
@@ -155,19 +155,19 @@ function sk_display_custom_fields() {
 		echo '</div>';
 	}
 }
-//* [All Item pages] Show Genre custom taxonomy terms for Items CPT single pages, archive page and Group taxonomy term pages
+//* [All Inventory Item pages] Show Genre custom taxonomy terms for Inventory Items CPT single pages, archive page and Group taxonomy term pages
 add_filter( 'genesis_post_meta', 'custom_post_meta' );
 function custom_post_meta( $post_meta ) {
-	if ( is_singular( 'item' ) || is_post_type_archive( 'item' ) || is_tax( 'groups' ) ) {
+	if ( is_singular( 'shop-inventory' ) || is_post_type_archive( 'shop-inventory' ) || is_tax( 'groups' ) ) {
 		$post_meta = '[post_terms taxonomy="groups" before="Groups: "]';
 	}
 	return $post_meta;
 }
 /**
-* [All Item pages] Display Post meta only if the entry has been assigned to any Group term
+* [All Inventory Item pages] Display Post meta only if the entry has been assigned to any Group term
 * Removes empty markup, '<p class="entry-meta"></p>' for entries that have not been assigned to any Group
 */
-/* called in archive-item.php and single-item.php */
+/* called in archive-shop-inventory.php and single-shop-inventory.php */
 function sk_custom_post_meta() {
 	if ( has_term( '', 'groups' ) ) {
 		genesis_post_meta();
@@ -175,22 +175,22 @@ function sk_custom_post_meta() {
 }
 /**
 * [WordPress] Template Redirect
-* Use archive-items.php for Genre taxonomy archives.
+* Use archive-shop-inventory.php for Genre taxonomy archives.
 */
 add_filter( 'template_include', 'sk_template_redirect' );
 function sk_template_redirect( $template ) {
 	if ( is_tax( 'groups' ) )
-		$template = get_query_template( 'archive-item' );
+		$template = get_query_template( 'archive-shop-inventory' );
 	return $template;
 }
-//* [Single Item pages] Custom Primary Sidebar for single Item entries
+//* [Single Inventory Item pages] Custom Primary Sidebar for single Item entries
 genesis_register_sidebar( array(
 	'id'			=> 'primary-sidebar-item',
 	'name'			=> 'Primary Sidebar - Item',
 	'description'	=> 'This is the primary sidebar for Item CPT entry'
 ) );
 
-//****** end Single Item CPT ******//
+//****** end Single Inventory Item CPT ******//
 
 
 
