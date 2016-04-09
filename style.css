@@ -2284,7 +2284,7 @@ section#text-11 img {
   width: 220px;
 }
 
-/* # Contact Page
+/* # Contact Page and The Shop
 ---------------------------------------------------------------------------------------------------- */
 
 .contact-overline {
@@ -2295,6 +2295,16 @@ section#text-11 img {
 .page-id-29 h3 {  /*the shop*/
   margin-top: 0;
   font-weight: 700;
+}
+
+#shop-right h3 {
+  margin-top: 60px;
+  font-weight: 300;
+}
+
+.shop-ess-grid {
+  clear: both;
+  margin-top: 60px;
 }
 
 .contact-left {
