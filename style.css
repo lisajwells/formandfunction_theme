@@ -2322,11 +2322,12 @@ section#text-11 img {
   float: left;
   margin-left: 10%;
   margin-right: 5%;
-  width: 50%;
+  width: 47%;
 }
 #shop-right {
+  margin-left: 10%;
   margin-right: 0;
-  width: 33%;
+  width: 50%;
 }
 
 .vfb-fieldset {
