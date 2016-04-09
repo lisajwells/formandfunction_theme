@@ -3618,6 +3618,15 @@ div#mobile-inventory-menu-button.shrink  {
     top: 128px;
   }
 
+  .admin-bar .nav-secondary #menu-services-menu,
+  .admin-bar .nav-tertiary #menu-inventory-menu {
+    top: 142px;
+  }
+  .admin-bar .nav-secondary.shrink #menu-services-menu,
+  .admin-bar .nav-tertiary.shrink #menu-inventory-menu {
+    top: 132px;
+  }
+
 	.archive-pagination li a {
 		margin-bottom: 4px;
 	}
@@ -3695,12 +3704,12 @@ div#mobile-inventory-menu-button.shrink  {
 
   .admin-bar .nav-secondary #menu-services-menu,
   .admin-bar .nav-tertiary #menu-inventory-menu {
-    top: 182px;
+    top: 156px;
   }
 
   .admin-bar .nav-secondary.shrink #menu-services-menu,
   .admin-bar .nav-tertiary.shrink #menu-inventory-menu {
-      top: 172px;
+      top: 146px;
   }
 
 }
