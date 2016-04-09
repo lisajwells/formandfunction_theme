@@ -3611,11 +3611,11 @@ div#mobile-inventory-menu-button.shrink  {
 
   .nav-secondary #menu-services-menu,
   .nav-tertiary #menu-inventory-menu {
-    top: 138px;
+    top: 110px;
   }
   .nav-secondary.shrink #menu-services-menu,
   .nav-tertiary.shrink #menu-inventory-menu {
-    top: 128px;
+    top: 100px;
   }
 
   .admin-bar .nav-secondary #menu-services-menu,
