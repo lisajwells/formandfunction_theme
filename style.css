@@ -3880,9 +3880,12 @@ div#mobile-inventory-menu-button.shrink  {
     margin: 4% 0;
   }
 
-  .contact-overline {
+  .contact-overline,
+  #shop-right h3 {
       margin: 37px 0 0 0;
   }
+
+
 
   /* 500 */
 
