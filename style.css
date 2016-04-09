@@ -3789,6 +3789,21 @@ div#mobile-inventory-menu-button.shrink  {
       display: block;
       padding: 5%;
   }
+
+  #shop-left {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  #shop-right {
+    margin-left: 0;
+    width: 100%;
+  }
+  #shop-right h3 {
+    margin-top: 0;
+  }
+
+
 }
 
 /* # 550
