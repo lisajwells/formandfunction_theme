@@ -3350,6 +3350,10 @@ div#mobile-inventory-menu-button  {
     z-index: 10;
 }
 
+div#mobile-inventory-menu-button  {
+    width: 176px;
+}
+
 div#mobile-menu-button.shrink ,
 div#mobile-inventory-menu-button.shrink  {
     top: 60px;
@@ -3375,6 +3379,10 @@ div#mobile-inventory-menu-button.shrink  {
     border-top: none;
     width: 160px;
     padding-right: 0;
+}
+.nav-tertiary.shrink #menu-inventory-menu,
+.nav-tertiary #menu-inventory-menu {
+    width: 176px;
 }
 
 .nav-secondary.shrink #menu-services-menu,
@@ -3715,8 +3723,8 @@ div#mobile-inventory-menu-button.shrink  {
   .archive.category .entry-content,
   .single-post .entry-content,
   .page-id-46 .entry-content,
-  .page-id-42 .entry-content,
-  .entry-content {
+  .page-id-42 .entry-content/*,
+  .entry-content*/ {
     padding: 0;
   }
 
