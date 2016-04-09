@@ -2312,11 +2312,21 @@ section#text-11 img {
   margin-left: 5%;
   width: 33%;
 }
+#shop-left {
+  margin-bottom: 40px;
+  margin-left: 0;
+  width: 40%;
+}
+
 .contact-right {
   float: left;
   margin-left: 10%;
   margin-right: 5%;
-  width: 47%;
+  width: 50%;
+}
+#shop-right {
+  margin-right: 0;
+  width: 33%;
 }
 
 .vfb-fieldset {
