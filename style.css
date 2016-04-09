@@ -3057,10 +3057,9 @@ section#simple-social-icons-3 a {
 
   .blog.content-sidebar .content,
   .archive.category .content,
-  .single-post .content,
-  .content-sidebar .content {
+  .single-post .content/*,
+  .content-sidebar .content*/ {
       float: none;
-      /*margin: 0 auto;*/
       max-width: 100%;
       width: 100%;
   }
@@ -3889,8 +3888,6 @@ div#mobile-inventory-menu-button.shrink  {
   #shop-right h3 {
       margin: 37px 0 0 0;
   }
-
-
 
   /* 500 */
 
