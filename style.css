@@ -3084,6 +3084,13 @@ section#simple-social-icons-3 a {
     width: 100%;
   }
 
+  .content-sidebar .single-item-img.alignleft {
+    margin: 0 auto;
+    width: auto !important;
+    float: none;
+  }
+
+
   /**/
 
   .footer-widgets {
