@@ -3090,6 +3090,9 @@ section#simple-social-icons-3 a {
     float: none;
   }
 
+  .single-shop-inventory .content-sidebar-wrap {
+    margin: 0 40px;
+  }
 
   /**/
 
@@ -3905,6 +3908,10 @@ div#mobile-inventory-menu-button.shrink  {
     padding: 0 20px;
   }
 
+  .single-shop-inventory .content-sidebar-wrap,
+  .prev-next-post-links {
+    margin: 0 20px;
+  }
 
   .contact-left,
   .contact-right {
