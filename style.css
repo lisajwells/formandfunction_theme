@@ -2291,7 +2291,8 @@ section#text-11 img {
   margin: 60px 0 0 0;
 }
 
-.page-id-35 h3 {
+.page-id-35 h3, /*contact*/
+.page-id-29 h3 {  /*the shop*/
   margin-top: 0;
   font-weight: 700;
 }
