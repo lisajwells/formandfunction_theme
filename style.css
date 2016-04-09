@@ -2284,6 +2284,67 @@ section#text-11 img {
   width: 220px;
 }
 
+/* # The Team
+
+  /*the team*/
+
+  .team {
+    clear: both;
+  }
+
+  .team-img-pair {
+    width: 50%;
+    margin: 0 3% 3% 0;
+    float: left;
+  }
+
+  .team-img-pair .team-img-left,
+  .team-img-pair .team-img-right {
+    float: left;
+    overflow: hidden;
+  }
+
+  .team-img-left {
+    margin-right: 3%;
+  }
+
+  .team-text {
+    float: right;
+    width: 47%;
+  }
+
+  .team-text h3 {
+    margin-top: -6px;
+    margin-bottom: 7px;
+  }
+
+  #team-1 .team-img-left {
+    width: 66%;
+  }
+  #team-1 .team-img-right {
+    width: 31%;
+  }
+  #team-2 .team-img-left {
+    width: 39%;
+  }
+  #team-2 .team-img-right {
+    width: 58%;
+  }
+  #team-3 .team-img-left {
+    width: 58%;
+  }
+  #team-3 .team-img-right {
+    width: 39%;
+  }
+  #team-4 .team-img-left {
+    width: 39%;
+  }
+  #team-4 .team-img-right {
+    width: 58%;
+  }
+
+
+
 /* # Contact Page and The Shop
 ---------------------------------------------------------------------------------------------------- */
 
@@ -3974,6 +4035,7 @@ div#mobile-inventory-menu-button.shrink  {
   .sidebar-primary .textwidget .button.call-button {
     display: inline-block;
   }
+
 
 }
 
