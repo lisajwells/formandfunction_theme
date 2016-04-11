@@ -3530,8 +3530,13 @@ div#mobile-inventory-menu-button.shrink  {
     padding: 36px 36px;
   }
 
-  blockquote p {
+  blockquote p,
+  .page-id-62 blockquote.block-boxed p {
     margin-bottom: 6px;
+  }
+
+  .page-id-62 blockquote p {
+    margin-bottom: 28px;
   }
 
   div#home-hero-image {
@@ -3789,7 +3794,6 @@ div#mobile-inventory-menu-button.shrink  {
     margin-top: -6px;
     margin-bottom: 7px;
   }
-
 
 }
 
