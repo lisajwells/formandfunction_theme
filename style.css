@@ -3771,6 +3771,26 @@ div#mobile-inventory-menu-button.shrink  {
     padding: 0;
   }
 
+  /*the team*/
+
+  .team-img-pair {
+    width: 100%;
+    margin: 2% 3% 4% 0;
+    float: none;
+  }
+
+  .team-text {
+    float: none;
+    width: 100%;
+    margin-bottom: 7%;
+  }
+
+  .team-text h3 {
+    margin-top: -6px;
+    margin-bottom: 7px;
+  }
+
+
 }
 
 /* # 620
