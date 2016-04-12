@@ -2430,6 +2430,10 @@ section#text-11 img {
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 
+.page-id-35 .widget-area { /* none on contact */
+    display: none;
+}
+
 .footer-widgets {
   position: relative;
 	color: #000;

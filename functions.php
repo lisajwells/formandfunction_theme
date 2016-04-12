@@ -289,6 +289,15 @@ function faf_custom_footer() {
 	<?php
 }
 
+//* Remove footer widgets from Contact Page
+//* this works, but then you lose the border above, so i'm doing it with css
+// add_action( 'genesis_before', 'faf_remove_widgets_contact_footer' );
+// function faf_remove_widgets_contact_footer() {
+// 	if( is_page('contact') ) {
+// 	remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
+// 	}
+// }
+
 //* from https://www.itsupportguides.com/wordpress/how-to-use-a-non-breaking-space-in-wordpress/
 function itsg_allow_nbsp_in_tinymce( $init ) {
     $init['entities'] = '160,nbsp,38,amp,60,lt,62,gt';
