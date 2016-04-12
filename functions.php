@@ -113,7 +113,7 @@ if ( !is_page('14') )
 //* see single-inventory-item.php where it's added back in for those (couldn't get this to see !is_page_template)
 add_action('template_redirect', 'remove_tertiary_nav_pages');
 function remove_tertiary_nav_pages() {
-if ( !is_page (array('featured-decor', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) )
+if ( !is_page (array('featured-vintage', 'decor', 'lighting', 'chairs', 'furniture', 'tables' ) ) )
     remove_action('genesis_before_content_sidebar_wrap', 'add_third_nav_genesis');
 }
 //*

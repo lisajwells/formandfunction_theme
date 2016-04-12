@@ -263,7 +263,7 @@ blockquote a {
 blockquote footer {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -418,7 +418,12 @@ p.prev-next-btns {
 .button.small.next-project-button {
   right: 5.66666%;
 }
-
+.button.small.footer-button {
+	width:260px;
+	}
+.right {
+	float:right;
+	}
 a#fancybox-right,
 a#fancybox-left {
     position: fixed;
@@ -883,6 +888,11 @@ th {
   text-align:center;
 }
 
+.after-entry-title {
+font-size: 60px;
+  font-family: 'La Belle Aurore', cursive;
+  text-align:center;
+}
 .single-shop-inventory .entry-title {
     margin-top: 109px;
 }
@@ -1306,7 +1316,7 @@ div .book-featured-text-banner {
 }
 
 .genesis-nav-menu .sub-menu li a {
-  background-color: #efefef;
+  background-color: #e5e5e5;
   color: #fff;
   font-size: 12px;
   padding: 20px;
@@ -1921,7 +1931,8 @@ p.entry-meta {
 --------------------------------------------- */
 
 .after-entry {
-	padding: 0 80px 80px;
+	padding: 60px 80px 80px;
+	background-color:#efefef;
 }
 
 /* ## Pagination
@@ -2220,7 +2231,9 @@ section#text-11 img {
 .blog .sidebar li a,
 .archive.category .sidebar li a,
 .single-post .sidebar li a {
-    line-height: 2;
+    line-height: 1.2;
+	padding-bottom:13px;
+	font-weight:700;
 }
 
 /* PRESS */
@@ -2297,6 +2310,7 @@ section#text-11 img {
   .team-text {
     float: right;
     width: 47%;
+	padding-bottom:60px;
   }
 
   .team-text h3 {
