@@ -30,19 +30,14 @@ function sk_show_featured_image_single_item_pages() {
 
 add_action( 'genesis_before_sidebar_widget_area', 'sk_display_custom_fields' );
 
-// add_action( 'genesis_entry_content', 'sk_add_buy_button' );
-// function sk_add_buy_button() {
-// 	if ( get_field( 'item_number' ) ) {
-// 		echo '<a href="' . get_field( 'item_number' ) . '" class="button">Get Directions</a>';
-// 	}
-// }
 
 //* Previous and Next Post navigation
+//* Group 38 is excluded ("new" group)
 add_action('genesis_after_content_sidebar_wrap', 'sk_custom_post_nav');
 function sk_custom_post_nav() {
 	echo '<div class="prev-next-post-links">';
-		previous_post_link('<div class="previous-post-link">&laquo; %link</div>', '<strong>%title</strong>', TRUE, ' ', 'group' );
-		next_post_link('<div class="next-post-link">%link &raquo;</div>', '<strong>%title</strong>', TRUE, ' ', 'group'  );
+		previous_post_link('<div class="previous-post-link">&laquo; %link</div>', '<strong>%title</strong>', TRUE, '38 ', 'group' );
+		next_post_link('<div class="next-post-link">%link &raquo;</div>', '<strong>%title</strong>', TRUE, '38 ', 'group'  );
 	echo '</div>';
 }
 

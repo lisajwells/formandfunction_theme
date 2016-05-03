@@ -9,7 +9,7 @@
 add_action( 'genesis_before_loop', 'faf_display_schedule_button' );
 
 function faf_display_schedule_button() {
-        echo '<a href="http://formandfunction.dev/contact" id="schedule-consult-button" class="button small">Schedule a Consultation</a>';
+        echo '<a href="http://formandfunctionraleigh.com/contact" id="schedule-consult-button" class="button small">Schedule a Consultation</a>';
 }
 
 /* no real post title to show */
