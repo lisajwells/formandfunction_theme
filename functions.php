@@ -113,7 +113,7 @@ if ( !is_page('14') )
 //* see single-inventory-item.php where it's added back in for those (couldn't get this to see !is_page_template)
 add_action('template_redirect', 'remove_tertiary_nav_pages');
 function remove_tertiary_nav_pages() {
-if ( !is_page (array('featured-decor', 'decor', 'lighting', 'seating', 'storage', 'tables' ) ) )
+if ( !is_page (array('new-inventory', 'decor', 'lighting', 'chairs', 'furniture', 'tables' ) ) )
     remove_action('genesis_before_content_sidebar_wrap', 'add_third_nav_genesis');
 }
 //*
@@ -284,10 +284,20 @@ add_action( 'genesis_footer', 'faf_custom_footer' );
 function faf_custom_footer() {
 	?>
 	<p><a href="<?php echo get_home_url(); ?>"><img id="footer-logo" src="<?php get_home_url() ?>/wp-content/uploads/2016/03/FormFunctionLogoMark.png"></a></p>
-	<p><a href="#">Privacy Policy</a> | <a href="#">Sitemap</a></p>
+	<p><a href="http://formandfunctionraleigh.com/privacy-policy">Privacy Policy</a> | <a href="http://formandfunctionraleigh.com/sitemap">Sitemap</a></p>
 	<p>Copyright <?php echo date ( 'Y' ) ?> Form & Function Raleigh. All rights reserved.</p>
+	<p><a href="http://curioelectro.com" target="_blank">Web Design and Development by Curio Electro</a></p>
 	<?php
 }
+
+//* Remove footer widgets from Contact Page
+//* this works, but then you lose the border above, so i'm doing it with css
+// add_action( 'genesis_before', 'faf_remove_widgets_contact_footer' );
+// function faf_remove_widgets_contact_footer() {
+// 	if( is_page('contact') ) {
+// 	remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
+// 	}
+// }
 
 //* from https://www.itsupportguides.com/wordpress/how-to-use-a-non-breaking-space-in-wordpress/
 function itsg_allow_nbsp_in_tinymce( $init ) {
@@ -333,3 +343,44 @@ function be_exclude_category_from_blog( $query ) {
         $query->set( 'cat', '-34' );
     }
 }
+
+//* Previous and Next Post navigation copied from single-shop-inventory.php
+// add_action('genesis_entry_footer', 'faf_custom_post_nav');
+// function faf_custom_post_nav() {
+// 	echo '<div class="prev-next-post-links">';
+// 		previous_post_link('<div class="previous-post-link">&laquo; %link</div>', '<strong>%title</strong>', TRUE, ' ', 'group' );
+// 		next_post_link('<div class="next-post-link">%link &raquo;</div>', '<strong>%title</strong>', TRUE, ' ', 'group'  );
+// 	echo '</div>';
+// }
+
+/**
+ * Display links to previous and next post, from a single post.
+ *
+ * @since 1.5.1
+ *
+ * @return null Return early if not a post.
+ */
+add_action('genesis_entry_footer', 'faf_prev_next_post_nav');
+function faf_prev_next_post_nav() {
+
+	if ( ! is_singular( 'post' ) )
+		return;
+
+	genesis_markup( array(
+		'html5'   => '<div %s>',
+		'xhtml'   => '<div class="navigation">',
+		'context' => 'adjacent-entry-pagination',
+	) );
+
+	echo '<div class="pagination-previous alignleft">';
+	previous_post_link('<div class="previous-post-link">&laquo; %link</div>', '<strong>%title</strong>', FALSE, '34');
+	echo '</div>';
+
+	echo '<div class="pagination-next alignright">';
+	next_post_link('<div class="next-post-link">%link &raquo;</div>', '<strong>%title</strong>', FALSE, '34');
+	echo '</div>';
+
+	echo '</div>';
+
+}
+

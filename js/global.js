@@ -28,9 +28,17 @@ jQuery(function( $ ){
 
   });
 
+  // our services menu toggle
   $( "#mobile-menu-button" ).click(function() {
     $( "nav.nav-secondary" ).toggle();
   });
+
+  // our services close menu when scroll-to-id link clicked ++++++
+  $( "#menu-services-menu .menu-item").click(function() {
+    $( "nav.nav-secondary" ).toggle();
+  });
+
+  // inventory menu toggle
   $( "div#mobile-inventory-menu-button" ).click(function() {
     $( "nav.nav-tertiary" ).toggle();
   });
@@ -64,11 +72,7 @@ jQuery(function( $ ){
 
     if ($(window).scrollTop() + $(window).height() >= $(document).height() - 450) {
         $('#schedule-consult-button').addClass("sched-button-low");
-        // setTimeout(function() {
-        //   $('#schedule-consult-button').addClass("sched-button-none");
-        // }, 3000);
     } else {
-        // $('#schedule-consult-button').removeClass("sched-button-none");
         $('#schedule-consult-button').removeClass("sched-button-low");
     }
   });
