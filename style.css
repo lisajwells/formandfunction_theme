@@ -421,9 +421,6 @@ p.prev-next-btns {
 .button.small.footer-button {
 	width:260px;
 	}
-.button.small.up {
-	margin-top:-20px;
-	}
 .right {
 	float:right;
 	}
@@ -440,17 +437,7 @@ a#fancybox-right {
 a#fancybox-left {
     left: 5%;
 }
-/* ## Popup
---------------------------------------------- */
 
-}
-.ppsPopupShell .ppsSuccessMsg {
-    padding: 5px;
-    margin: 5px 0;
-    text-align: center;
-	font-size:24px;
-    color: #ffffff !important;
-}
 
 /* ## Essential Grid
 --------------------------------------------- */
@@ -661,8 +648,7 @@ th {
   background-position: left 0 top 0, right 40%, left 0 bottom 40%;
 }
 
-.page-id-35 .site-container,
-.page-id-29 .site-container { /*contact and shop*/
+.page-id-35 .site-container { /*contact*/
   background-image: url(../form-and-function/images/blob_2_180.jpg), url(../form-and-function/images/blob_3_180.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: left -84px bottom 670px, right 0 top 53px;
@@ -1034,6 +1020,131 @@ img.alignright,
 	text-align: center;
 }
 
+/* ## Featured Content
+--------------------------------------------- */
+
+/*.featured-content .entry {
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.widget-area .featured-content .entry-header p {
+	margin-bottom: 20px;
+}
+
+.featured-content .entry:after {
+	display: none;
+}
+
+.featured-content .entry:last-of-type {
+	margin-bottom: 0;
+}
+
+.featured-content .entry-title {
+	font-size: 22px;
+}
+
+.featured-content .entry:last-of-type + .widget-title {
+	margin-top: 20px;
+}
+
+.featured-content .aligncenter ~ div,
+.featured-content .aligncenter ~ header {
+	text-align: center;
+}
+
+.featured-content .aligncenter ~ div .more-link {
+	margin: 20px auto 0;
+}
+
+.content .widget-full .featuredpage {
+	background-color: #181c1e;
+	color: #fff;
+}
+
+.content .widget-full .featuredpage .entry {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+.content .widget-full .featuredpage a:hover,
+.content .widget-full .featuredpage .entry-title a {
+	color: #fff;
+}
+
+.content .widget-full .featuredpage .entry-title a:hover {
+	color: #ccc;
+}
+*/
+
+/* # Plugins
+---------------------------------------------------------------------------------------------------- */
+
+/* ## Genesis Author Pro
+--------------------------------------------- */
+
+/*.archive.genesis-author-pro .archive-description,
+.archive.genesis-author-pro .breadcrumb,
+.archive.genesis-pro-portfolio .archive-description,
+.archive.genesis-pro-portfolio .breadcrumb {
+	margin: -80px -80px 80px;
+}
+
+.archive.genesis-author-pro .archive-pagination,
+.archive.genesis-pro-portfolio .archive-pagination {
+	margin: 0 -80px;
+}
+
+.archive.genesis-author-pro .content .entry {
+	margin-bottom: 20px;
+}
+
+.archive.genesis-author-pro  .entry::after,
+.archive.genesis-pro-portfolio .entry::after {
+	border-bottom-width: 0;
+	padding-top: 0;
+}
+
+.archive.genesis-author-pro .author-pro-featured-image,
+.author-pro-featured-image a,
+.single-books .author-pro-featured-image {
+	position: relative;
+	overflow: hidden;
+}
+
+div .book-featured-text-banner {
+	background-color: #0085da;
+}
+
+.featuredbook .image-aligncenter ~ div,
+.featuredbook .image-aligncenter ~ header {
+	text-align: center;
+}
+
+.featuredbook .book-price {
+	font-weight: 700;
+}
+
+.single-books .content .book-price {
+	border-bottom: 1px solid #000;
+}*/
+
+/* ## Genesis eNews Extended
+--------------------------------------------- */
+
+/*.enews-widget input {
+	font-size: 16px;
+	margin-bottom: 16px;
+}
+
+.enews-widget input[type="submit"] {
+	margin: 0;
+	width: 100%;
+}
+
+.enews form + p {
+	margin-top: 24px;
+}*/
+
 /* ## Jetpack
 --------------------------------------------- */
 
@@ -1333,6 +1444,12 @@ div#mobile-inventory-menu-button {
 	/*margin-top: 70px;*/
 }
 
+/*.nav-secondary .genesis-nav-menu a,
+.nav-tertiary .genesis-nav-menu a {
+  color: #fff;
+  padding: 26px 16px;
+}*/
+
 .nav-secondary .genesis-nav-menu .sub-menu a,
 .nav-tertiary .genesis-nav-menu .sub-menu a {
   color: #e1e9ee;
@@ -1544,9 +1661,7 @@ div#mobile-inventory-menu-button {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 80%;
   height: 80%;
 }
@@ -1555,9 +1670,7 @@ div#mobile-inventory-menu-button {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width:80%;
 }
 
@@ -1584,9 +1697,7 @@ div#mobile-inventory-menu-button {
   max-width: 600px;
   top: 50%;  /* top  edge of the element at the middle of the parent */
   left: 50%; /* left edge of the element at the middle of the parent */
-  -webkit-transform: translate(-50%, -48%);
-      -ms-transform: translate(-50%, -48%);
-          transform: translate(-50%, -48%); /* translateX(-50%) and translateY(-48%) */
+  transform: translate(-50%, -48%); /* translateX(-50%) and translateY(-48%) */
   padding: 60px;
   width: auto;
   height: auto;
@@ -1809,8 +1920,6 @@ p.entry-meta {
 .entry-tags,
 .entry-terms {
 	display: block;
-	font-weight:700;
-	font-size:18px;
 }
 
 .entry-comments-link::before {
@@ -1835,7 +1944,6 @@ p.entry-meta {
 
 .adjacent-entry-pagination {
 	margin-bottom: 0;
-  margin-top: 40px;
 }
 
 .archive-pagination {
@@ -3281,11 +3389,6 @@ section#simple-social-icons-3 a {
 
 /*.nav-secondary and tertiary max980 */
 
-/*#menu-services-menu,
-.nav-secondary #menu-services-menu {
-  display:none;*/ /*until we figure out how to make this close itself*/
-/*}*/
-
 nav.nav-secondary,
 nav.nav-tertiary {
   display: none;
@@ -3301,10 +3404,6 @@ div#mobile-inventory-menu-button  {
     width: 160px;
     z-index: 10;
 }
-
-/*div#mobile-menu-button {*/
-  /*display:none;*/ /*until we figure out how to make this close itself*/
-/*}*/
 
 div#mobile-inventory-menu-button  {
     width: 176px;
@@ -3393,9 +3492,7 @@ div#mobile-inventory-menu-button.shrink  {
     background: none;
     color: #fff;
   }
-.after-entry {
-	display:none;
-	}
+
 
 }
 
@@ -3742,7 +3839,6 @@ div#mobile-inventory-menu-button.shrink  {
     right: 0;
     width: 100%;
   }
-
 }
 
 /* # 600
@@ -3987,7 +4083,40 @@ div.title-area, .header-image .site-title > a {
 /* Single and Archive templates for Inventory-Items CPT
 ----------------------------------------------- */
 
+/*.type-item .entry-meta { is this used?
+	border-top: none;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}*/
+
+/* inventory items CPT archive page */
+
+/*.post-type-archive-item .item-meta p {
+	margin-bottom: 5px;
+}
+
+.post-type-archive-item .item-meta .button { is this used?
+	padding: 8px 15px;
+	font-size: 13px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}*/
+
+/*.post-type-archive-item .cpt-archive-description {
+	background: #fff url(images/book-shelf.png) no-repeat right bottom;
+}*/
+
 /* items CPT single pages */
+
+/*moved this to .sidebar-primary*/
+/*.single-shop-inventory .item-meta {*/
+/*	background: #EFEFEF;
+	color: #111;
+	padding: 40px;
+	margin-bottom: 40px;
+}*/
 
 .single-shop-inventory .entry-title,
 .post-type-archive-items .entry-title {
@@ -4007,3 +4136,18 @@ div.title-area, .header-image .site-title > a {
 .next-post-link {
 	float: right;
 }
+
+/*@media only screen and (max-width: 568px) {
+
+	.type-items .entry-content {*/ /*no such thing?*/
+/*		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	.type-items .entry-content img.alignleft {*/ /*no such thing?*//*
+		float: none;
+	}
+
+}*/
