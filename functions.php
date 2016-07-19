@@ -30,7 +30,7 @@ function author_enqueue_scripts_styles() {
 //* Modify the length of post excerpts
 add_filter( 'excerpt_length', 'sp_excerpt_length' );
 function sp_excerpt_length( $length ) {
-return 80; // pull first 80 words
+	return 80; // pull first 80 words
 }
 
 //* Add new image sizes
@@ -118,13 +118,14 @@ if ( !is_page (array('new-inventory', 'decor', 'lighting', 'chairs', 'furniture'
 }
 //*
 
-//****** Single Inventory Item CPT ******//
 //* [Site-wide] Modify the Excerpt read more link
 add_filter('excerpt_more', 'new_excerpt_more');
 function new_excerpt_more($more) {
 	// var_dump($more);
 	return '... <a class="more-link" href="' . get_permalink() . '">Read More</a>';
 }
+
+//****** Single Inventory Item CPT ******//
 //* [Dashboard] Add Archive Settings option to Inventory Items CPT
 add_post_type_support( 'shop-inventory', 'genesis-cpt-archives-settings' );
 /**
