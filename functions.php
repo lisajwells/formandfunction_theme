@@ -122,6 +122,7 @@ if ( !is_page (array('new-inventory', 'decor', 'lighting', 'chairs', 'furniture'
 //* [Site-wide] Modify the Excerpt read more link
 add_filter('excerpt_more', 'new_excerpt_more');
 function new_excerpt_more($more) {
+	// var_dump($more);
 	return '... <a class="more-link" href="' . get_permalink() . '">Read More</a>';
 }
 //* [Dashboard] Add Archive Settings option to Inventory Items CPT
