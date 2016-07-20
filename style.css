@@ -186,7 +186,6 @@ input[type="reset"],
 input[type="submit"],
 textarea:focus,
 .button,
-.more-link,
 .vfb-fieldset input[type="submit"],
 .textwidget .button,
 .gallery img {
@@ -196,7 +195,14 @@ textarea:focus,
 	-o-transition:      all .3s ease-in-out;
 	transition:         all .3s ease-in-out;
 }
-
+.more-link {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition:    all .3s ease-in-out;
+	-ms-transition:     all .3s ease-in-out;
+	-o-transition:      all .3s ease-in-out;
+	transition:         all .3s ease-in-out;
+	text-decoration:none !important;
+	}
 ::-moz-selection {
 	background-color: #000;
 	color: #fff;
@@ -522,8 +528,11 @@ input[type="submit"],
   text-transform: uppercase;
   white-space: normal;
   width: auto;
+  text-decoration:none;
 }
-
+.noUnder {
+  text-decoration:none !important;
+	}
 .button-light {
 	background-color: #c2ca66;
 }
@@ -1621,7 +1630,7 @@ div#mobile-inventory-menu-button {
 }
 
 /*inventory and portfolio main to center 2's*/
-.page-id-42 .dark-box-img-div:nth-of-type(4) {
+.page-id-42 .dark-box-img-div:nth-of-type(7) {
     margin-left: 18.34%;
 }
 
@@ -1928,6 +1937,7 @@ p.entry-meta {
     top: 512px;
     width: 160px;
     z-index: 50;
+    text-decoration:none;
 }
 
 /* slide right the button when scrolled down */
@@ -2318,7 +2328,9 @@ section#text-11 img {
 	padding: 40px;
 	margin-bottom: 1px;
 }
-
+section#text-10 {
+	margin-top:20px;
+	}
 
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */

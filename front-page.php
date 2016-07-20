@@ -12,7 +12,7 @@ add_action( 'genesis_meta', 'author_front_page_genesis_meta' );
 add_action( 'genesis_before_content_sidebar_wrap', 'faf_home_add_hero' );
 function faf_home_add_hero() {
 	echo '<div id="home-hero">
-			<div id="home-hero-image"><img src="'. get_home_url() .'/wp-content/uploads/2016/03/Interior-Designers-Raleigh-NC.jpg" alt="Interior Designers Raleigh NC" /></div>
+			<div id="home-hero-image"><img src="'. get_home_url() .'/wp-content/uploads/2016/05/Interior-Designers-Raleigh-NC.jpg" alt="Interior Designers Raleigh NC" /></div>
 
 			<div class="dark-box-group" id="hero-dark-box-group"><p>Real&nbsp;people live&nbsp;here.</p><h1>Interior Design and Unique Home Furnishings for the Greater&nbsp;Raleigh&nbsp;Area</h1><a href="'. get_home_url() .'/interior-design" class="button">Interior Design Services</a><a href="'. get_home_url() .'/home-decor" class="button button-light">The Shop</a></div></div>';
 }
@@ -21,7 +21,7 @@ add_action( 'genesis_entry_footer', 'faf_home_add_cta_imgs' );
 function faf_home_add_cta_imgs() {
 	echo '<div id="home-cta-imgs">
 			<div class="home-cta-img">
-				<img src="'. get_home_url() .'/wp-content/uploads/2016/04/Custom-DIY-Design-for-Rustic-Industrial-Kitchen.jpg" alt="Custom DIY Design for a Rustic Industrial Kitchen" />
+				<img src="'. get_home_url() .'/wp-content/uploads/2016/05/Custom-DIY-Interior-Design.jpg" alt="Custom DIY Interior Design" />
 			<div class="dark-box-group">
 				<div class="dark-box-content-wrap">
 					<p>Custom Diy</p>
@@ -30,7 +30,7 @@ function faf_home_add_cta_imgs() {
 			</div>
 			</div>
 			<div class="home-cta-img">
-				<img src="'. get_home_url() .'/wp-content/uploads/2016/04/Historical-Home-Interior-Design.jpg" alt="Historical Home Design North Carolina" />
+				<img src="'. get_home_url() .'/wp-content/uploads/2016/05/Historical-Home-Interior-Design.jpg" alt="Historical Home Design North Carolina" />
 			<div class="dark-box-group">
 				<div class="dark-box-content-wrap">
 					<p>Redesign</p>
@@ -39,7 +39,7 @@ function faf_home_add_cta_imgs() {
 			</div>
 			</div>
 			<div class="home-cta-img">
-				<img src="'. get_home_url() .'/wp-content/uploads/2016/04/Modern-Mountain-House-Design.jpg" alt="Modern Mountain House Design NC" />
+				<img src="'. get_home_url() .'/wp-content/uploads/2016/05/Modern-Mountain-House-Design.jpg" alt="Modern Mountain House Design NC" />
 			<div class="dark-box-group">
 				<div class="dark-box-content-wrap">
 					<p>The Works</p>
